@@ -1,0 +1,7 @@
+<div class="panel panel-success factor-chart">
+    <div class="panel-heading">{{$ctrl.heading}}</div>
+    <div class="panel-body factor-chart" >
+        <nvd3 options="$ctrl.options" data="$ctrl.data"></nvd3>
+        <div class="loading" ng-show="$ctrl.showLoading"></div>
+    </div>
+</div>

@@ -1,3 +1,15 @@
-<app-header ></app-header>
-<h1>{{$ctrl.product.name}}</h1>
-<product></product>
+<app-header title="{{$ctrl.title}}" beta="$ctrl.beta"></app-header>
+
+<div class="container-fluid">
+    <ul class="nav nav-tabs">
+        <li><a ui-sref="home" class="btn {{$ctrl.$state.$current.name == 'home' || $ctrl.$state.$current.name == 'detail'? 'active' : ''}}">
+            Summary
+        </a></li>
+        <li>
+            <a ui-sref="searchncompare" class="btn {{$ctrl.$state.$current.name == 'searchncompare' || $ctrl.$state.$current.name == 'insights' ? 'active' : ''}}">
+                Mill Speed Deviation
+            </a>
+        </li>
+    </ul>
+    <ui-view></ui-view>
+</div>

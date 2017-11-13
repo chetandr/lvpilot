@@ -1,0 +1,29 @@
+<div class="panel panel-info">
+    <div class="panel-heading">Data Filters</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2" ng-repeat="(idx, filter) in $ctrl.filters" ng-if="idx != 'Select Period'">
+                {{idx}} :
+                <select>
+                    <option ng-repeat="item in filter" value="{{item}}">{{item}}</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                Select Period :
+                <select>
+                    <option ng-repeat="periods in $ctrl.filters['Select Period']">{{periods}}</option>
+                </select>
+                To
+                <select>
+                    <option ng-repeat="periods in $ctrl.filters['Select Period']">{{periods}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-info">
+<div class="panel-heading">Insights – Top ML Factors</div>
+    <div class="panel-body">
+        <insight-detail factors="$ctrl.factors"></insight-detail>
+    </div>
+</div>

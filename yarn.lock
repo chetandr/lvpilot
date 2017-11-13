@@ -2,6 +2,26 @@
 # yarn lockfile v1
 
 
+"@types/lodash-es@^4.14.7":
+  version "4.14.7"
+  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.14.7.tgz#5eac6eff541ff352e5c818be326588230616c8f1"
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.78"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.78.tgz#f26a0b38a44a832c652964803c7e48be05939d3f"
+
+"@uirouter/angularjs@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.10.tgz#e18b0b65cd0d2d87165fad80294acfb2dc5e5277"
+  dependencies:
+    "@uirouter/core" "5.0.11"
+
+"@uirouter/core@5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-5.0.11.tgz#bec461fcda767d79c98f6647cc9313ef9e5de03a"
+
 "@uirouter/core@5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-5.0.3.tgz#e2b5b1e45190e20c67ba4e15c013de5d4e0ccab3"
@@ -67,6 +87,14 @@ angular-mocks@^1.5.0:
   version "1.6.6"
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.6.6.tgz#c93018e7838c6dc5ceaf1a6bcf9be13c830ea515"
 
+angular-nvd3@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/angular-nvd3/-/angular-nvd3-1.0.9.tgz#8d8a71487d9e5a122e8a5d0f5cd26ab0e491a6f5"
+  dependencies:
+    angular "^1.x"
+    d3 "^3.3"
+    nvd3 "^1.7.1"
+
 "angular-sanitize@>= 1.2", angular-sanitize@^1.6.6:
   version "1.6.6"
   resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.6.6.tgz#0fd065a19931517fbece66596d325d72b6e06041"
@@ -94,7 +122,7 @@ angular-ui-router@^1.0.3:
   dependencies:
     "@uirouter/core" "5.0.3"
 
-"angular@>= 1.2", angular@^1.6.6:
+"angular@>= 1.2", angular@^1.6.6, angular@^1.x:
   version "1.6.6"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.6.tgz#fd5a3cfb437ce382d854ee01120797978527cb64"
 
@@ -1330,6 +1358,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+d3@^3.3:
+  version "3.5.17"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-3.5.17.tgz#bc46748004378b21a360c9fc7cf5231790762fb8"
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -2417,6 +2449,10 @@ loader-utils@^1.0.2:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
+lodash-es@^4.17.4:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
+
 lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
@@ -2774,6 +2810,10 @@ num2fraction@^1.2.2:
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
+
+nvd3@^1.7.1:
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/nvd3/-/nvd3-1.8.6.tgz#2d3eba74bf33363b5101ebf1d093c59a53ae73c4"
 
 oauth-sign@~0.8.1, oauth-sign@~0.8.2:
   version "0.8.2"

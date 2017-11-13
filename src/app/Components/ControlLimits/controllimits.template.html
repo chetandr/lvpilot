@@ -1,0 +1,23 @@
+<div class="row" ng-repeat="controllimits in $ctrl.limits">
+    <div class="col-md-2" ng-repeat="limit in controllimits">
+        <div class="panel panel-warning">
+            <div class="panel-heading">{{limit.label}}</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        Min : <br/>
+                        <select>
+                            <option ng-repeat="value in limit.values" value="value">{{value}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        Max : <br/>
+                        <select>
+                            <option ng-repeat="value in limit.values" value="value">{{value}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

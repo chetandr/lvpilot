@@ -1,0 +1,22 @@
+<div class="panel panel-success">
+    <div class="panel-heading">Set Mill Process Control Limits</div>
+
+    <div class="panel-body">
+        <div class="panel panel-info">
+            <div class="panel-heading">Louisville Plant</div>
+            <div class="panel-body">
+                Select a Mill :
+                <select ng-change="onMillChange()" ng-model="$ctrl.currentMill">
+                    <option ng-repeat="mill in $ctrl.mills" value="{{mill.key}}" v-bind:key="$ctrl.currentMill + '-' + mill.value">{{mill.value}}</option>
+                </select>
+                <control-limits limits="$ctrl.limits"></control-limits>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">Hotsprings Plant</div>
+            <div class="panel-body">
+                <control-limits limits="$ctrl.hsLimits"></control-limits>
+            </div>
+        </div>
+    </div>
+</div>

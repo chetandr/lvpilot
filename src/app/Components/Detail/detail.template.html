@@ -1,0 +1,51 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        {{$ctrl.coilType}} coils
+    </div>
+    <div class="row bg-success" style="margin: 0px">
+        <div class="col-md-3">Parameter Base</div>
+        <div class="col-md-4"><input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"> <span> Hotsprings</span></div>
+        <div class="col-md-4"><input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"> <span> Louisville</span></div>
+    </div>
+    <table class="table">
+        <tr class="bg-info"><th colspan="3">Identified Reasons - {{$ctrl.coilType}} Patterns</th></tr>
+        <tr>
+            <th>#</th>
+            <th>Reasons</th>
+            <th># Of Coils</th>
+        </tr>
+        <tr ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase]">
+            <td>{{idx + 1}}</td>
+            <td>{{item.reason}}</td>
+            <td>{{item.count}}</td>
+        </tr>
+        <tr class="bg-info">
+            <td colspan="2">Total</td>
+            <td colspan="2">{{$ctrl.details[$ctrl.coilType].reasonTotal[$ctrl.paramBase]}}</td>
+        </tr>
+    </table>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                ML Factors & Contribution
+            </div>
+            <div class="panel-body">
+                <nvd3 options="$ctrl.pieChartOptions" data="$ctrl.details[$ctrl.coilType].mlfactors"></nvd3>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default" ng-if="$ctrl.coilType == 'Rejected'">
+            <div class="panel-heading">
+                Reasons - Coil Rejects
+            </div>
+            <div class="panel-body">
+                <nvd3 options="$ctrl.pieChartOptions" data="$ctrl.details[$ctrl.coilType].rejectReason"></nvd3>
+            </div>
+        </div>
+
+    </div>
+</div>

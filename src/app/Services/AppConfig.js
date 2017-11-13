@@ -1,8 +1,7 @@
+import Config from '../config';
+
 const AppConfig = () => {
-    return {
-        title : 'Lousville Project POC',
-        beta : true,
-    }
+    return Config;
 };
 
 export default AppConfig;

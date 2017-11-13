@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="col-md-6 col-lg-6 col-md-12 col-sm-12 col-sm-12" ng-repeat-start="(idx, factor) in $ctrl.importantFactors">
+        <factors heading="factor.Value" factor-key="factor.key"></factors>
+    </div>
+    <div ng-if="(idx+1)%2 == 0" class="clearfix visible-md-block"></div>
+    <div ng-repeat-end class="clearfix visible-xs-block visible-sm-block"></div>
+</div>

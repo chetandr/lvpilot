@@ -1,0 +1,13 @@
+<div class="panel panel-warning" ng-repeat="factor in $ctrl.factors">
+    <div class="panel-heading">
+        <span class="label label-danger">Rank : {{factor.rank}}</span>
+        {{factor.value}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6" ng-repeat="item in $ctrl.Clusters.list">
+                <factor-mill-speed factor-key="factor.key" mltitle="'Coils with Mill Speed Deviation  - ' + item.name"></factor-mill-speed>
+            </div>
+        </div>
+    </div>
+</div>

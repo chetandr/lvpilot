@@ -1,0 +1,40 @@
+<div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Select Filters</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>
+                            Plant :
+                        </label>
+                        <input type="checkbox" ng-checked="$ctrl.plant == 'hotsprings'" ng-click="$ctrl.setPlant('hotsprings')" class="regular-checkbox"> <span> Hotsprings</span>
+                        <input type="checkbox" ng-checked="$ctrl.plant == 'louisville'" ng-click="$ctrl.setPlant('louisville')" class="regular-checkbox"> <span> Louisville</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Mill :</label>
+                        <select ng-model="$ctrl.currentMill" ng-onchange="$ctrl.setTargetGague()">
+                            <option ng-repeat="(key, mill) in $ctrl.filters.MillFilter[$ctrl.plant]" value="{{key}}">{{mill.value}}</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label>Target Gauge :</label>
+                        <select ng-model="$ctrl.targetGauge">
+                            <option ng-repeat="tg in $ctrl.filters.MillFilter[$ctrl.plant][$ctrl.currentMill].targetGauge" value="{{tg}}">{{tg}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Mill Speed Trend For Coil Group</div>
+        <div class="panel-body">
+            <mill-speed-trend clusters="$ctrl.clusters" trends="$ctrl.trends" ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill" gauge="$ctrl.targetGauge"></mill-speed-trend>
+        </div>
+    </div>
+</div>
