@@ -3,7 +3,8 @@ import template from './Detail/detail.template.html'
 
 const bindings = {
     details: '<',
-    coilType :'<'
+    coilType :'<',
+    total: '<'
 }
 
 export default {

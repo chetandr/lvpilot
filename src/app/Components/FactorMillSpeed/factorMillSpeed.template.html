@@ -1,1 +1,47 @@
-<nvd3 options="$ctrl.options" data="$ctrl.data"></nvd3>
+<div class="panel panel-default">
+    <div class="panel-heading">{{$ctrl.mltitle}}</div>
+    <div class="panel-body" style="min-height: 500px">
+        <div class="loading" ng-if="$ctrl.data.length <= 0"></div>
+        <div class="row" ng-if="$ctrl.data.length > 0">
+            <div class="col-md-6">
+                <label>Group By:</label>
+                <select ng-model="$ctrl.groupFactor" style="font-size:0.6em">
+                    <option value="group1">Accepted Vs Rejected (with Reason)</option>
+                    <option value="group2">Good Vs Non Standard Vs Web Breaks</option>
+                </select>
+            </div>
+            <div class="col-md-3" ng-if="$ctrl.chartOptions.threshold">
+                <div class="form-group">
+                    <label>Min :</label>
+                    <select  style="font-size:0.6em" ng-model="$ctrl.minThreshold">
+                        <option ng-repeat="item in $ctrl.maxMinValues" value="{{item}}">{{item}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group" ng-if="$ctrl.chartOptions.threshold" >
+                    <label>Max :</label>
+                    <select  style="font-size:0.6em" ng-model="$ctrl.maxThreshold">
+                        <option ng-repeat="item in $ctrl.maxMinValues" value="{{item}}">{{item}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <factor-chart caster="$ctrl.caster"
+                              oven="$ctrl.oven"
+                              workrolls="$ctrl.workrolls"
+                              alloy="$ctrl.alloy"
+                              period="$ctrl.period"
+                              chart-options="$ctrl.chartOptions"
+                              chart-data="$ctrl.data"
+                              group-by="$ctrl.groupFactor"
+                              max="$ctrl.maxThreshold"
+                              min="$ctrl.minThreshold"
+                              ng-if="$ctrl.data.length > 0"></factor-chart>
+            </div>
+        </div>
+    </div>
+</div>
+

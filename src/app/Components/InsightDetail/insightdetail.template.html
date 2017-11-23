@@ -5,8 +5,13 @@
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-6" ng-repeat="item in $ctrl.Clusters.list">
-                <factor-mill-speed factor-key="factor.key" mltitle="'Coils with Mill Speed Deviation  - ' + item.name"></factor-mill-speed>
+            <div class="col-md-6" ng-repeat="item in $ctrl.Clusters.list" style="min-height: 340px;">
+                <factor-mill-speed caster="$ctrl.caster"
+                                   oven="$ctrl.oven"
+                                   workrolls="$ctrl.workrolls"
+                                   alloy="$ctrl.alloy"
+                                   period="$ctrl.period"
+                                   factor-key="factor.key" deviation="item" mltitle="'Coils with Mill Speed Deviation  - ' + item.name"></factor-mill-speed>
             </div>
         </div>
     </div>

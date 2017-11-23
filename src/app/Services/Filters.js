@@ -1,6 +1,7 @@
 const Filters = () => {
     return {
-        list: []
+        list: [],
+        values: []
     }
 }
 

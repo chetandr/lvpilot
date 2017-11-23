@@ -2,12 +2,13 @@ import merge from 'lodash-es/merge';
 
 export default class MillSpeedTrendCtrl {
 
-    constructor($scope, $http, $state, ClusterService, CoilDataService, AppConfig, ChartOptions) {
+    constructor($scope, $http, $state, ClusterService, CoilDataService, AppConfig, ChartOptions, FilterService) {
         this.ClusterService = ClusterService;
         this.AppConfig = AppConfig;
         this.ChartOptions = ChartOptions;
         this.$http = $http;
         this.CoilDataService = CoilDataService;
+
         this.scope = $scope;
         $scope.selectedClusters = [];
         this.$state = $state;
@@ -18,7 +19,7 @@ export default class MillSpeedTrendCtrl {
 
     $onInit() {
         this.selectedClusters = [];
-        this.showInsights = () => this.$state.transitionTo('insights');
+        this.showInsights = () => this.$state.transitionTo('insights', {plant : this.plant, mill: this.mill, gauge: this.gauge});
         let restURL = this.AppConfig.restUrls.MILL_SPEED_TREND;
         const multiBarChart = {
             "chart" :{
@@ -34,7 +35,7 @@ export default class MillSpeedTrendCtrl {
                 },
                 xAxis:{
                     tickFormat: d => {
-                        const values = this.trends.data[0].values;
+                        const values = this.trends.data[this.plant][this.mill][this.gauge][0].values;
                         const ret = values[(d/10) -1] ? values[(d/10) -1].label : null;
                         return ret;
                     },

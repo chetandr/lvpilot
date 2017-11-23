@@ -380,7 +380,12 @@ table.dmi-table {
         margin-top: 15px !important;
     }
 }
-
+input[type="checkbox"].small-round {
+    -webkit-border-radius:5px !important;
+    -moz-border-radius:5px !important;
+    border-radius:5px !important;
+    padding: 2px !important;
+}
 .factor-chart {
     position: relative !important;
     min-height: 300px;
@@ -399,4 +404,8 @@ table.dmi-table {
     padding-bottom: 10px;
     background-color: #FFFFFF;
     border: 1px solid #ddd;
+}
+
+.small-font {
+    font-size: 0.8em;
 }

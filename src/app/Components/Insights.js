@@ -3,7 +3,8 @@ import template from './Insights/insights.template.html'
 
 const bindings = {
     filters: '<',
-    factors: '<'
+    factors: '<',
+    caster: '<'
 };
 
 export default {

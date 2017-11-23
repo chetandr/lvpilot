@@ -2,28 +2,57 @@
     <div class="panel-heading">Data Filters</div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-2" ng-repeat="(idx, filter) in $ctrl.filters" ng-if="idx != 'Select Period'">
-                {{idx}} :
-                <select>
-                    <option ng-repeat="item in filter" value="{{item}}">{{item}}</option>
+            <div class="col-md-2" ng-repeat="filter in $ctrl.insightFilters" ng-if="idx != 'Select Period'">
+                {{filter.key}} :
+                <select ng-model="$ctrl[filter.key]" class="small-font">
+                    <option value="{{null}}">Select {{filter.key}}</option>
+                    <option ng-repeat="item in filter.value" value="{{item}}">{{item}}</option>
                 </select>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 Select Period :
-                <select>
-                    <option ng-repeat="periods in $ctrl.filters['Select Period']">{{periods}}</option>
+                <select  class="small-font">
+                    <option ng-repeat="period in $ctrl.filters.period" value="{{period.key}}">{{period.value}}</option>
                 </select>
                 To
                 <select>
-                    <option ng-repeat="periods in $ctrl.filters['Select Period']">{{periods}}</option>
+                    <option ng-repeat="period in $ctrl.filters.period" value="{{period.key}}">{{period.value}}</option>
                 </select>
             </div>
+
         </div>
     </div>
 </div>
 <div class="panel panel-info">
 <div class="panel-heading">Insights – Top ML Factors</div>
     <div class="panel-body">
-        <insight-detail factors="$ctrl.factors"></insight-detail>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Plant :</label>
+                    {{$ctrl.plantLabel}}
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Mill : </label>
+                    {{$ctrl.millLabel}}
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Target Gauge : </label>
+                    {{$ctrl.gauge}}
+                </div>
+            </div>
+
+        </div>
+        <insight-detail factors="$ctrl.factors"
+                        caster="$ctrl.Caster"
+                        oven="$ctrl.Oven"
+                        workrolls="$ctrl.WorkRolls"
+                        alloy="$ctrl.Alloy"
+                        period="$ctrl.Period"
+                        ></insight-detail>
     </div>
 </div>

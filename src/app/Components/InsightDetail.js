@@ -2,7 +2,12 @@ import controller from './InsightDetail/insightdetail.controller';
 import template from './InsightDetail/insightdetail.template.html'
 
 const bindings = {
-    factors: '<'
+    factors: '<',
+    caster: '<',
+    oven : '<',
+    workrolls: '<',
+    alloy: '<',
+    period: '<'
 };
 
 export default {

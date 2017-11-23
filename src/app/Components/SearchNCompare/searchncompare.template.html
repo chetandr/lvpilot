@@ -15,7 +15,7 @@
                 <div class="col-md-2">
                     <div class="form-group">
                         <label>Mill :</label>
-                        <select ng-model="$ctrl.currentMill" ng-onchange="$ctrl.setTargetGague()">
+                        <select ng-model="$ctrl.currentMill" ng-change="$ctrl.clearCluster()">
                             <option ng-repeat="(key, mill) in $ctrl.filters.MillFilter[$ctrl.plant]" value="{{key}}">{{mill.value}}</option>
                          </select>
                     </div>
@@ -23,10 +23,13 @@
                 <div class="col-md-5">
                     <div class="form-group">
                         <label>Target Gauge :</label>
-                        <select ng-model="$ctrl.targetGauge">
+                        <select ng-model="$ctrl.targetGauge" ng-change="$ctrl.clearCluster()">
                             <option ng-repeat="tg in $ctrl.filters.MillFilter[$ctrl.plant][$ctrl.currentMill].targetGauge" value="{{tg}}">{{tg}}</option>
                         </select>
                     </div>
+                </div>
+                <div class="col-md-offset-2">
+                    <button type="button" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">{{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}</button>
                 </div>
             </div>
         </div>
@@ -34,7 +37,7 @@
     <div class="panel panel-info">
         <div class="panel-heading">Mill Speed Trend For Coil Group</div>
         <div class="panel-body">
-            <mill-speed-trend clusters="$ctrl.clusters" trends="$ctrl.trends" ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill" gauge="$ctrl.targetGauge"></mill-speed-trend>
+            <mill-speed-trend clusters="$ctrl.Clusters.list" trends="$ctrl.trends" ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill" gauge="$ctrl.targetGauge"></mill-speed-trend>
         </div>
     </div>
 </div>

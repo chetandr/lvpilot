@@ -13,6 +13,7 @@ import Trends from './Components/Trends';
 import TrendsFactors from './Components/Factors';
 import FactorMillSpeed from './Components/FactorMillSpeed';
 import FactorChart from './Components/FactorChart';
+import FactorChartLegend from './Components/FactorChartLegend';
 import ProcessControlLimits from './Components/ProcessControlLimits';
 import ControlLimits from './Components/ControlLimits';
 import SearchNCompare from './Components/SearchNCompare';
@@ -48,6 +49,7 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
     .component('factors', TrendsFactors )
     .component('factorMillSpeed', FactorMillSpeed )
     .component('factorChart', FactorChart )
+    .component('factorChartLegend', FactorChartLegend )
     .component('processControlLimits', ProcessControlLimits )
     .component('controlLimits', ControlLimits )
     .component('searchNCompare', SearchNCompare )
@@ -63,6 +65,7 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
     .factory('Filters', Filters)
     .config(($stateProvider) => {
         $stateProvider
+            .state(UIState.Default)
             .state(UIState.Home)
             .state(UIState.Details)
             .state(UIState.Insights)

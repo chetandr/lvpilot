@@ -2,7 +2,6 @@ export default class InsightDetailCtrl {
 
     constructor(Clusters){
         this.Clusters = Clusters;
-        //this.mills = [];
     }
 
     $onInit() {

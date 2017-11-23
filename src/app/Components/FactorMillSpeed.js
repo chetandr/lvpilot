@@ -5,7 +5,13 @@ const bindings = {
     heading: '<',
     chartData: '<',
     factorKey: '<',
-    mltitle: '<'
+    mltitle: '<',
+    deviation: '<',
+    caster: '<',
+    oven : '<',
+    workrolls: '<',
+    alloy: '<',
+    period: '<'
 };
 
 export default {

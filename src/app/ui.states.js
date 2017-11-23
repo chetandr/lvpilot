@@ -1,4 +1,9 @@
 const UIStates = {
+    Default : {
+      name: 'default',
+      url : '/',
+      redirectTo : ['home']
+    },
     Home : {
         name : 'home',
         url: '/home',
@@ -20,7 +25,7 @@ const UIStates = {
 
     Insights : {
         name: 'insights',
-        url: '/insights',
+        url: '/insights/{plant}/{mill}/{gauge}',
         component : 'insights',
         resolve: {
             filters : (CoilDataService) => CoilDataService.getFilters(),

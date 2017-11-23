@@ -1,5 +1,5 @@
 const Config = {
-    pieChart : {
+    'pieChart' : {
             chart: {
                 type: 'pieChart',
                 height: 300,
@@ -12,7 +12,7 @@ const Config = {
                     return d.y;
                 },
                 showLabels: true,
-                labelType: 'percent',
+                labelType: 'value',
                 duration: 500,
                 labelThreshold: 0.01,
                 labelSunbeamLayout: true,
@@ -44,6 +44,68 @@ const Config = {
             }
         }
     },
+    'scatterChart' : {
+        "chart": {
+            "type": "scatterChart",
+            "height": 450,
+            "color": [
+                "#1f77b4",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728",
+                "#9467bd",
+                "#8c564b",
+                "#e377c2",
+                "#7f7f7f",
+                "#bcbd22",
+                "#17becf"
+            ],
+            "scatter": {
+                "onlyCircles": false
+            },
+            "showDistX": true,
+            "showDistY": true,
+            "duration": 350,
+            "xAxis": {
+                "axisLabel": "X Axis"
+            },
+            "yAxis": {
+                "axisLabel": "Y Axis",
+                "axisLabelDistance": -5
+            },
+            "zoom": {
+                "enabled": true,
+                "scaleExtent": [
+                    1,
+                    10
+                ],
+                "useFixedDomain": false,
+                "useNiceScale": false,
+                "horizontalOff": false,
+                "verticalOff": false,
+                "unzoomEventType": "dblclick.zoom"
+            }
+        }
+    },
+    'multiChart':  {
+        "chart": {
+            "type": "multiChart",
+            "height": 450,
+            "color": [
+                "#1f77b4",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728",
+                "#9467bd",
+                "#8c564b",
+                "#e377c2",
+                "#7f7f7f",
+                "#bcbd22",
+                "#17becf"
+            ],
+            "duration": 500,
+        }
+    }
 
 }
 

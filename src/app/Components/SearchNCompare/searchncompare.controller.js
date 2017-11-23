@@ -4,7 +4,7 @@ import head from 'lodash-es/head';
 
 export default class SearchNCompareCtrl {
 
-    constructor($scope, $http, ClusterService, Clusters, CoilDataService, AppConfig){
+    constructor($scope, $http, ClusterService, Clusters, CoilDataService, FilterService, AppConfig){
         this.ClusterService = ClusterService;
         this.CoilDataService = CoilDataService;
         this.scope = $scope;
@@ -12,15 +12,22 @@ export default class SearchNCompareCtrl {
         this.plant = 'hotsprings';
         this.Clusters = Clusters;
         this.trends = null;
+        this.FilterService = FilterService;
         this.trendsURL = AppConfig.restUrls.MILL_SPEED_TREND;
+        this.weatherStatus = false;
     }
 
     $onInit() {
         this.currentMill = head(keys(this.filters.MillFilter[this.plant]));
         this.targetGauge = "" + head(this.filters.MillFilter[this.plant][this.currentMill].targetGauge);
-        //this.setTargetGauge = () => this.targetGauge = "" + head(this.filters.MillFilter[this.plant][this.currentMill].targetGauge);
-        this.clusters = this.Clusters.list;
-        this.setPlant = plant => this.plant = plant;
+        this.setPlant = plant => {
+            this.plant = plant;
+            this.clearCluster();
+        }
+
+        this.clearCluster = () => {
+            this.Clusters.list = [];
+        }
 
         this.$http.get(this.trendsURL).then((result) => this.trends = result.data, (err) => console.error(err));
     }
@@ -32,6 +39,9 @@ export default class SearchNCompareCtrl {
         if(this.targetGauge == null) {
             this.targetGauge = "" + head(this.filters.MillFilter[this.plant][this.currentMill].targetGauge);
         }
+        this.FilterService.setValue('plant', this.plant);
+        this.FilterService.setValue('mill', this.currentMill);
+        this.FilterService.setValue('gauge', this.targetGauge);
     }
 
     $setTrends() {

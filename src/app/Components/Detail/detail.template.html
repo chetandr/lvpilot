@@ -4,24 +4,25 @@
     </div>
     <div class="row bg-success" style="margin: 0px">
         <div class="col-md-3">Parameter Base</div>
-        <div class="col-md-4"><input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"> <span> Hotsprings</span></div>
-        <div class="col-md-4"><input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"> <span> Louisville</span></div>
+        <div class="col-md-3"><input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"> <span> Hotsprings</span></div>
+        <div class="col-md-3"><input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"> <span> Louisville</span></div>
+        <div class="col-md-3">
+            <button type="button" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">{{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}</button>
+        </div>
     </div>
     <table class="table">
-        <tr class="bg-info"><th colspan="3">Identified Reasons - {{$ctrl.coilType}} Patterns</th></tr>
+        <tr class="bg-info"><th colspan="4">Identified Reasons - {{$ctrl.coilType}} Patterns</th></tr>
         <tr>
             <th>#</th>
             <th>Reasons</th>
-            <th># Of Coils</th>
+            <th># Count</th>
+            <th># {{$ctrl.coilType}}</th>
         </tr>
-        <tr ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase]">
+        <tr ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]">
             <td>{{idx + 1}}</td>
             <td>{{item.reason}}</td>
             <td>{{item.count}}</td>
-        </tr>
-        <tr class="bg-info">
-            <td colspan="2">Total</td>
-            <td colspan="2">{{$ctrl.details[$ctrl.coilType].reasonTotal[$ctrl.paramBase]}}</td>
+            <td>{{item[$ctrl.coilType.toLowerCase()]}}</td>
         </tr>
     </table>
 </div>

@@ -1,9 +1,17 @@
-import controller from './FactorChart/factochart.controller';
+import controller from './FactorChart/factorchart.controller';
 import template from './FactorChart/factorchart.template.html';
 
 const bindings = {
     chartData: '<',
-    showLoading : '<',
+    chartOptions : '<',
+    groupBy : '<',
+    caster : '<',
+    oven : '<',
+    workrolls: '<',
+    alloy: '<',
+    period: '<',
+    max: '<',
+    min: '<',
 };
 
 export default {

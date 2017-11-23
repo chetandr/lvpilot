@@ -1,69 +1,50 @@
-import { forEach } from 'lodash-es';
+import map from 'lodash-es/map';
+import uniq from 'lodash-es/uniq'
+import orderBy from 'lodash-es/orderBy';
+import forEach from 'lodash-es/forEach';
+import filter from 'lodash-es/filter';
 
-export default  class FactorsCtrl {
+export default  class FactorsMillSpeedCtrl {
 
-    constructor(AppConfig, CoilDataService, $http){
+    constructor($http, AppConfig, CoilDataService, FilterService ){
         this.CoilDataService = CoilDataService;
         this.http = $http;
         this.AppConfig = AppConfig;
         this.showLoading = true;
-
+        this.plant = FilterService.getValue('plant');
+        this.mill = FilterService.getValue('mill');
+        this.gauge = FilterService.getValue('gauge');
+        this.groupFactor = 'group1';
     }
-
     $onInit() {
         this.data = [];
         this.chartOptions = [];
-
-        let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factorKey;
+        this.loading = true;
+        this.maxThreshold = 0;
+        this.minThreshold = 0;
+        let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factorKey + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge + '&deviation=' + this.deviation.name.split(' To ').join();
         this.http.get(restURL,).then((result) => {
             this.data = result.data.data;
+            //this.$setChartData();
+            this.maxMinValues = uniq(map(orderBy(this.data, 'y'), 'y'));
             this.chartOptions = result.data.options;
+            this.maxThreshold = this.chartOptions.thresholdValues.max;
+            this.minThreshold = this.chartOptions.thresholdValues.min;
             this.showLoading = false
         });
-        this.options = {
-            chart: {
-                type: 'scatterChart',
-                height: 300,
-                width: 550,
-                color: d3.scale.category10().range(),
-                scatter: {
-                    onlyCircles: false
-                },
-                forceY : [400, 800],
-                showDistX: true,
-                showDistY: true,
-                tooltipContent: function (key) {
-                    return '<h3>' + key + '</h3>';
-                },
-                duration: 350,
-                xAxis: {
-                    axisLabel: 'X Axis',
-                    tickFormat: function (d) {
-                        return d3.format('.02f')(d);
-                    }
-                },
-                yAxis: {
-                    axisLabel: 'Y Axis',
-                    tickFormat: function (d) {
-                        return d3.format('.02f')(d);
-                    },
-                    axisLabelDistance: -5
-                },
-                zoom: {
-                    //NOTE: All attributes below are optional
-                    enabled: false,
-                    scaleExtent: [1, 10],
-                    useFixedDomain: false,
-                    useNiceScale: false,
-                    horizontalOff: false,
-                    verticalOff: false,
-                    unzoomEventType: 'dblclick.zoom'
-                }
-            },
-            title: {
-                enable: true,
-                text : this.mltitle
-            },
-        }
     }
+
+    $setChartData() {
+        const groupParameters = uniq(map(this.data, this.groupFactor));
+        const chartData = [];
+        let filterCriteria = {};
+        forEach(groupParameters, parameter => {
+            filterCriteria = {[this.groupFactor] : parameter };
+            chartData.push({"key" : parameter, values : filter(this.data, filterCriteria), color: this.AppConfig.colors[parameter]});
+        })
+        this.chartData = chartData;
+        this.loading = false;
+    }
+
+
 };

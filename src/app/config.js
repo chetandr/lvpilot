@@ -14,6 +14,23 @@ const Config = {
         IDENTIFIED_REASONS : "http://localhost/RankLousvillePOC/Data/getIdentifiedReasons.php",
         FACTOR_REASONS : "http://localhost/RankLousvillePOC/Data/getRejectFactorReason.php",
     },
+    colors : {
+        'Accepted' : '#cd6a40',
+        'Rejected (Mill Edge Cracks)' : '#e6d37d',
+        'Rejected (Mill - Oscillated ID)' : '#ae1984',
+        'Rejected (Mill - Gauge Spikes)' : '#ef5614',
+        'Rejected (Mill - Crane Damage)' : '#2f61df',
+        'Rejected (Mill - Too Small)' : '#47740e' ,
+        'Rejected (Cast - Voids)' : '#e785d7',
+        'Rejected (Cast - Too Small)' : '#7f1ba7',
+        'Rejected (Cast - Dog Ears)' : '#62a58d',
+        'Rejected (Cast - Profile)' : '#4af144',
+        'Rejected (Cast - Edge Freeze)' : '#e0481b',
+        "Web Breaks" : "#75AEC0",
+        "Non Standard" : "#3b2064",
+        "Good" : "#CD6A40"
+    }
+    ,
     pieChartOptions : {
             chart: {
                 type: 'pieChart',
