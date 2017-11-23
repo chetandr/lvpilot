@@ -217,6 +217,7 @@ module.exports = function makeWebpackConfig() {
      * Reference: http://webpack.github.io/docs/webpack-dev-server.html
      */
     config.devServer = {
+        host : env == 'dev' ? 'localhost' : 'rlldchdp01.pactiv.com',
         contentBase: './src/public',
         stats: 'minimal',
         port: 8083
