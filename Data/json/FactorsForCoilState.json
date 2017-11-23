@@ -1,0 +1,13 @@
+[{
+    "key": "coil-chemistry-zinc",
+    "Value": "Coil-Chemistry (% Zinc)"
+}, {
+    "key": "avg-coil-gauge",
+    "Value": "Average Coil Gauge"
+}, {
+    "key": "mill-speed",
+    "Value": "Mill Speed"
+}, {
+    "key": "gauge-at-center-from-coil-profile",
+    "Value": "Gauge At Center From Coil Center"
+}]

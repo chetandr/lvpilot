@@ -1,0 +1,98 @@
+{
+    "mill1": [{
+        "label": "Target Gauge",
+        "values": [0.0085, 0.0045, 0.0025, 0.0012]
+    }, {
+        "label": "Rewind Tension",
+        "values": [5, 5.25, 5.5, 6]
+    }, {
+        "label": "Roll Load",
+        "values": [1, 1.25, 1.5, 1.75, 2]
+    }, {
+        "label": "Coolant Temp",
+        "values": [80, 85, 90, 95, 100]
+    }, {
+        "label": "Unwind Tension",
+        "values": [265, 266, 267, 268, 269, 270, 280, 281, 282, 283, 284, 285, 286, 287, 289, 290]
+    }],
+    "mill2": [{
+        "label": "Target Gauge",
+        "values": [0.0085, 0.0045, 0.0025, 0.0012]
+    }, {
+        "label": "Rewind Tension",
+        "values": [5, 5.25, 5.5, 6]
+    }, {
+        "label": "Roll Load",
+        "values": [1, 1.25, 1.5, 1.75, 2]
+    }, {
+        "label": "Coolant Temp",
+        "values": [80, 85, 90, 95, 100]
+    }, {
+        "label": "Unwind Tension",
+        "values": [265, 266, 267, 268, 269, 270, 280, 281, 282, 283, 284, 285, 286, 287, 289, 290]
+    }],
+    "mill3": [{
+        "label": "Target Gauge",
+        "values": [0.0085, 0.0045, 0.0025, 0.0012]
+    }, {
+        "label": "Rewind Tension",
+        "values": [5, 5.25, 5.5, 6]
+    }, {
+        "label": "Roll Load",
+        "values": [1, 1.25, 1.5, 1.75, 2]
+    }, {
+        "label": "Coolant Temp",
+        "values": [80, 85, 90, 95, 100]
+    }, {
+        "label": "Unwind Tension",
+        "values": [265, 266, 267, 268, 269, 270, 280, 281, 282, 283, 284, 285, 286, 287, 289, 290]
+    }],
+    "mill4": [{
+        "label": "Target Gauge",
+        "values": [0.008, 0.0045, 0.0025, 0.0012]
+    }, {
+        "label": "Rewind Tension",
+        "values": [4, 5.25, 5.5, 6]
+    }, {
+        "label": "Roll Load",
+        "values": [1, 1.25, 1.5, 1.75, 2]
+    }, {
+        "label": "Coolant Temp",
+        "values": [75, 85, 90, 95, 100]
+    }, {
+        "label": "Unwind Tension",
+        "values": [260, 266, 267, 268, 269, 270, 280, 281, 282, 283, 284, 285, 286, 287, 289, 290]
+    }],
+    "mill5": [{
+        "label": "Target Gauge",
+        "values": [0.0085, 0.0045, 0.0025, 0.0012]
+    }, {
+        "label": "Rewind Tension",
+        "values": [5, 5.25, 5.5, 6]
+    }, {
+        "label": "Roll Load",
+        "values": [1, 1.25, 1.5, 1.75, 2]
+    }, {
+        "label": "Coolant Temp",
+        "values": [80, 85, 90, 95, 100]
+    }, {
+        "label": "Unwind Tension",
+        "values": [265, 266, 267, 268, 269, 270, 280, 281, 282, 283, 284, 285, 286, 287, 289, 290]
+    }],
+    "mill6": [{
+        "label": "Target Gauge",
+        "values": [0.0085, 0.0045, 0.0025, 0.0012]
+    }, {
+        "label": "Rewind Tension",
+        "values": [5, 5.25, 5.5, 6]
+    }, {
+        "label": "Roll Load",
+        "values": [1, 1.25, 1.5, 1.75, 2]
+    }, {
+        "label": "Coolant Temp",
+        "values": [80, 85, 90, 95, 100]
+    }, {
+        "label": "Unwind Tension",
+        "values": [265, 266, 267, 268, 269, 270, 280, 281, 282, 283, 284, 285, 286, 287, 289, 290]
+    }]
+}

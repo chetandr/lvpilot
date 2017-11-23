@@ -1,0 +1,310 @@
+{
+    "summary1": [{
+        "key": "Accepted",
+        "y": 200
+    }, {
+        "key": "Rejected",
+        "y": 100
+    }],
+    "summary2": [{
+        "key": "Good",
+        "y": 200
+    }, {
+        "key": "Non Standard",
+        "y": 800
+    }, {
+        "key": "Web Breaks",
+        "y": 200
+    }],
+    "details": {
+        "Accepted": {
+            "reasons": {
+                "hotsprings": {
+                    "weather": [{
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc <= 20.3333339691",
+                        "count": 20
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc > 20.3333339691",
+                        "count": 60
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature <= 18.2000007629",
+                        "count": 31
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature > 18.2000007629",
+                        "count": 99
+                    }],
+                    "non-weather": [{
+                        "reason": "Silicon % <= 0.500199973583 & Cadmium % <= 0.00044999999227",
+                        "count": 827
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % <= 0.00185000000056 & Crown <= 3.75 & Zinc % > 0.0186499990523 ",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % <= 0.000600000028498",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % > 0.000600000028498 & Zinc Percent <= 0.0136500000954",
+                        "count": 35
+                    }]
+                },
+                "louisville": {
+                    "weather": [{
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc <= 20.3333339691",
+                        "count": 20
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc > 20.3333339691",
+                        "count": 60
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature <= 18.2000007629",
+                        "count": 31
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature > 18.2000007629",
+                        "count": 99
+                    }],
+                    "non-weather": [{
+                        "reason": "Silicon % <= 0.500199973583 & Cadmium % <= 0.00044999999227",
+                        "count": 827
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % <= 0.00185000000056 & Crown <= 3.75 & Zinc % > 0.0186499990523 ",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % <= 0.000600000028498",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % > 0.000600000028498 & Zinc Percent <= 0.0136500000954",
+                        "count": 35
+                    }]
+                },
+                "reasonTotal": {
+                    "hotsprings": {
+                        "weather": 200,
+                        "non-weather": 932
+                    },
+                    "louisville": {
+                        "weather": 200,
+                        "non-weather": 932
+                    }
+                },
+                "mlfactors": [{
+                    "key": "Coolant Temperature >30\u00baC",
+                    "y": 700
+                }]
+            }
+        },
+        "Rejected": {
+            "reasons": {
+                "hotsprings": [{
+                    "reason": "Coolant Temp. > 30\u00baC ",
+                    "count": 700
+                }]
+            },
+            "reasonTotal": {
+                "hotsprings": 700,
+                "louisville": 5500
+            },
+            "mlfactors": [{
+                "key": "Coolant Temperature > 30",
+                "y": 70
+            }],
+            "rejectReason": [{
+                "key": "Mill - Edge Cracks",
+                "y": 23
+            }, {
+                "key": "Mill - Oscillated ID",
+                "y": 1
+            }, {
+                "key": "Mill - Gauge Spikes",
+                "y": 2
+            }, {
+                "key": "Mill - Crane Damage",
+                "y": 2
+            }, {
+                "key": "Mill - Too Small",
+                "y": 3
+            }, {
+                "key": "Cast - Voids",
+                "y": 2
+            }, {
+                "key": "Cast - Too Small",
+                "y": 1
+            }, {
+                "key": "Cast - Dog Ears",
+                "y": 1
+            }, {
+                "key": "Cast - Profile",
+                "y": 4
+            }, {
+                "key": "Cast - Edge Freeze",
+                "y": 1
+            }]
+        },
+        "Good": {
+            "reasons": {
+                "hotsprings": {
+                    "weather": [{
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc <= 20.3333339691",
+                        "count": 20
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc > 20.3333339691",
+                        "count": 60
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature <= 18.2000007629",
+                        "count": 31
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature > 18.2000007629",
+                        "count": 99
+                    }],
+                    "non-weather": [{
+                        "reason": "Silicon % <= 0.500199973583 & Cadmium % <= 0.00044999999227",
+                        "count": 827
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % <= 0.00185000000056 & Crown <= 3.75 & Zinc % > 0.0186499990523 ",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % <= 0.000600000028498",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % > 0.000600000028498 & Zinc Percent <= 0.0136500000954",
+                        "count": 35
+                    }]
+                },
+                "louisville": {
+                    "weather": [{
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc <= 20.3333339691",
+                        "count": 20
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc <= 0.00185000000056 & crown <= 3.75 & zn_perc <= 0.0186499990523 & cloud_cover_perc > 20.3333339691",
+                        "count": 60
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature <= 18.2000007629",
+                        "count": 31
+                    }, {
+                        "reason": "si_perc > 0.500199973583 & hg_perc > 0.00185000000056 & zr_perc > 0.000550500000827 & mn_perc <= 0.0126540996134 & normal_relative_humidity <= 57.125 & normal_temperature > 18.2000007629",
+                        "count": 99
+                    }],
+                    "non-weather": [{
+                        "reason": "Silicon % <= 0.500199973583 & Cadmium % <= 0.00044999999227",
+                        "count": 827
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % <= 0.00185000000056 & Crown <= 3.75 & Zinc % > 0.0186499990523 ",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % <= 0.000600000028498",
+                        "count": 35
+                    }, {
+                        "reason": "Silicon % > 0.500199973583 & Mercury % > 0.00185000000056 & Zirconium % <= 0.000550500000827 & Crown <= 4.75 & Lead % > 0.000600000028498 & Zinc Percent <= 0.0136500000954",
+                        "count": 35
+                    }]
+                },
+                "reasonTotal": {
+                    "hotsprings": {
+                        "weather": 200,
+                        "non-weather": 932
+                    },
+                    "louisville": {
+                        "weather": 200,
+                        "non-weather": 932
+                    }
+                },
+                "mlfactors": [{
+                    "key": "Coolant Temperature >30\u00baC",
+                    "y": 700
+                }]
+            }
+        },
+        "Non Standard": {
+            "reasons": {
+                "hotsprings": [{
+                    "reason": "Coolant Temp. > 30\u00baC ",
+                    "count": 700
+                }]
+            },
+            "reasonTotal": {
+                "hotsprings": 700,
+                "louisville": 5500
+            },
+            "mlfactors": [{
+                "key": "Coolant Temperature > 30",
+                "y": 70
+            }],
+            "rejectReason": [{
+                "key": "Mill - Edge Cracks",
+                "y": 23
+            }, {
+                "key": "Mill - Oscillated ID",
+                "y": 1
+            }, {
+                "key": "Mill - Gauge Spikes",
+                "y": 2
+            }, {
+                "key": "Mill - Crane Damage",
+                "y": 2
+            }, {
+                "key": "Mill - Too Small",
+                "y": 3
+            }, {
+                "key": "Cast - Voids",
+                "y": 2
+            }, {
+                "key": "Cast - Too Small",
+                "y": 1
+            }, {
+                "key": "Cast - Dog Ears",
+                "y": 1
+            }, {
+                "key": "Cast - Profile",
+                "y": 4
+            }, {
+                "key": "Cast - Edge Freeze",
+                "y": 1
+            }]
+        },
+        "Web Breaks": {
+            "reasons": {
+                "hotsprings": [{
+                    "reason": "Coolant Temp. > 30\u00baC ",
+                    "count": 700
+                }]
+            },
+            "reasonTotal": {
+                "hotsprings": 700,
+                "louisville": 5500
+            },
+            "mlfactors": [{
+                "key": "Coolant Temperature > 30",
+                "y": 70
+            }],
+            "rejectReason": [{
+                "key": "Mill - Edge Cracks",
+                "y": 23
+            }, {
+                "key": "Mill - Oscillated ID",
+                "y": 1
+            }, {
+                "key": "Mill - Gauge Spikes",
+                "y": 2
+            }, {
+                "key": "Mill - Crane Damage",
+                "y": 2
+            }, {
+                "key": "Mill - Too Small",
+                "y": 3
+            }, {
+                "key": "Cast - Voids",
+                "y": 2
+            }, {
+                "key": "Cast - Too Small",
+                "y": 1
+            }, {
+                "key": "Cast - Dog Ears",
+                "y": 1
+            }, {
+                "key": "Cast - Profile",
+                "y": 4
+            }, {
+                "key": "Cast - Edge Freeze",
+                "y": 1
+            }]
+        }
+    }
+}

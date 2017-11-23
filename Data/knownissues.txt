@@ -1,0 +1,1 @@
+1. Screen 1 : Tooltip for pie chart should be formatted.
