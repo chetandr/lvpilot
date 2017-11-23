@@ -16,12 +16,11 @@
     $millFilters = json_decode(file_get_contents('json/Mills_filters.json'));
     $finalTrends = array();
     foreach($millFilters->MillFilter as $plantKey => $plant) {
-       //print_r($millFilters->MillFilter);
         $finalTrends[$plantKey] = array();
         foreach($plant as $millKey => $mill) {
             $finalTrends[$plantKey][$millKey] = array();
             foreach($mill->targetGauge as $targetGauge) {
-                $finalTrends[$plantKey][$millKey][(string)$targetGauge] = array(array("key" => "Mill Speed Trend", "bar" => true, "values" => array(
+                $finalTrends[$plantKey][$millKey][(string)$targetGauge] = array("range_5" => array(array("key" => "Mill Speed Trend", "bar" => true, "values" => array(
                     array("x"=>10, "y"=>ceil(50 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-35 To -30"),
                     array("x"=>20, "y"=>ceil(30 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-30 To -25"),
                     array("x"=>30, "y"=>ceil(40 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-25 To -20"),
@@ -31,7 +30,14 @@
                     array("x"=>70, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-05 To 0"),
                     array("x"=>80, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "0 To 05"),
                     array("x"=>90, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "05 To 10"),
-                    array("x"=>100, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "10 To 15") )));
+                    array("x"=>100, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "10 To 15") ))),
+                    "range_10" => array(array("key" => "Mill Speed Trend", "bar" => true, "values" => array(
+                    array("x"=>10, "y"=>ceil(50 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-40 To -30"),
+                    array("x"=>20, "y"=>ceil(30 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-30 To -20"),
+                    array("x"=>30, "y"=>ceil(40 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-20 To -10"),
+                    array("x"=>40, "y"=>ceil(45 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "-10 To 0"),
+                    array("x"=>50, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "0 To 10"),
+                    array("x"=>60, "y"=>ceil(25 * $targetGauge * 10), "color" => '#0A0E40', "width" => 10, "label" => "10 To 20")))));
             }
         }
     }

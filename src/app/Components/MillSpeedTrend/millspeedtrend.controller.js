@@ -35,7 +35,7 @@ export default class MillSpeedTrendCtrl {
                 },
                 xAxis:{
                     tickFormat: d => {
-                        const values = this.trends.data[this.plant][this.mill][this.gauge][0].values;
+                        const values = this.trends.data[this.plant][this.mill][this.gauge][this.rangeSize][0].values;
                         const ret = values[(d/10) -1] ? values[(d/10) -1].label : null;
                         return ret;
                     },

@@ -7,7 +7,8 @@ const bindings = {
     gauge: '<',
     clusters: '<',
     clusters: '<',
-    trends : '<'
+    trends : '<',
+    rangeSize: '<'
 }
 
 export default {

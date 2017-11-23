@@ -9,6 +9,7 @@ export default class SearchNCompareCtrl {
         this.CoilDataService = CoilDataService;
         this.scope = $scope;
         this.$http = $http;
+        this.rangeSize = "range_5";
         this.plant = 'hotsprings';
         this.Clusters = Clusters;
         this.trends = null;
