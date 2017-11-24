@@ -9,7 +9,6 @@ export default class DetailCtrl {
         this.weatherStatus = false;
         this.round = Math.round;
         this.weathers = ['non-weather','weather'];
-        console.log(this.weathers);
         this.setParamBase = base => this.paramBase = base;
     }
 }

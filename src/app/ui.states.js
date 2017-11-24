@@ -9,7 +9,6 @@ const UIStates = {
         url: '/home',
         component: 'summary',
         resolve: {
-            rejectData : (CoilDataService) => CoilDataService.getRejectCoilsData(),
             summaryData : (CoilDataService) => CoilDataService.getSummaryData(),
         }
     },
