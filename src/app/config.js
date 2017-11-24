@@ -1,22 +1,34 @@
 const env = "dev";
-const url =  env == 'prod' ? 'http://rlldchdp01.pactiv.com/lvpilot/Data/' : "http://localhost/RankLousvillePOC/Data/";
+const getURL = (string) => {
+    switch(env) {
+        case 'dev' :
+            return 'http://localhost/RankLousvillePOC/Data/' + string + '.php';
+            break;
+        case 'prod' :
+            return 'http://rlldchdp01.pactiv.com/lvpilot/Data/' + string + '.php';
+            break;
+        case 'live' :
+            return 'http://rlldchdp01.pactiv.com:1234/' + string;
+            break;
+    }
+}
 
 const Config = {
     title : 'Lousville Project POC',
     beta : true,
 
     restUrls : {
-        SUMMARY_DATA : url + "getSummaryData.php",
-        REJECT_REASON_COUNT : url + "getRejectReasonCount.php",
-        ML_IMPORTANT_FACTORS : url + "getFactors.php",
-        ML_IMPORTANT_FACTORS_MILL_SPEED : url + "getFactorsForMillSpeed.php",
-        ML_COIL_FACTORS : url + "getMLForCoilFactors.php",
-        MILLS : url + "getMills.php",
-        CONTROL_LIMITS : url + "getControlLimits.php",
-        MILL_SPEED_TREND : url + "getMillSpeedTrend.php",
-        FILTERS : url + "getFilters.php",
-        IDENTIFIED_REASONS : url + "getIdentifiedReasons.php",
-        FACTOR_REASONS : url + "getRejectFactorReason.php",
+        SUMMARY_DATA : getURL("getSummaryData"),
+        REJECT_REASON_COUNT : getURL("getRejectReasonCount"),
+        ML_IMPORTANT_FACTORS : getURL("getFactors"),
+        ML_IMPORTANT_FACTORS_MILL_SPEED : getURL("getFactorsForMillSpeed"),
+        ML_COIL_FACTORS : getURL("getMLForCoilFactors"),
+        MILLS : getURL("getMills"),
+        CONTROL_LIMITS : getURL("getControlLimits"),
+        MILL_SPEED_TREND : getURL("getMillSpeedTrend"),
+        FILTERS : getURL("getFilters"),
+        IDENTIFIED_REASONS : getURL("getIdentifiedReasons"),
+        FACTOR_REASONS : getURL("getRejectFactorReason"),
     },
     colors : {
         'Accepted' : '#cd6a40',
