@@ -43,6 +43,7 @@ export default class SearchNCompareCtrl {
         this.FilterService.setValue('plant', this.plant);
         this.FilterService.setValue('mill', this.currentMill);
         this.FilterService.setValue('gauge', this.targetGauge);
+        this.FilterService.setValue('isWeather', this.weatherStatus);
     }
 
     $setTrends() {

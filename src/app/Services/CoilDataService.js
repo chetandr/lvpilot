@@ -1,4 +1,4 @@
-const CoildDataSevice =($http, $stateParams, AppConfig, FilterService) => {
+const CoildDataSevice =($http, $stateParams, AppConfig, FilterService, Filters) => {
     return {
 
         getRejectCoilsData() {
@@ -16,7 +16,12 @@ const CoildDataSevice =($http, $stateParams, AppConfig, FilterService) => {
             )
         },
         getFactorsForMillSpeed() {
-            let restURL = AppConfig.restUrls.ML_IMPORTANT_FACTORS_MILL_SPEED;
+
+            let plant = Filters.values['plant'];
+            let mill = Filters.values['mill'];
+            let gauge = Filters.values['gauge'];
+            let isWeather = Filters.values['isWeather'];
+            let restURL = AppConfig.restUrls.ML_IMPORTANT_FACTORS_MILL_SPEED + "?plant="+plant+"&mill="+mill+"&gauge="+gauge+"&isweather="+isWeather;
             return new Promise((resolve, reject) => {
                     $http.get(restURL,).then((result)=> resolve(result.data),(err)=> reject(err) );
                 }

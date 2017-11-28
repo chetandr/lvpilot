@@ -11,19 +11,23 @@
         </div>
     </div>
     <table class="table">
-        <tr class="bg-info"><th colspan="4">Identified Reasons - {{$ctrl.coilType}} Patterns</th></tr>
-        <tr>
-            <th>#</th>
-            <th>Reasons</th>
-            <th># Count</th>
-            <th># {{$ctrl.coilType}}</th>
-        </tr>
-        <tr ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]">
-            <td>{{idx + 1}}</td>
-            <td>{{item.reason}}</td>
-            <td>{{item.count}}</td>
-            <td>{{item[$ctrl.coilType.toLowerCase()]}}</td>
-        </tr>
+        <thead>
+            <tr class="bg-info"><th colspan="4">Identified Reasons - {{$ctrl.coilType}} Patterns</th></tr>
+            <tr>
+                <th>#</th>
+                <th>Reasons</th>
+                <th># Count</th>
+                <th># {{$ctrl.coilType}}</th>
+            </tr>
+        </thead>
+        <tbody style="max-height:500px">
+            <tr ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]">
+                <td>{{idx + 1}}</td>
+                <td>{{item.reason}}</td>
+                <td>{{item.count}}</td>
+                <td>{{item[$ctrl.coilType.toLowerCase()]}}</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 <div class="row">
