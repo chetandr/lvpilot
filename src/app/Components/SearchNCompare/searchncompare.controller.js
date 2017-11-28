@@ -10,7 +10,7 @@ export default class SearchNCompareCtrl {
         this.scope = $scope;
         this.$http = $http;
         this.rangeSize = "range_5";
-        this.plant = 'HS';
+        this.plant = 'hotsprings';
         this.Clusters = Clusters;
         this.trends = null;
         this.FilterService = FilterService;
