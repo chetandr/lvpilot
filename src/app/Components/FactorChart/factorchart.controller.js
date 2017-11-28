@@ -78,6 +78,8 @@ export default class FactorChartCtrl {
         this.ovenFilter = this.oven;
         this.workrollsFilter = this.workrolls;
         this.periodFilter = this.period;
+        this.dateFromFilter = this.dateFrom;
+        this.dateToFilter = this.dateTo;
     }
 
     $setLegendFilter(legend) {
@@ -132,23 +134,36 @@ export default class FactorChartCtrl {
         const chartData = [];
         let filterCriteria = {};
         forEach(this.groupParameters, parameter => {
-            filterCriteria = {[this.groupBy]: parameter};
-            if (this.caster) {
-                filterCriteria.caster = parseInt(this.caster);
+
+            const filterFn = (data) => {
+                let status = data[this.groupBy] == parameter;
+
+                if (this.caster) {
+                   status =  status && data.caster == parseInt(this.caster);
+                }
+                if (this.oven) {
+                    status =  status && data.oven == parseInt(this.oven);
+                }
+                if (this.workrolls) {
+                    status =  status &&  data.workrolls == parseInt(this.workrolls);
+                }
+                if (this.alloy) {
+                    status =  status && data.aloy == parseInt(this.alloy);
+                }
+                if(this.dateFrom) {
+                    status = status && data.date > this.dateFrom;
+                }
+                if(this.dateTo) {
+                    status = status && data.date < this.dateTo;
+                }
+
+                return status;
             }
-            if (this.oven) {
-                filterCriteria.oven = parseInt(this.oven);
-            }
-            if (this.workrolls) {
-                filterCriteria.workrolls = parseInt(this.workrolls);
-            }
-            if (this.alloy) {
-                filterCriteria.aloy = parseInt(this.alloy);
-            }
+
             if (this.legendFilters[parameter]) {
                 chartData.push({
                     "key": parameter,
-                    values: filter(this.chartData, filterCriteria),
+                    values: filter(this.chartData, filterFn),
                     color: this.colors[parameter]
                 });
             }
@@ -182,7 +197,9 @@ export default class FactorChartCtrl {
             this.periodFilter !== this.period ||
             !isEqual(this.legendFilters, this.defaultLegendFilters) ||
             this.defaultMax !== this.max ||
-            this.defaultMin !== this.min
+            this.defaultMin !== this.min ||
+            this.dateFromFilter !== this.dateFrom ||
+            this.dateToFilter !== this.dateTo
         ) {
             this.$setGroupBy();
             this.$setChartData();

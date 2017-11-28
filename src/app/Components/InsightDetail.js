@@ -7,7 +7,9 @@ const bindings = {
     oven : '<',
     workrolls: '<',
     alloy: '<',
-    period: '<'
+    period: '<',
+    dateFrom: '<',
+    dateTo : '<'
 };
 
 export default {

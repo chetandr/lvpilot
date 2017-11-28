@@ -11,11 +11,11 @@
             </div>
             <div class="col-md-3">
                 Select Period :
-                <select  class="small-font">
+                <select  class="small-font" ng-model="$ctrl.dateFrom">
                     <option ng-repeat="period in $ctrl.filters.period" value="{{period.key}}">{{period.value}}</option>
                 </select>
                 To
-                <select>
+                <select class="small-font" ng-model="$ctrl.dateTo">
                     <option ng-repeat="period in $ctrl.filters.period" value="{{period.key}}">{{period.value}}</option>
                 </select>
             </div>
@@ -52,7 +52,9 @@
                         oven="$ctrl.Oven"
                         workrolls="$ctrl.WorkRolls"
                         alloy="$ctrl.Alloy"
-                        period="$ctrl.Period"
+                        period="$ctrl.period"
+                        date-from = "$ctrl.dateFrom"
+                        date-to = "$ctrl.dateTo"
                         ></insight-detail>
     </div>
 </div>

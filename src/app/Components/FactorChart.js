@@ -12,6 +12,8 @@ const bindings = {
     period: '<',
     max: '<',
     min: '<',
+    dateFrom: '<',
+    dateTo: '<'
 };
 
 export default {

@@ -72,6 +72,7 @@
             'workrolls' => getWorkRolls(),
             'aloy' => getAlloy(),
             'caster' => getCaster(),
+            'date' => rand(1451606400,1511837804),
             'group1' => $grp[0],
             'group2' => $grp[1]
         );
