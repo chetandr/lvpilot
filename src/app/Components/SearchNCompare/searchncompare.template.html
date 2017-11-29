@@ -6,15 +6,15 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label>
-                            Plant :
+                            Plant:
                         </label>
-                        <input type="checkbox" ng-checked="$ctrl.plant == 'hotsprings'" ng-click="$ctrl.setPlant('hotsprings')" class="regular-checkbox"> <span> Hotsprings</span>
+                        <input type="checkbox" ng-checked="$ctrl.plant == 'hotsprings'" ng-click="$ctrl.setPlant('hotsprings')" class="regular-checkbox"> <span style="margin-right:30px"> Hot Springs</span>
                         <input type="checkbox" ng-checked="$ctrl.plant == 'louisville'" ng-click="$ctrl.setPlant('louisville')" class="regular-checkbox"> <span> Louisville</span>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="form-group">
-                        <label>Mill :</label>
+                        <label>Mill:</label>
                         <select ng-model="$ctrl.currentMill" ng-change="$ctrl.clearCluster()">
                             <option ng-repeat="(key, mill) in $ctrl.filters.MillFilter[$ctrl.plant]" value="{{key}}">{{mill.value}}</option>
                          </select>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="form-group">
-                        <label>Target Gauge :</label>
+                        <label>Target Gauge:</label>
                         <select ng-model="$ctrl.targetGauge" ng-change="$ctrl.clearCluster()">
                             <option ng-repeat="tg in $ctrl.filters.MillFilter[$ctrl.plant][$ctrl.currentMill].targetGauge" value="{{tg}}">{{tg}}</option>
                         </select>
@@ -38,7 +38,7 @@
         <div class="panel-heading">Mill Speed Trend For Coil Group</div>
         <div class="panel-body">
             <div class="form-group">
-                <label>Range Size : </label>
+                <label>Range Size: </label>
                 <select ng-model="$ctrl.rangeSize">
                     <option value="range_5">5</option>
                     <option value="range_10">10</option>

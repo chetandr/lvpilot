@@ -40,31 +40,31 @@ export default class FactorChartCtrl {
                     stateChange: () => console.error('StateChangeDispatched')
                 },
                 showLegend: false,
-                tooltip: {
-                    valueFormatter: function (d, i) {
-                        return '';
-                    },
+            /*tooltip: {
+                valueFormatter: function (d, i) {
+                    return '';
+                },
 
-                    headerFormatter: function (d, i) {
-                        const coilData = indexedChartData[d];
-                        let str = "<div class='panel panel-success'><div class='panel-heading'>Coil # : " + d + "</div><div class='panel-body'><table class='table'>"
-                        str += '<tr><td>Caster</td><td>' + coilData.caster + '</td></tr>';
-                        console.log(plant);
-                        if (plant == 'louisville') {
-                            str += '<tr><td>Oven</td><td>' + coilData.oven + '</td></tr>';
-                            str += '<tr><td>Work Rolls</td><td>' + coilData.workrolls + '</td></tr>';
-                            str += '<tr><td>Alloy</td><td>' + coilData.aloy + '</td></tr>';
-                        }
-                        str += "<tr><td colspan='2'><div class='label' style='background-color: " + colors[coilData.group1] + "'>" + coilData.group1 + "</div></td></tr>";
-                        str += "<tr><td colspan='2'><div class='label' style='background-color: " + colors[coilData.group2] + "'>" + coilData.group2 + "</div></td></tr>";
-                        str += "</table></div></div>";
-                        return str;
-                    },
-                    keyFormatter: function (d, i) {
-                        return undefined;
+                headerFormatter: function (d, i) {
+                    const coilData = indexedChartData[d];
+                    let str = "<div class='panel panel-success'><div class='panel-heading'>Coil # : " + d + "</div><div class='panel-body'><table class='table'>"
+                    str += '<tr><td>Caster</td><td>' + coilData.caster + '</td></tr>';
+                    console.log(plant);
+                    if (plant == 'louisville') {
+                        str += '<tr><td>Oven</td><td>' + coilData.oven + '</td></tr>';
+                        str += '<tr><td>Work Rolls</td><td>' + coilData.workrolls + '</td></tr>';
+                        str += '<tr><td>Alloy</td><td>' + coilData.aloy + '</td></tr>';
                     }
-
+                    str += "<tr><td colspan='2'><div class='label' style='background-color: " + colors[coilData.group1] + "'>" + coilData.group1 + "</div></td></tr>";
+                    str += "<tr><td colspan='2'><div class='label' style='background-color: " + colors[coilData.group2] + "'>" + coilData.group2 + "</div></td></tr>";
+                    str += "</table></div></div>";
+                    return str;
+                },
+                keyFormatter: function (d, i) {
+                    return undefined;
                 }
+
+            }*/
             }
         };
 

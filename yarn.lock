@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/angular@^1.5.13":
+  version "1.6.39"
+  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.6.39.tgz#0c34938fc546f360c14817686f2e453ebf22312f"
+
 "@types/lodash-es@^4.14.7":
   version "4.14.7"
   resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.14.7.tgz#5eac6eff541ff352e5c818be326588230616c8f1"
@@ -2650,6 +2654,12 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng-table@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/ng-table/-/ng-table-3.0.1.tgz#e0efa58887cf41805cb7973814da509dddb89368"
+  dependencies:
+    "@types/angular" "^1.5.13"
 
 no-case@^2.2.0:
   version "2.3.2"

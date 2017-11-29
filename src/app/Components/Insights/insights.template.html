@@ -3,14 +3,14 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-2" ng-repeat="filter in $ctrl.insightFilters" ng-if="idx != 'Select Period'">
-                {{filter.key}} :
+                {{filter.key}}:
                 <select ng-model="$ctrl[filter.key]" class="small-font">
                     <option value="{{null}}">Select {{filter.key}}</option>
                     <option ng-repeat="item in filter.value" value="{{item}}">{{item}}</option>
                 </select>
             </div>
             <div class="col-md-3">
-                Select Period :
+                Select Period:
                 <select  class="small-font" ng-model="$ctrl.dateFrom">
                     <option ng-repeat="period in $ctrl.filters.period" value="{{period.key}}">{{period.value}}</option>
                 </select>
@@ -19,7 +19,6 @@
                     <option ng-repeat="period in $ctrl.filters.period" value="{{period.key}}">{{period.value}}</option>
                 </select>
             </div>
-
         </div>
     </div>
 </div>

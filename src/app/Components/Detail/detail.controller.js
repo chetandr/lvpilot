@@ -11,4 +11,5 @@ export default class DetailCtrl {
         this.weathers = ['non-weather','weather'];
         this.setParamBase = base => this.paramBase = base;
     }
+
 }

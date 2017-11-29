@@ -3,36 +3,40 @@
         {{$ctrl.coilType}} coils
     </div>
     <div class="row bg-success" style="margin: 0px">
-        <div class="col-md-3">Parameter Base</div>
-        <div class="col-md-3"><input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"> <span> Hotsprings</span></div>
-        <div class="col-md-3"><input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"> <span> Louisville</span></div>
-        <div class="col-md-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Parameter Base:</label>
+                <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"> <span  style="margin-right:30px">Hot Springs</span>
+                <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"> <span> Louisville</span>
+            </div>
+        </div>
+        <div class="col-md-offset-9">
             <button type="button" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">{{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}</button>
         </div>
     </div>
-    <table class="table">
-        <thead>
-            <tr class="bg-info"><th colspan="4">Identified Reasons - {{$ctrl.coilType}} Patterns</th></tr>
-            <tr>
-                <th>#</th>
-                <th>Reasons</th>
-                <th># Count</th>
-                <th># {{$ctrl.coilType}}</th>
-            </tr>
-        </thead>
-        <tbody style="max-height:500px">
-            <tr ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]">
-                <td>{{idx + 1}}</td>
-                <td>{{item.reason}}</td>
-                <td>{{item.count}}</td>
-                <td>{{item[$ctrl.coilType.toLowerCase()]}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row ml-0">
+        <div class="col-md-12">
+            <strong>Identified Reasons - {{$ctrl.coilType}} Patterns</strong>
+        </div>
+    </div>
+    <div class="row ml-0">
+            <div class="col-md-1 div-cell"><strong>#</strong></div>
+            <div class="col-md-7 div-cell" ><strong>Reasons</strong></div>
+            <div class="col-md-2 div-cell"><strong># Count</strong></div>
+            <div class="col-md-2 div-cell"><strong># {{$ctrl.coilType}}</strong></div>
+    </div>
+    <div class="scroll-body scroll">
+        <div class="row ml-0" ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]">
+                <div class="col-md-1 div-cell">{{idx + 1}}</div>
+                <div class="col-md-7 div-cell">{{item.reason}}</div>
+                <div class="col-md-2 div-cell">{{item.count}}</div>
+                <div class="col-md-2 div-cell">{{item[$ctrl.coilType.toLowerCase()]}}</div>
+        </div>
+    </div>
 </div>
 <div class="row">
-    <div class="col-md-6">
-        <div class="panel panel-default">
+    <div class="col-md-6" ng-if="false">
+        <div class="panel panel-default"">
             <div class="panel-heading">
                 ML Factors & Contribution
             </div>
