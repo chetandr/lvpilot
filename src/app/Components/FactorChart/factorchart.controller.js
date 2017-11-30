@@ -23,7 +23,6 @@ export default class FactorChartCtrl {
         for (let k = 0; k < chartDataCount; k++) {
             indexedChartData[chartData[k].x] = chartData[k];
         }
-        console.log(this.plant);
         const plant = this.plant;
         const colors = this.colors;
 
@@ -93,7 +92,6 @@ export default class FactorChartCtrl {
                 }
             }
         } else {
-            console.log(this.legendFilters[legend]);
             this.legendFilters[legend] = !this.legendFilters[legend];
         }
     }

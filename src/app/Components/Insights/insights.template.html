@@ -23,7 +23,31 @@
     </div>
 </div>
 <div class="panel panel-info">
-<div class="panel-heading">Insights – Top ML Factors</div>
+<div class="panel-heading">
+    <div class="row">
+        <div class="col-md-5">
+            Insights – Top ML Factors
+        </div>
+        <div class="col-md-7">
+            <div class="pull-right">
+                <span class="form-group">
+                    <label>Select Factor:</label>
+                    <select ng-model="$ctrl.factorId" ng-change="$ctrl.$changeFactor()">
+                        <option ng-repeat="(idx, item) in $ctrl.factors" value="{{idx}}">Rank {{item.rank}} - {{item.value}}</option>
+                    </select>
+                </span>
+                <span ng-if="$ctrl.currentPage > 0"ng-click="$ctrl.$onPrev()" style="cursor: pointer; margin-right: 10px"><span class="glyphicon glyphicon-arrow-left"></span>Prev</span>
+                <span>
+                    Showing Rank
+                    {{($ctrl.currentPage * $ctrl.pageSize) + 1}}
+                    to
+                    {{($ctrl.currentPage * $ctrl.pageSize) + $ctrl.pageSize > $ctrl.factors.length ? $ctrl.factors.length : ($ctrl.currentPage * $ctrl.pageSize) + $ctrl.pageSize}}
+                    of {{$ctrl.factors.length}}</span>
+                <span ng-click="$ctrl.$onNext()" ng-if="($ctrl.currentPage * $ctrl.pageSize) + $ctrl.pageSize < $ctrl.factors.length" style="cursor: pointer; margin-left: 10px">Next<span class="glyphicon glyphicon-arrow-right"></span></span>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="panel-body">
         <div class="row">
             <div class="col-md-2">
@@ -46,7 +70,7 @@
             </div>
 
         </div>
-        <insight-detail factors="$ctrl.factors"
+        <insight-detail factors="$ctrl.pageFactors"
                         caster="$ctrl.Caster"
                         oven="$ctrl.Oven"
                         workrolls="$ctrl.WorkRolls"
