@@ -6,19 +6,21 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label>Parameter Base:</label>
-                <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"> <span  style="margin-right:30px">Hot Springs</span>
-                <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"> <span> Louisville</span>
+                <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span  style="margin-right:30px">Hot Springs</span>
+                <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span> Louisville</span>
             </div>
         </div>
         <div class="col-md-offset-9">
-            <div class="input-group">
-            <button type="button" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">{{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}</button>
+            <div class="input-group pull-right">
+                <button type="button" style="border-radius:0px" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">
+                    {{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}
+                </button>
             </div>
         </div>
     </div>
     <div class="row ml-0">
         <div class="col-md-12">
-            <strong>Identified Reasons - {{$ctrl.coilType}} Patterns</strong>
+            <strong>Identified Patterns</strong>
         </div>
     </div>
     <div class="row ml-0">
