@@ -31,9 +31,9 @@ const Config = {
         FACTOR_REASONS : getURL("getRejectFactorReason"),
     },
     colors : {
-        'Accepted' : '#cd6a40',
-        'Rejected (Mill Edge Cracks)' : '#e6d37d',
-        'Rejected (Edge Cracks)' : '#e6d37d',
+        'Accepted' : '#E8DE10',
+        'Rejected (Mill Edge Cracks)' : '#E8A9E4',
+        'Rejected (Edge Cracks)' : '#E8A9E4',
         'Rejected (Mill - Oscillated ID)' : '#ae1984',
         'Rejected (Oscillated ID)' : '#ae1984',
         'Rejected (Mill - Gauge Spikes)' : '#ef5614',

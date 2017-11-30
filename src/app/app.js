@@ -30,6 +30,7 @@ import ClusterService from './Services/ClusterService';
 import Clusters from './Services/Clusters';
 import FilterService from './Services/FilterService';
 import Filters from './Services/Filters';
+import StateTransition from './Services/StateTransition';
 
 // Static Files
 import '../assets/css/app.css';
@@ -63,12 +64,16 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
     .factory('ClusterService', ClusterService)
     .factory('FilterService', FilterService)
     .factory('Filters', Filters)
-    .config(($stateProvider) => {
+    .factory('StateTransition', StateTransition)
+    .config(($stateProvider, $urlRouterProvider) => {
         $stateProvider
             .state(UIState.Default)
             .state(UIState.Home)
             .state(UIState.Details)
             .state(UIState.Insights)
-            .state(UIState.SearchNCompare)
+            .state(UIState.SearchNCompare);
+
+        $urlRouterProvider.otherwise('/home');
     });
+
 export default MODULE_NAME;

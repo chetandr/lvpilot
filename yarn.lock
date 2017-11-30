@@ -120,6 +120,10 @@ angular-schema-form@^0.8.13:
     objectpath "^1.2.1"
     tv4 "~1.0.15"
 
+angular-state-loader@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/angular-state-loader/-/angular-state-loader-0.3.0.tgz#be02fc588b7363a74498c08d2b304d87aa827b38"
+
 angular-ui-bootstrap@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/angular-ui-bootstrap/-/angular-ui-bootstrap-2.5.0.tgz#2facefb915386655dc5f44150258032517236d01"

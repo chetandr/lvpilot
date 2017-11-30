@@ -1,16 +1,15 @@
-<div class="row" style="padding-left: 60px; padding-right: 30px">
+<!--<div class="row" style="padding-left: 60px; padding-right: 30px">
     <div class="col-md-4" ng-repeat="legend in $ctrl.groupParameters">
         <div class="form-group small-font">
             <input type="checkbox"
                    checked="$ctrl.legendFilters[legend]"
                    ng-dblclick="$ctrl.$dblSetLegendFilter(legend)"
                    class="regular-checkbox small-round"
-                   ng-model="$ctrl.legendFilters[legend]"
                    ng-click="$ctrl.$setLegendFilter(legend)"
-                   style="background-color: {{$ctrl.legendFilters[legend] ? $ctrl.colors[legend] : '#FFFFFF'}};border-color: {{$ctrl.colors[legend]}}">
+                   style="background-color: {{$ctrl.legendFilters[legend]?$ctrl.colors[legend] : '#FFFFFF'}};border-color: {{$ctrl.colors[legend]}}">
             <div class="label" style="color: {{$ctrl.colors[legend]}}">{{legend}}</div>
         </div>
     </div>
     <div class="clearfix"></div>
-</div>
+</div>-->
 <nvd3 options="$ctrl.options" data="$ctrl.data"/>

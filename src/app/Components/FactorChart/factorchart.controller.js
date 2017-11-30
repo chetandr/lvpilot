@@ -36,10 +36,7 @@ export default class FactorChartCtrl {
                     axisLabel: this.chartOptions.yAxisLabel,
                     tickFormat: d => d == this.chartOptions.thresholdValues.max ? 'Max' : (d == this.chartOptions.thresholdValues.min ? 'Min' : d)
                 },
-                dispatch: {
-                    stateChange: () => console.error('StateChangeDispatched')
-                },
-                showLegend: false,
+                showLegend: true,
             /*tooltip: {
                 valueFormatter: function (d, i) {
                     return '';
@@ -95,6 +92,9 @@ export default class FactorChartCtrl {
                     this.legendFilters[k] = true;
                 }
             }
+        } else {
+            console.log(this.legendFilters[legend]);
+            this.legendFilters[legend] = !this.legendFilters[legend];
         }
     }
 
@@ -170,20 +170,6 @@ export default class FactorChartCtrl {
         })
         const arrMax = [];
         const arrMin = [];
-        for (let i = 0; i < this.chartData.length; i += 4) {
-            arrMax.push({x: i, y: this.max, size: 0.1});
-            arrMin.push({x: i, y: this.min, size: 0.1});
-        }
-        chartData.push({
-            "key": 'Max',
-            values: arrMax,
-            color: "#4C5259"
-        })
-        chartData.push({
-            "key": 'Min',
-            values: arrMin,
-            color: "#4C5259"
-        })
         this.data = chartData;
         this.options.chart.yAxis.tickFormat = d => d == this.max ? 'Max' : (d == this.min ? 'Min' : d);
     }

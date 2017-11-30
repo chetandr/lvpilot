@@ -5,7 +5,7 @@
         <div class="row" ng-if="$ctrl.data.length > 0">
             <div class="col-md-6">
                 <label>Group By:</label>
-                <select ng-model="$ctrl.groupFactor" style="font-size:0.6em">
+                <select ng-model="$ctrl.groupFactor" style="font-size:0.6em" disabled>
                     <option value="group1">Accepted Vs Rejected (with Reason)</option>
                     <option value="group2">Good Vs Non Standard Vs Web Breaks</option>
                 </select>
@@ -13,7 +13,7 @@
             <div class="col-md-3" ng-if="$ctrl.chartOptions.threshold">
                 <div class="form-group">
                     <label>Min :</label>
-                    <select  style="font-size:0.6em" ng-model="$ctrl.minThreshold">
+                    <select  style="font-size:0.6em" ng-model="$ctrl.minThreshold" disabled>
                         <option ng-repeat="item in $ctrl.maxMinValues" value="{{item}}">{{item}}</option>
                     </select>
                 </div>
@@ -21,7 +21,7 @@
             <div class="col-md-3">
                 <div class="form-group" ng-if="$ctrl.chartOptions.threshold" >
                     <label>Max :</label>
-                    <select  style="font-size:0.6em" ng-model="$ctrl.maxThreshold">
+                    <select  style="font-size:0.6em" ng-model="$ctrl.maxThreshold" disabled>
                         <option ng-repeat="item in $ctrl.maxMinValues" value="{{item}}">{{item}}</option>
                     </select>
                 </div>

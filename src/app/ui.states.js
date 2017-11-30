@@ -1,8 +1,11 @@
 const UIStates = {
     Default : {
       name: 'default',
-      url : '/',
-      redirectTo : ['home']
+      url: '/',
+      component: 'summary',
+      resolve: {
+          summaryData : (CoilDataService) => CoilDataService.getSummaryData(),
+      }
     },
     Home : {
         name : 'home',
@@ -12,7 +15,6 @@ const UIStates = {
             summaryData : (CoilDataService) => CoilDataService.getSummaryData(),
         }
     },
-
     Details : {
         name: 'detail',
         url: '/detail/{coilState}',
@@ -21,7 +23,6 @@ const UIStates = {
             importantFactors : (CoilDataService, $stateParams) => CoilDataService.getFactors($stateParams.coilState)
         }
     },
-
     Insights : {
         name: 'insights',
         url: '/insights/{plant}/{mill}/{gauge}',
@@ -31,7 +32,6 @@ const UIStates = {
             factors : (CoilDataService) => CoilDataService.getFactorsForMillSpeed(),
         }
     },
-
     SearchNCompare : {
         name: 'searchncompare',
         url: '/searchncompare',
