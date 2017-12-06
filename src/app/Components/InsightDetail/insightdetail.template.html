@@ -1,12 +1,6 @@
-
-<div class="panel panel-warning" ng-repeat="factor in $ctrl.factors">
-    <div class="panel-heading">
-        <span class="label label-danger">Rank : {{factor.rank}}</span>
-        {{factor.value}}
-    </div>
-    <div class="panel-body">
-        <div class="row">
-            <div class="col-md-6" ng-repeat="item in $ctrl.Clusters.list" style="min-height: 340px;">
+<div ng-repeat="factor in $ctrl.factors">
+        <div class="row"  style="min-height: 340px;">
+            <div class="col-md-6" ng-repeat="item in $ctrl.Clusters.list">
                 <factor-mill-speed caster="$ctrl.caster"
                                    oven="$ctrl.oven"
                                    workrolls="$ctrl.workrolls"
@@ -16,8 +10,9 @@
                                    deviation="item"
                                    date-from = "$ctrl.dateFrom"
                                    date-to = "$ctrl.dateTo"
-                                   mltitle="'Coils with Mill Speed Deviation  - ' + item.name"></factor-mill-speed>
+                                   rank = "factor.rank"
+                                   factor = "factor.value"
+                                   mltitle="item.name"></factor-mill-speed>
             </div>
         </div>
-    </div>
 </div>

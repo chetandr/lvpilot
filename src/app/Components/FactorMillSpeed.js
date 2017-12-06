@@ -1,6 +1,8 @@
 import controller from './FactorMillSpeed/factorMillSpeed.controller';
 import template from './FactorMillSpeed/factorMillSpeed.template.html';
 
+
+
 const bindings = {
     heading: '<',
     chartData: '<',
@@ -13,7 +15,9 @@ const bindings = {
     alloy: '<',
     period: '<',
     dateFrom: '<',
-    dateTo : '<'
+    dateTo : '<',
+    rank: '<',
+    factor:'<'
 };
 
 export default {

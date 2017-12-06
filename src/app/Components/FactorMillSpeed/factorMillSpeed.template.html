@@ -1,6 +1,7 @@
-<div class="panel panel-default">
-    <div class="panel-heading">{{$ctrl.mltitle}}</div>
-    <div class="panel-body" style="min-height: 500px">
+<div class="panel panel-success">
+    <div class="panel-heading"> <span class="label label-danger">Rank : {{$ctrl.rank}} - {{$ctrl.factor}} </span>
+        Coils with mill speed deviation: {{$ctrl.mltitle}}</div>
+    <div  class="panel-body" style="min-height: 500px">
         <div class="loading" ng-if="$ctrl.data.length <= 0"></div>
         <div class="row" ng-if="$ctrl.data.length > 0">
             <div class="col-md-6">
@@ -10,20 +11,21 @@
                     <option value="group2">Good Vs Non Standard Vs Web Breaks</option>
                 </select>
             </div>
-            <div class="col-md-3" ng-if="$ctrl.chartOptions.threshold">
+            <div class="col-md-2" ng-if="$ctrl.chartOptions.threshold">
                 <div class="form-group">
-                    <label>Min :</label>
-                    <select  style="font-size:0.6em" ng-model="$ctrl.minThreshold" disabled>
-                        <option ng-repeat="item in $ctrl.maxMinValues" value="{{item}}">{{item}}</option>
-                    </select>
+                    <label>Min:</label>
+                    <input type="number" style="font-size:0.6em;width:50px" ng-model="$ctrl.minThreshold"/>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="form-group" ng-if="$ctrl.chartOptions.threshold" >
-                    <label>Max :</label>
-                    <select  style="font-size:0.6em" ng-model="$ctrl.maxThreshold" disabled>
-                        <option ng-repeat="item in $ctrl.maxMinValues" value="{{item}}">{{item}}</option>
-                    </select>
+                    <label>Max:</label>
+                    <input type="number" style="font-size:0.6em; width:50px" ng-model="$ctrl.maxThreshold"/>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group" ng-if="$ctrl.chartOptions.threshold" >
+                    <button class="btn-xs" ng-click="$ctrl.$plotMaxMin()">Go</button>
                 </div>
             </div>
         </div>
@@ -37,8 +39,8 @@
                               chart-options="$ctrl.chartOptions"
                               chart-data="$ctrl.data"
                               group-by="$ctrl.groupFactor"
-                              max="$ctrl.maxThreshold"
-                              min="$ctrl.minThreshold"
+                              max="$ctrl.max"
+                              min="$ctrl.min"
                               date-from="$ctrl.dateFrom"
                               date-to="$ctrl.dateTo"
                               ng-if="$ctrl.data.length > 0"></factor-chart>

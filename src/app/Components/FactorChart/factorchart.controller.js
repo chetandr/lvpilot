@@ -20,6 +20,7 @@ export default class FactorChartCtrl {
         const chartData = this.chartData;
         const indexedChartData = [];
         const chartDataCount = chartData.length;
+
         for (let k = 0; k < chartDataCount; k++) {
             indexedChartData[chartData[k].x] = chartData[k];
         }
@@ -36,34 +37,8 @@ export default class FactorChartCtrl {
                     tickFormat: d => d == this.chartOptions.thresholdValues.max ? 'Max' : (d == this.chartOptions.thresholdValues.min ? 'Min' : d)
                 },
                 showLegend: true,
-            /*tooltip: {
-                valueFormatter: function (d, i) {
-                    return '';
-                },
-
-                headerFormatter: function (d, i) {
-                    const coilData = indexedChartData[d];
-                    let str = "<div class='panel panel-success'><div class='panel-heading'>Coil # : " + d + "</div><div class='panel-body'><table class='table'>"
-                    str += '<tr><td>Caster</td><td>' + coilData.caster + '</td></tr>';
-                    console.log(plant);
-                    if (plant == 'louisville') {
-                        str += '<tr><td>Oven</td><td>' + coilData.oven + '</td></tr>';
-                        str += '<tr><td>Work Rolls</td><td>' + coilData.workrolls + '</td></tr>';
-                        str += '<tr><td>Alloy</td><td>' + coilData.aloy + '</td></tr>';
-                    }
-                    str += "<tr><td colspan='2'><div class='label' style='background-color: " + colors[coilData.group1] + "'>" + coilData.group1 + "</div></td></tr>";
-                    str += "<tr><td colspan='2'><div class='label' style='background-color: " + colors[coilData.group2] + "'>" + coilData.group2 + "</div></td></tr>";
-                    str += "</table></div></div>";
-                    return str;
-                },
-                keyFormatter: function (d, i) {
-                    return undefined;
-                }
-
-            }*/
             }
         };
-
         this.options = merge({}, this.defaultScatterOptions, scatterChartOptions);
         this.$setGroupBy();
         this.$setChartData();
@@ -165,9 +140,31 @@ export default class FactorChartCtrl {
                     color: this.colors[parameter]
                 });
             }
-        })
+        });
         const arrMax = [];
+        const len = this.chartData.length;
+        if(this.max) {
+            for(let k=0;k<len; k+=50) {
+                    arrMax.push({x:k, y: this.max, size:0.1,color:'#000'});
+            }
+            chartData.push({
+                key: "Max",
+                values: arrMax,
+                color: "#000000"
+            });
+        }
+
         const arrMin = [];
+        if(this.min) {
+            for(let k=0;k<len; k+=50) {
+                    arrMin.push({x:k, y: this.min, color:'#000',size:0.1});
+            }
+            chartData.push({
+                key: "Min",
+                values: arrMin,
+                color: "#000000"
+            });
+        }
         this.data = chartData;
         this.options.chart.yAxis.tickFormat = d => d == this.max ? 'Max' : (d == this.min ? 'Min' : d);
     }

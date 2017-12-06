@@ -1,12 +1,19 @@
 <div class="row">
     <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">Coil Summary</div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                Coil Summary: Accepted v/s Rejected
+            </div>
             <div class="panel-body">
-                <div class="bg-info row" style="margin:0px"><div class="col-md-12">Accepted v/s Rejected</div></div>
                 <nvd3 options="$ctrl.chartOptions" data="$ctrl.summaryData.summary1"></nvd3>
-                <div class="bg-info row" style="margin:0px" ng-if="false"><div class="col-md-12">Good V/S Non Standard V/S Web Breaks</div></div>
-                <nvd3 options="$ctrl.chartOptions" data="$ctrl.summaryData.summary2" ng-if="false"></nvd3>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                Coil Summary: Good V/S Non Standard V/S Web Breaks
+            </div>
+            <div class="panel-body">
+                <nvd3 options="$ctrl.chartOptions" data="$ctrl.summaryData.summary2"></nvd3>
             </div>
         </div>
     </div>

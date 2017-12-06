@@ -1,28 +1,22 @@
-<div class="panel panel-default">
+<div class="panel panel-info">
     <div class="panel-heading">
-        {{$ctrl.coilType}} coils
+        <strong>Identified Patterns</strong> For {{$ctrl.coilType}} coils
+
     </div>
-    <div class="row bg-success" style="margin: 0px">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label>Parameter Base:</label>
-                <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span  style="margin-right:30px">Hot Springs</span>
-                <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span> Louisville</span>
-            </div>
-        </div>
-        <div class="col-md-offset-9">
-            <div class="input-group pull-right">
-                <button type="button" style="border-radius:0px" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">
-                    {{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}
-                </button>
-            </div>
-        </div>
+    <div class="pull-right" style="margin-right: 15px">
+        <span class="form-group" style="padding-right:20px">
+            <label>Parameter Base:</label>
+            <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span  style="margin-right:30px">Hot Springs</span>
+            <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span> Louisville</span>
+        </span>
+
+        <span  ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus"
+               class="btn btn-xs btn-success toggle {{$ctrl.weatherStatus ? 'active' : 'btn-info'}}">
+            {{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}
+            <span class="btn btn-xs btn-default">&nbsp;</span>
+        </span>
     </div>
-    <div class="row ml-0">
-        <div class="col-md-12">
-            <strong>Identified Patterns</strong>
-        </div>
-    </div>
+    <div class="clearfix"></div>
     <div class="row ml-0">
             <div class="col-md-1 div-cell"><strong>#</strong></div>
             <div class="col-md-7 div-cell" ><strong>Reasons</strong></div>
@@ -40,7 +34,7 @@
 </div>
 <div class="row">
     <div class="col-md-6" ng-if="false">
-        <div class="panel panel-default"">
+        <div class="panel panel-info">
             <div class="panel-heading">
                 ML Factors & Contribution
             </div>
@@ -51,7 +45,7 @@
 
     </div>
     <div class="col-md-6">
-        <div class="panel panel-default" ng-if="$ctrl.coilType == 'Rejected'">
+        <div class="panel panel-info" ng-if="$ctrl.coilType == 'Rejected'">
             <div class="panel-heading">
                 Reasons - Coil Rejects
             </div>

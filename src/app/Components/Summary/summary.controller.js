@@ -5,7 +5,7 @@ export default class SummaryCtrl {
     constructor($http, $scope, AppConfig,ChartOptions) {
         this.pieChartOptions = ChartOptions.getOption('pieChart');
         this.$scope = $scope;
-        this.coilType = null;
+        this.coilType = 'Accepted';
 
     }
 

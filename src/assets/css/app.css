@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto" !important;
+    background-color: #F9F6F4 ;
 }
 
 /* Absolute Center Spinner */
@@ -8,7 +9,7 @@ body {
   z-index: 999;
   height: 2em;
   width: 2em;
-  overflow: show;
+  overflow: visible;
   margin: auto;
   top: 0;
   left: 0;
@@ -172,6 +173,9 @@ body {
   .label, label {
       font-size:0.8em;
       color: #000;
+  }
+  label.whitelabel{
+      color: #FFFFFF !important;
   }
   .reynolds-color {
       background-color: #0055A5;
@@ -419,7 +423,40 @@ input[type="checkbox"].small-round {
 }
 
 .scroll-body {
-    height:245px;
+    height:253px;
     overflow: hidden;
     overflow-y: scroll
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/*Toggle button CSSs*/
+
+.toggle {
+    position: relative;
+    padding-right:20px !important;
+}
+
+.toggle.active {
+    position: relative;
+    padding-left:20px !important;
+}
+
+.toggle.active .btn-xs {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right: inherit;
+}
+
+.toggle .btn-xs {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
 }

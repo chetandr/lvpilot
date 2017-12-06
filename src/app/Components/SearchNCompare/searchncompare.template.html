@@ -1,42 +1,46 @@
 <div>
     <div class="panel panel-info">
-        <div class="panel-heading">Select Filters</div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label>
-                            Plant:
-                        </label>
-                        <input type="checkbox" ng-checked="$ctrl.plant == 'hotsprings'" ng-click="$ctrl.setPlant('hotsprings')" class="regular-checkbox"> <span style="margin-right:30px"> Hot Springs</span>
-                        <input type="checkbox" ng-checked="$ctrl.plant == 'louisville'" ng-click="$ctrl.setPlant('louisville')" class="regular-checkbox"> <span> Louisville</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="form-group">
-                        <label>Mill:</label>
-                        <select ng-model="$ctrl.currentMill" ng-change="$ctrl.clearCluster()">
-                            <option ng-repeat="(key, mill) in $ctrl.filters.MillFilter[$ctrl.plant]" value="{{key}}">{{mill.value}}</option>
-                         </select>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="form-group">
-                        <label>Target Gauge:</label>
-                        <select ng-model="$ctrl.targetGauge" ng-change="$ctrl.clearCluster()">
-                            <option ng-repeat="tg in $ctrl.filters.MillFilter[$ctrl.plant][$ctrl.currentMill].targetGauge" value="{{tg}}">{{tg}}</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-offset-2">
-                    <button type="button" class="btn {{$ctrl.weatherStatus ? 'btn-warning' : 'btn-info'}}" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus">{{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-info">
         <div class="panel-heading">Mill Speed Trend For Coil Group</div>
         <div class="panel-body">
+            <div class="pull-right">
+
+                    <span style="margin-right:40px" class="form-group">
+                        <label>Plant:</label>
+                        <input type="checkbox" ng-checked="$ctrl.plant == 'hotsprings'"
+                               ng-click="$ctrl.setPlant('hotsprings')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+                        <span style="margin-right:30px;"> Hot Springs</span>
+                        <input type="checkbox" ng-checked="$ctrl.plant == 'louisville'"
+                               ng-click="$ctrl.setPlant('louisville')" class="regular-checkbox"
+                               style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+                        <span> Louisville</span>
+                    </span>
+
+                    <span style="margin-right:40px" class="form-group">
+                        <label>Mill:</label>
+                        <select ng-model="$ctrl.currentMill" ng-change="$ctrl.clearCluster()">
+                            <option ng-repeat="(key, mill) in $ctrl.filters.MillFilter[$ctrl.plant]" value="{{key}}">
+                                {{mill.value}}
+                            </option>
+                        </select>
+                    </span>
+
+                    <span style="margin-right:40px" class="form-group">
+                        <label>Target Gauge:</label>
+                        <select ng-model="$ctrl.targetGauge" ng-change="$ctrl.clearCluster()" style="width:100px">
+                            <option ng-repeat="tg in $ctrl.filters.MillFilter[$ctrl.plant][$ctrl.currentMill].targetGauge"
+                                    value="{{tg}}">{{tg}}
+                            </option>
+                        </select>
+                    </span>
+
+                    <span style="margin-right:40px" ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus"
+                           class="btn btn-xs btn-success toggle {{$ctrl.weatherStatus ? 'active' : 'btn-info'}}">
+                        {{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}
+                        <span class="btn btn-xs btn-default">&nbsp;</span>
+                    </span>
+
+            </div>
+            <div class="clearfix">
             <div class="form-group">
                 <label>Range Size: </label>
                 <select ng-model="$ctrl.rangeSize">
@@ -44,7 +48,9 @@
                     <option value="range_10">10</option>
                 </select>
             </div>
-            <mill-speed-trend range-size="$ctrl.rangeSize" clusters="$ctrl.Clusters.list" trends="$ctrl.trends" ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill" gauge="$ctrl.targetGauge"></mill-speed-trend>
+            <mill-speed-trend range-size="$ctrl.rangeSize" clusters="$ctrl.Clusters.list" trends="$ctrl.trends"
+                              ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill"
+                              gauge="$ctrl.targetGauge"></mill-speed-trend>
         </div>
     </div>
 </div>

@@ -1,12 +1,11 @@
-<app-header title="{{$ctrl.title}}" beta="$ctrl.beta"></app-header>
-
-<div class="container-fluid">
+<div class="container-fluid" style="padding-top:18px">
+    <a class="logo" href="#"><img src="./img/reynolds-logo.png"/></a>
     <ul class="nav nav-tabs">
-        <li><a ui-sref="home" class="btn {{$ctrl.$state.$current.name == 'home' || $ctrl.$state.$current.name == 'detail'? 'active' : ''}}">
+        <li><a ui-sref="home" class="btn {{$ctrl.$state.$current.name == 'home' || $ctrl.$state.$current.name == 'detail'? 'btn-success' : ''}}">
             Summary
         </a></li>
         <li>
-            <a ui-sref="searchncompare" class="btn {{$ctrl.$state.$current.name == 'searchncompare' || $ctrl.$state.$current.name == 'insights' ? 'active' : ''}}">
+            <a ui-sref="searchncompare" class="btn {{$ctrl.$state.$current.name == 'searchncompare' || $ctrl.$state.$current.name == 'insights' ? 'btn-success' : ''}}">
                 Mill Speed Deviation
             </a>
         </li>

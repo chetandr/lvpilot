@@ -35,7 +35,7 @@ import StateTransition from './Services/StateTransition';
 // Static Files
 import '../assets/css/app.css';
 import '../assets/css/bootstrap.css';
-import '../assets/css/bootstrap-theme.css';
+//import '../assets/css/bootstrap.min.css';
 import '../../node_modules/roboto-fontface/css/roboto/roboto-fontface.css';
 import '../../node_modules/nvd3/build/nv.d3.css';
 

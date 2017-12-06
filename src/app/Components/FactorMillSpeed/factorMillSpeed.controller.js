@@ -16,20 +16,19 @@ export default  class FactorsMillSpeedCtrl {
         this.gauge = FilterService.getValue('gauge');
         this.groupFactor = 'group1';
     }
+
     $onInit() {
         this.data = [];
         this.chartOptions = [];
         this.loading = true;
-        this.maxThreshold = 0;
-        this.minThreshold = 0;
+        this.maxThreshold = null;
+        this.minThreshold = null;
         let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factorKey + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge + '&deviation=' + this.deviation.name.split(' To ').join();
         this.http.get(restURL,).then((result) => {
             this.data = result.data.data;
             //this.$setChartData();
             this.maxMinValues = uniq(map(orderBy(this.data, 'y'), 'y'));
             this.chartOptions = result.data.options;
-            this.maxThreshold = this.chartOptions.thresholdValues.max;
-            this.minThreshold = this.chartOptions.thresholdValues.min;
             this.showLoading = false
         });
     }
@@ -46,5 +45,16 @@ export default  class FactorsMillSpeedCtrl {
         this.loading = false;
     }
 
+    $plotMaxMin() {
+       this.max = this.maxThreshold;
+       this.min = this.minThreshold;
+    }
 
+    $setMinvalue(min) {
+        this.minThreshold = min;
+    }
+
+    $setMaxvalue(max) {
+        this.maxThreshold = max;
+    }
 };
