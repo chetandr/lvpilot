@@ -77,3 +77,10 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
     });
 
 export default MODULE_NAME;
+
+db.reynolds_lousville.corelation_1.find().forEach(function(e,i){
+    e.Accepted.reasons.HS.weather.forEach(function(el, k) {
+        el.reason.replace(/&/g, " & ");
+    })
+});
+
