@@ -102,6 +102,22 @@ const CoildDataSevice =($http, $stateParams, AppConfig, FilterService, Filters) 
                     "value": 500,
                 },
             ]
+        },
+
+        getSampleData() {
+            let restURL = AppConfig.restUrls.SAMPLE_HS;
+            return new Promise((resolve, reject) => {
+                    const filters = FilterService.getFilters();
+                    if(filters.length > 0) {
+                        resolve(filters);
+                    } else {
+                        $http.get(restURL,).then((result)=> {
+                            FilterService.setFilters(result.data);
+                            resolve(result.data);
+                        },(err)=> reject(err));
+                    }
+                }
+            )
         }
 
     }

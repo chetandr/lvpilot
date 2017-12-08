@@ -460,3 +460,7 @@ input[type="checkbox"].small-round {
     bottom: 0px;
     right:0px;
 }
+
+option {
+    color :#000;
+}

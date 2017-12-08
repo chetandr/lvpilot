@@ -27,7 +27,11 @@ export default class SummaryCtrl {
                             vm.$scope.$apply();
                         }
                     }
-                }
+                },
+                y : d => d3.format("d")(d.y),
+                labelFormat: n => d3.format("d")(n),
+                labelType: (d) => d3.format("d")(d.value) + " ("+ d.data.percent + "%)"
+
             }
         }
         this.chartOptions = merge({},this.pieChartOptions, customChartOptions);

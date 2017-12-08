@@ -2,19 +2,14 @@ import merge from 'lodash-es/merge';
 
 export default class MillSpeedTrendCtrl {
 
-    constructor($scope, $http, $state, ClusterService, CoilDataService, AppConfig, ChartOptions, FilterService) {
+    constructor($http, $state, ClusterService, AppConfig, ChartOptions) {
         this.ClusterService = ClusterService;
         this.AppConfig = AppConfig;
         this.ChartOptions = ChartOptions;
         this.$http = $http;
-        this.CoilDataService = CoilDataService;
-
-        this.scope = $scope;
-        $scope.selectedClusters = [];
         this.$state = $state;
         this.trends = [];
         this.options = merge({},this.ChartOptions.getOption('discreteBar'));
-
     }
 
     $onInit() {
@@ -27,8 +22,13 @@ export default class MillSpeedTrendCtrl {
                 discretebar: {
                     dispatch: {
                         elementClick: (u) => {
-                            this.ClusterService.addCluster(u.data.label);
-                            u.data.color = '#F3DD6D';
+                            if(u.data.color == '#F3DD6D') {
+                                this.ClusterService.removeCluster(u.data.label);
+                                u.data.color = '#0A0E40';
+                            } else {
+                                this.ClusterService.addCluster(u.data.label);
+                                u.data.color = '#F3DD6D';
+                            }
                             this.scope.$apply();
                         }
                     }
@@ -49,6 +49,9 @@ export default class MillSpeedTrendCtrl {
                 yAxis: {
                     axisLabel: this.trends.options.yAxisLabel
                 },
+                margin: {
+                    bottom: 80
+                }
             }
         }
 

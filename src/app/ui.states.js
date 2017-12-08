@@ -40,6 +40,14 @@ const UIStates = {
             filters : (CoilDataService) => CoilDataService.getFilters(),
             mills : (CoilDataService) => CoilDataService.getMills()
         }
+    },
+    Test : {
+        name: 'test',
+        url: '/test',
+        component : 'test',
+        resolve: {
+            sampleData : (CoilDataService) => CoilDataService.getSampleData()
+        }
     }
 }
 

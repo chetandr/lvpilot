@@ -20,6 +20,7 @@ import SearchNCompare from './Components/SearchNCompare';
 import MillSpeedTrend from './Components/MillSpeedTrend';
 import Insights from './Components/Insights';
 import InsightDetail from './Components/InsightDetail';
+import Test from './Components/Test';
 
 import UIState from './ui.states';
 // Services
@@ -57,6 +58,7 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
     .component('millSpeedTrend', MillSpeedTrend )
     .component('insights', Insights )
     .component('insightDetail', InsightDetail )
+    .component('test', Test )
     .factory('AppConfig', AppConfig)
     .factory('ChartOptions', ChartOptions)
     .factory('CoilDataService', CoilDataService)
@@ -71,16 +73,10 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
             .state(UIState.Home)
             .state(UIState.Details)
             .state(UIState.Insights)
-            .state(UIState.SearchNCompare);
+            .state(UIState.SearchNCompare)
+            .state(UIState.Test);
 
         $urlRouterProvider.otherwise('/home');
     });
 
 export default MODULE_NAME;
-
-db.reynolds_lousville.corelation_1.find().forEach(function(e,i){
-    e.Accepted.reasons.HS.weather.forEach(function(el, k) {
-        el.reason.replace(/&/g, " & ");
-    })
-});
-

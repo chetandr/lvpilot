@@ -29,6 +29,7 @@ const Config = {
         FILTERS : getURL("getFilters"),
         IDENTIFIED_REASONS : getURL("getIdentifiedReasons"),
         FACTOR_REASONS : getURL("getRejectFactorReason"),
+        SAMPLE_HS : getURL("samplehsdata")
     },
     colors : {
         'Accepted' : '#E8DE10',
