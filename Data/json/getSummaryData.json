@@ -1,0 +1,476 @@
+{
+	"details": {
+		"Accepted": {
+			"reasons": {
+				"hotsprings": {
+					"weather": [{
+						"count": 818,
+						"reason": "fe_perc <= 0.645207643509 & si_perc <= 0.357294678688 & sn_perc <= 0.00334999989718",
+						"accepted": 818,
+						"decision": "Accept",
+						"rejected": 0
+					}, {
+						"count": 59,
+						"reason": "fe_perc <= 0.645207643509 & si_perc > 0.357294678688 & si_perc > 0.526565670967 & hg_perc > 0.00198454223573",
+						"accepted": 59,
+						"decision": "Accept",
+						"rejected": 0
+					}, {
+						"count": 26,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent > 0.00395693397149 & wind_speed <= 8.65930652618",
+						"accepted": 26,
+						"decision": "Accept",
+						"rejected": 0
+					}, {
+						"count": 62,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown > 3.00026702881 & crown > 3.9972076416 & d_speed_deviation <= 61.5656242371 & o3 > 393.938140869",
+						"accepted": 62,
+						"decision": "Accept",
+						"rejected": 0
+					}, {
+						"count": 18,
+						"reason": "fe_perc <= 0.645207643509 & si_perc <= 0.357294678688 & sn_perc > 0.00334999989718",
+						"accepted": 17,
+						"decision": "Accept",
+						"rejected": 1
+					}, {
+						"count": 22,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent > 0.00395693397149 & wind_speed > 8.65930652618 & wind_speed > 14.4171657562",
+						"accepted": 21,
+						"decision": "Accept",
+						"rejected": 1
+					}, {
+						"count": 18,
+						"reason": "fe_perc <= 0.645207643509 & si_perc > 0.357294678688 & si_perc > 0.526565670967 & hg_perc <= 0.00198454223573",
+						"accepted": 16,
+						"decision": "Accept",
+						"rejected": 2
+					}, {
+						"count": 317,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent <= 0.00395693397149 & hg_perc > 0.00239957030863 & cu_perc <= 0.0354952588677",
+						"accepted": 315,
+						"decision": "Accept",
+						"rejected": 2
+					}, {
+						"count": 56,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown > 3.5050265789 & zr_perc > 0.000898805330507 & crown > 4.49283456802",
+						"accepted": 54,
+						"decision": "Accept",
+						"rejected": 2
+					}, {
+						"count": 57,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent <= 0.00395693397149 & hg_perc > 0.00239957030863 & cu_perc > 0.0354952588677",
+						"accepted": 53,
+						"decision": "Accept",
+						"rejected": 4
+					}, {
+						"count": 45,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown <= 3.5050265789 & bi_perc <= 0.000100295917946 & wedge > 1.00108790398",
+						"accepted": 41,
+						"decision": "Accept",
+						"rejected": 4
+					}, {
+						"count": 120,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown > 3.00026702881 & crown > 3.9972076416 & d_speed_deviation > 61.5656242371 & cd_perc > 0.000101205507235",
+						"accepted": 112,
+						"decision": "Accept",
+						"rejected": 8
+					}, {
+						"count": 275,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown > 3.00026702881 & crown > 3.9972076416 & d_speed_deviation > 61.5656242371 & cd_perc <= 0.000101205507235",
+						"accepted": 263,
+						"decision": "Accept",
+						"rejected": 12
+					}, {
+						"count": 353,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown <= 3.5050265789 & bi_perc <= 0.000100295917946 & wedge <= 1.00108790398",
+						"accepted": 341,
+						"decision": "Accept",
+						"rejected": 12
+					}, {
+						"count": 382,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown <= 3.5050265789 & bi_perc > 0.000100295917946 & bi_perc > 0.000198738445761",
+						"accepted": 356,
+						"decision": "Accept",
+						"rejected": 26
+					}, {
+						"count": 580,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent <= 0.00395693397149 & hg_perc <= 0.00239957030863 & hg_perc <= 0.00230033975095",
+						"accepted": 551,
+						"decision": "Accept",
+						"rejected": 29
+					}],
+					"non-weather": [{
+						"count": 824,
+						"reason": "si_perc <= 0.357810199261 & sn_perc <= 0.00345000019297",
+						"accepted": 824,
+						"decision": "Accept",
+						"rejected": 0
+					}, {
+						"count": 12,
+						"reason": "si_perc <= 0.357810199261 & sn_perc > 0.00345000019297",
+						"accepted": 11,
+						"decision": "Accept",
+						"rejected": 1
+					}, {
+						"count": 66,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge > 0.0014406258706 & wedge > 0.998841226101 & crown <= 2.50339436531 & crown <= 2.49864578247",
+						"accepted": 63,
+						"decision": "Accept",
+						"rejected": 3
+					}, {
+						"count": 46,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge > 0.0014406258706 & wedge > 0.998841226101 & crown > 2.50339436531 & wedge > 1.99954390526",
+						"accepted": 43,
+						"decision": "Accept",
+						"rejected": 3
+					}, {
+						"count": 181,
+						"reason": "si_perc > 0.357810199261 & crown > 3.00096940994 & crown > 3.49978113174 & crown <= 3.5004067421 & mg_perc <= 0.00320987426676 & v_perc > 0.00869339425117",
+						"accepted": 178,
+						"decision": "Accept",
+						"rejected": 3
+					}, {
+						"count": 86,
+						"reason": "si_perc > 0.357810199261 & crown > 3.00096940994 & crown > 3.49978113174 & crown <= 3.5004067421 & mg_perc > 0.00320987426676 & d3 <= 397.02355957",
+						"accepted": 82,
+						"decision": "Accept",
+						"rejected": 4
+					}, {
+						"count": 28,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge <= 0.0014406258706 & cd_perc <= 9.93243738776e-05 & cd_perc <= 2.83290717107e-07 & zr_perc <= 0.000486749981064",
+						"accepted": 23,
+						"decision": "Accept",
+						"rejected": 5
+					}, {
+						"count": 164,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge <= 0.0014406258706 & cd_perc <= 9.93243738776e-05 & cd_perc <= 2.83290717107e-07 & zr_perc > 0.000486749981064",
+						"accepted": 158,
+						"decision": "Accept",
+						"rejected": 6
+					}, {
+						"count": 352,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge <= 0.0014406258706 & cd_perc > 9.93243738776e-05 & b_perc <= 0.00050759606529 & d_speed_deviation <= 198.105255127",
+						"accepted": 346,
+						"decision": "Accept",
+						"rejected": 6
+					}, {
+						"count": 84,
+						"reason": "si_perc > 0.357810199261 & crown > 3.00096940994 & crown > 3.49978113174 & crown <= 3.5004067421 & mg_perc <= 0.00320987426676 & v_perc <= 0.00869339425117",
+						"accepted": 76,
+						"decision": "Accept",
+						"rejected": 8
+					}, {
+						"count": 215,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge <= 0.0014406258706 & cd_perc > 9.93243738776e-05 & b_perc > 0.00050759606529 & hg_perc <= 0.0022999048233",
+						"accepted": 205,
+						"decision": "Accept",
+						"rejected": 10
+					}, {
+						"count": 308,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge <= 0.0014406258706 & cd_perc > 9.93243738776e-05 & b_perc > 0.00050759606529 & hg_perc > 0.0022999048233",
+						"accepted": 296,
+						"decision": "Accept",
+						"rejected": 12
+					}, {
+						"count": 293,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge > 0.0014406258706 & wedge > 0.998841226101 & crown <= 2.50339436531 & crown > 2.49864578247",
+						"accepted": 281,
+						"decision": "Accept",
+						"rejected": 12
+					}, {
+						"count": 573,
+						"reason": "si_perc > 0.357810199261 & crown > 3.00096940994 & crown > 3.49978113174 & crown > 3.5004067421 & crown > 3.99847793579 & wedge <= 0.00574623653665",
+						"accepted": 537,
+						"decision": "Accept",
+						"rejected": 36
+					}]
+				},
+				"reasonTotal": {
+					"hotsprings": {
+						"weather": 3208,
+						"non-weather": 3232
+					}
+				}
+			},
+			"mlfactors": {
+				"weather": [{
+					"y": 0.3303696,
+					"key": "wedge"
+				}, {
+					"y": 0.2290944,
+					"key": "crown"
+				}, {
+					"y": 0.21968015,
+					"key": "fe_perc"
+				}, {
+					"y": 0.06345407,
+					"key": "bi_perc"
+				}, {
+					"y": 0.028664943,
+					"key": "hg_perc"
+				}, {
+					"y": 0.023544755,
+					"key": "d_speed_deviation"
+				}, {
+					"y": 0.022377962,
+					"key": "water_equivalent"
+				}, {
+					"y": 0.021911323,
+					"key": "wind_speed"
+				}, {
+					"y": 0.021255136,
+					"key": "d3"
+				}, {
+					"y": 0.017326001,
+					"key": "si_perc"
+				}],
+				"non-weather": [{
+					"y": 0.38041976,
+					"key": "crown"
+				}, {
+					"y": 0.22461632,
+					"key": "wedge"
+				}, {
+					"y": 0.22335534,
+					"key": "si_perc"
+				}, {
+					"y": 0.09259097,
+					"key": "cd_perc"
+				}, {
+					"y": 0.021983797,
+					"key": "d3"
+				}, {
+					"y": 0.016898073,
+					"key": "mg_perc"
+				}, {
+					"y": 0.015620518,
+					"key": "b_perc"
+				}, {
+					"y": 0.014904737,
+					"key": "hg_perc"
+				}, {
+					"y": 0.005865434,
+					"key": "d_speed_deviation"
+				}, {
+					"y": 0.00314627,
+					"key": "v_perc"
+				}]
+			}
+		},
+		"Rejected": {
+			"reasons": {
+				"hotsprings": {
+					"weather": [{
+						"count": 1,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent <= 0.00395693397149 & hg_perc <= 0.00239957030863 & hg_perc > 0.00230033975095",
+						"accepted": 1,
+						"decision": "Reject",
+						"rejected": 0
+					}, {
+						"count": 22,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown > 3.5050265789 & zr_perc <= 0.000898805330507 & wedge > 1.99953532219",
+						"accepted": 21,
+						"decision": "Reject",
+						"rejected": 1
+					}, {
+						"count": 9,
+						"reason": "fe_perc <= 0.645207643509 & si_perc > 0.357294678688 & si_perc <= 0.526565670967",
+						"accepted": 7,
+						"decision": "Reject",
+						"rejected": 2
+					}, {
+						"count": 8,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown > 3.5050265789 & zr_perc > 0.000898805330507 & crown <= 4.49283456802",
+						"accepted": 6,
+						"decision": "Reject",
+						"rejected": 2
+					}, {
+						"count": 28,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown <= 3.00026702881 & water_equivalent > 0.00395693397149 & wind_speed > 8.65930652618 & wind_speed <= 14.4171657562",
+						"accepted": 23,
+						"decision": "Reject",
+						"rejected": 5
+					}, {
+						"count": 35,
+						"reason": "fe_perc > 0.645207643509 & wedge > 0.00171717186458 & wedge > 0.999771952629 & crown > 3.5050265789 & zr_perc <= 0.000898805330507 & wedge <= 1.99953532219",
+						"accepted": 28,
+						"decision": "Reject",
+						"rejected": 7
+					}, {
+						"count": 102,
+						"reason": "fe_perc > 0.645207643509 & wedge <= 0.00171717186458 & crown > 3.00026702881 & crown > 3.9972076416 & d_speed_deviation <= 61.5656242371 & o3 <= 393.938140869",
+						"accepted": 89,
+						"decision": "Reject",
+						"rejected": 13
+					}],
+					"non-weather": [{
+						"count": 11,
+						"reason": "si_perc > 0.357810199261 & crown <= 3.00096940994 & wedge <= 0.0014406258706 & cd_perc > 9.93243738776e-05 & b_perc <= 0.00050759606529 & d_speed_deviation > 198.105255127",
+						"accepted": 9,
+						"decision": "Reject",
+						"rejected": 2
+					}, {
+						"count": 48,
+						"reason": "si_perc > 0.357810199261 & crown > 3.00096940994 & crown > 3.49978113174 & crown <= 3.5004067421 & mg_perc > 0.00320987426676 & d3 > 397.02355957",
+						"accepted": 38,
+						"decision": "Reject",
+						"rejected": 10
+					}, {
+						"count": 122,
+						"reason": "si_perc > 0.357810199261 & crown > 3.00096940994 & crown > 3.49978113174 & crown > 3.5004067421 & crown > 3.99847793579 & wedge > 0.00574623653665",
+						"accepted": 110,
+						"decision": "Reject",
+						"rejected": 12
+					}]
+				},
+				"reasonTotal": {
+					"hotsprings": {
+						"weather": 205,
+						"non-weather": 181
+					}
+				}
+			},
+			"mlfactors": {
+				"weather": [{
+					"y": 0.3303696,
+					"key": "wedge"
+				}, {
+					"y": 0.2290944,
+					"key": "crown"
+				}, {
+					"y": 0.21968015,
+					"key": "fe_perc"
+				}, {
+					"y": 0.06345407,
+					"key": "bi_perc"
+				}, {
+					"y": 0.028664943,
+					"key": "hg_perc"
+				}, {
+					"y": 0.023544755,
+					"key": "d_speed_deviation"
+				}, {
+					"y": 0.022377962,
+					"key": "water_equivalent"
+				}, {
+					"y": 0.021911323,
+					"key": "wind_speed"
+				}, {
+					"y": 0.021255136,
+					"key": "d3"
+				}, {
+					"y": 0.017326001,
+					"key": "si_perc"
+				}],
+				"non-weather": [{
+					"y": 0.38041976,
+					"key": "crown"
+				}, {
+					"y": 0.22461632,
+					"key": "wedge"
+				}, {
+					"y": 0.22335534,
+					"key": "si_perc"
+				}, {
+					"y": 0.09259097,
+					"key": "cd_perc"
+				}, {
+					"y": 0.021983797,
+					"key": "d3"
+				}, {
+					"y": 0.016898073,
+					"key": "mg_perc"
+				}, {
+					"y": 0.015620518,
+					"key": "b_perc"
+				}, {
+					"y": 0.014904737,
+					"key": "hg_perc"
+				}, {
+					"y": 0.005865434,
+					"key": "d_speed_deviation"
+				}, {
+					"y": 0.00314627,
+					"key": "v_perc"
+				}]
+			},
+			"rejectReason": [{
+				"key": "Inclusions - Dross",
+				"y": 130
+			}, {
+				"key": "Crown",
+				"y": 3
+			}, {
+				"key": "RR",
+				"y": 3
+			}, {
+				"key": "Shape",
+				"y": 96
+			}, {
+				"key": "Edge Cracks",
+				"y": 193
+			}, {
+				"key": "Voids",
+				"y": 12
+			}, {
+				"key": "Waterstain",
+				"y": 3
+			}]
+		},
+		"Good": {
+			"reasons": {
+				"hotsprings": {
+					"weather": [],
+					"non-weather": []
+				},
+				"reasonTotal": {
+					"hotsprings": {
+						"weather": 0,
+						"non-weather": 0
+					}
+				}
+			}
+		},
+		"Non Standard": {
+			"reasons": {
+				"hotsprings": {
+					"weather": [],
+					"non-weather": []
+				},
+				"reasonTotal": {
+					"hotsprings": {
+						"weather": 0,
+						"non-weather": 0
+					}
+				}
+			}
+		},
+		"Web Breaks": {
+			"reasons": {
+				"hotsprings": {
+					"weather": [],
+					"non-weather": []
+				},
+				"reasonTotal": {
+					"hotsprings": {
+						"weather": 0,
+						"non-weather": 0
+					}
+				}
+			}
+		}
+	},
+	"summary1": [{
+		"key": "Rejected",
+		"y": 133,
+        "percent" : 3.8,
+        "color": "#ef5614"
+	}, {
+		"key": "Accepted",
+		"y": 3280,
+        "percent" : 96.2,
+        "color": "#47740e"
+	}],
+	"summary2": []
+}
