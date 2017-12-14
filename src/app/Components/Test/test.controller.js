@@ -1,8 +1,22 @@
+import merge from "lodash-es/merge";
 
 export default class TestCtrl {
 
     constructor(ChartOptions) {
-        this.chartOptions = ChartOptions.getOption('scatterChart');
+        const scatterChartOptions = {
+            chart: {
+                xAxis: {
+                    axisLabel: "Manganese Percent",
+                },
+                yAxis: {
+                    axisLabel: "Deviation Percent",
+                },
+                showDistX: false,
+                showDistY: false
+            }
+        };
+        this.chartOptions = merge({},ChartOptions.getOption('scatterChart'), scatterChartOptions);
+
     }
 
     $onInit() {

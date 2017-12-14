@@ -2,11 +2,12 @@ import merge from 'lodash-es/merge';
 
 export default class MillSpeedTrendCtrl {
 
-    constructor($http, $state, ClusterService, AppConfig, ChartOptions) {
+    constructor($scope, $http, $state, ClusterService, AppConfig, ChartOptions) {
         this.ClusterService = ClusterService;
         this.AppConfig = AppConfig;
         this.ChartOptions = ChartOptions;
         this.$http = $http;
+        this.scope = $scope;
         this.$state = $state;
         this.trends = [];
         this.options = merge({},this.ChartOptions.getOption('discreteBar'));

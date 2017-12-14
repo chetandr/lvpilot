@@ -464,3 +464,7 @@ input[type="checkbox"].small-round {
 option {
     color :#000;
 }
+
+.nv-x .tick line {
+    display: none;
+}
