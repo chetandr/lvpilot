@@ -25,7 +25,7 @@ const UIStates = {
     },
     Insights : {
         name: 'insights',
-        url: '/insights/{plant}/{mill}/{gauge}',
+        url: '/insights',
         component : 'insights',
         resolve: {
             filters : (CoilDataService) => CoilDataService.getFilters(),

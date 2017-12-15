@@ -19,21 +19,7 @@ export default class MillSpeedTrendCtrl {
         let restURL = this.AppConfig.restUrls.MILL_SPEED_TREND;
         const multiBarChart = {
             "chart" :{
-                width: 750,
-                discretebar: {
-                    dispatch: {
-                        elementClick: (u) => {
-                            if(u.data.color == '#F3DD6D') {
-                                this.ClusterService.removeCluster(u.data.label);
-                                u.data.color = '#0A0E40';
-                            } else {
-                                this.ClusterService.addCluster(u.data.label);
-                                u.data.color = '#F3DD6D';
-                            }
-                            this.scope.$apply();
-                        }
-                    }
-                },
+                //width: 750,
                 xAxis:{
                     tickFormat: d => {
                         const values = this.trends.data[this.plant][this.mill][this.gauge][this.rangeSize][0].values;

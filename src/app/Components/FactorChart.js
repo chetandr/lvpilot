@@ -13,7 +13,8 @@ const bindings = {
     max: '<',
     min: '<',
     dateFrom: '<',
-    dateTo: '<'
+    dateTo: '<',
+    factor: '<'
 };
 
 export default {

@@ -3,6 +3,7 @@ import template from './InsightDetail/insightdetail.template.html'
 
 const bindings = {
     factors: '<',
+    factor: '<',
     caster: '<',
     oven : '<',
     workrolls: '<',

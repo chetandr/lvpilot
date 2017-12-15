@@ -461,10 +461,11 @@ input[type="checkbox"].small-round {
     right:0px;
 }
 
-option {
-    color :#000;
+.hide-grid-y .nv-y .tick line {
+    display: none;
 }
 
-.nv-x .tick line {
+
+.hide-grid-x .nv-x .tick line {
     display: none;
 }

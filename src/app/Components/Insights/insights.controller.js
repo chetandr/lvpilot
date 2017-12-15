@@ -4,7 +4,7 @@ import head from "lodash-es/head";
 import last from "lodash-es/last";
 import ceil from "lodash-es/ceil";
 
-export default class ProcessControlLimitsCtrl {
+export default class InsightsCtrl {
 
     constructor($state, Clusters, FilterService){
         this.Clusters = Clusters;
@@ -30,9 +30,13 @@ export default class ProcessControlLimitsCtrl {
     $onInit(){
         this.dateFrom = head(this.filters.period).key;
         this.dateTo = last(this.filters.period).key;
+        this.factor = head(this.factors).key;
         for(let i=this.currentPage; i<this.currentPage+ this.pageSize; i++) {
             this.pageFactors.push(this.factors[i])
         }
+    }
+    $onFactorClick(factor) {
+        this.factor = factor;
     }
 
     $onNext(){

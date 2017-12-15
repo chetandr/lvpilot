@@ -1,6 +1,6 @@
 <div ng-repeat="factor in $ctrl.factors">
         <div class="row"  style="min-height: 340px;">
-            <div class="col-md-6" ng-repeat="item in $ctrl.Clusters.list">
+            <div class="col-md-12">
                 <factor-mill-speed caster="$ctrl.caster"
                                    oven="$ctrl.oven"
                                    workrolls="$ctrl.workrolls"
@@ -12,7 +12,7 @@
                                    date-to = "$ctrl.dateTo"
                                    rank = "factor.rank"
                                    factor = "factor.value"
-                                   mltitle="item.name"></factor-mill-speed>
+                                   mltitle=""></factor-mill-speed>
             </div>
         </div>
 </div>

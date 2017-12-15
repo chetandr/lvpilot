@@ -1,29 +1,9 @@
 <div class="panel panel-info">
 <div class="panel-heading">
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-4">
             Insights – Top ML Factors
         </div>
-        <div class="col-md-7">
-            <div class="pull-right">
-                <span class="form-group">
-                    <label class="whitelabel">Select Factor:</label>
-                    <select ng-model="$ctrl.factorId" ng-change="$ctrl.$changeFactor()">
-                        <option ng-repeat="(idx, item) in $ctrl.factors" value="{{idx}}">Rank {{item.rank}} - {{item.value}}</option>
-                    </select>
-                </span>
-                <span ng-if="$ctrl.currentPage > 0"ng-click="$ctrl.$onPrev()" style="cursor: pointer; margin-right: 10px"><span class="glyphicon glyphicon-arrow-left"></span>Prev</span>
-                <span>
-                    Showing Rank
-                    {{($ctrl.currentPage * $ctrl.pageSize) + 1}}
-                    to
-                    {{($ctrl.currentPage * $ctrl.pageSize) + $ctrl.pageSize > $ctrl.factors.length ? $ctrl.factors.length : ($ctrl.currentPage * $ctrl.pageSize) + $ctrl.pageSize}}
-                    of {{$ctrl.factors.length}}</span>
-                <span ng-click="$ctrl.$onNext()" ng-if="($ctrl.currentPage * $ctrl.pageSize) + $ctrl.pageSize < $ctrl.factors.length" style="cursor: pointer; margin-left: 10px">Next<span class="glyphicon glyphicon-arrow-right"></span></span>
-            </div>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-md-2">
             <div class="form-group">
                 <label class="whitelabel">Plant :</label>
@@ -41,6 +21,16 @@
                 <label class="whitelabel">Target Gauge : </label>
                 {{$ctrl.gauge}}
             </div>
+        </div>
+        <div class="col-md-2">
+            <button
+                    ng-class="['btn-xs', {'btn-success': $ctrl.currentPage != 0}, {'btn-default': $ctrl.currentPage == 0}]"
+                    ng-click="$ctrl.$onPrev()"
+                    ng-disabled="$ctrl.currentPage == 0"><span class="glyphicon glyphicon-arrow-left"></span> Prev</button>
+            <button
+                    ng-class="['btn-xs', {'btn-success': $ctrl.pageSize * ($ctrl.currentPage + 1) < $ctrl.factors.length}, {'btn-default': $ctrl.pageSize * ($ctrl.currentPage + 1) >= $ctrl.factors.length}]"
+                    ng-click="$ctrl.$onNext()"
+                    ng-disabled="$ctrl.pageSize * ($ctrl.currentPage + 1) >= $ctrl.factors.length">Next  <span class="glyphicon glyphicon-arrow-right"></span></button>
         </div>
     </div>
 </div>
@@ -64,15 +54,34 @@
                 </select>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Ranked Factors</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li ng-repeat="factor in $ctrl.factors"
+                                class="list-group-item list-group-item-warning"
+                                ng-click="$ctrl.$onFactorClick(factor.key)">
+                                {{factor.value}} <span class="badge badge-danger">Rank : {{factor.rank}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <insight-detail factors="$ctrl.pageFactors"
+                                factor = "$ctrl.factor"
+                                caster="$ctrl.Caster"
+                                oven="$ctrl.Oven"
+                                workrolls="$ctrl.WorkRolls"
+                                alloy="$ctrl.Alloy"
+                                period="$ctrl.period"
+                                date-from = "$ctrl.dateFrom"
+                                date-to = "$ctrl.dateTo"
+                ></insight-detail>
+            </div>
+        </div>
 
-        <insight-detail factors="$ctrl.pageFactors"
-                        caster="$ctrl.Caster"
-                        oven="$ctrl.Oven"
-                        workrolls="$ctrl.WorkRolls"
-                        alloy="$ctrl.Alloy"
-                        period="$ctrl.period"
-                        date-from = "$ctrl.dateFrom"
-                        date-to = "$ctrl.dateTo"
-                        ></insight-detail>
     </div>
 </div>

@@ -23,9 +23,9 @@ export default  class FactorsMillSpeedCtrl {
         this.loading = true;
         this.maxThreshold = null;
         this.minThreshold = null;
-        let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factorKey + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge + '&deviation=' + this.deviation.name.split(' To ').join();
+        let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factor + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge;
         this.http.get(restURL,).then((result) => {
-            this.data = result.data.data;
+            this.data = result.data;
             //this.$setChartData();
             this.maxMinValues = uniq(map(orderBy(this.data, 'y'), 'y'));
             this.chartOptions = result.data.options;
@@ -34,14 +34,14 @@ export default  class FactorsMillSpeedCtrl {
     }
 
     $setChartData() {
-        const groupParameters = uniq(map(this.data, this.groupFactor));
+        /*const groupParameters = uniq(map(this.data, this.groupFactor));
         const chartData = [];
         let filterCriteria = {};
         forEach(groupParameters, parameter => {
             filterCriteria = {[this.groupFactor] : parameter };
             chartData.push({"key" : parameter, values : filter(this.data, filterCriteria), color: this.AppConfig.colors[parameter]});
-        })
-        this.chartData = chartData;
+        })*/
+        //this.chartData = this.data;
         this.loading = false;
     }
 

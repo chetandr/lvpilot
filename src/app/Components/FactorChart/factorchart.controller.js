@@ -20,7 +20,7 @@ export default class FactorChartCtrl {
         const chartData = this.chartData;
         const indexedChartData = [];
         const chartDataCount = chartData.length;
-
+        this.data = this.chartData;
         for (let k = 0; k < chartDataCount; k++) {
             indexedChartData[chartData[k].x] = chartData[k];
         }
@@ -30,18 +30,18 @@ export default class FactorChartCtrl {
         const scatterChartOptions = {
             chart: {
                 xAxis: {
-                    axisLabel: this.chartOptions.xAxisLabel,
+                   axisLabel: 'Speed Deviation Percent',
                 },
                 yAxis: {
-                    axisLabel: this.chartOptions.yAxisLabel,
-                    tickFormat: d => d == this.chartOptions.thresholdValues.max ? 'Max' : (d == this.chartOptions.thresholdValues.min ? 'Min' : d)
+                    axisLabel: this.factor,
+                    //tickFormat: d => d == this.chartOptions.thresholdValues.max ? 'Max' : (d == this.chartOptions.thresholdValues.min ? 'Min' : d)
                 },
                 showLegend: true,
             }
         };
         this.options = merge({}, this.defaultScatterOptions, scatterChartOptions);
-        this.$setGroupBy();
-        this.$setChartData();
+        //this.$setGroupBy();
+        //this.$setChartData();
         this.groupFactor = this.groupBy;
         this.casterFilter = this.castor;
         this.defaultMax = this.max;
@@ -104,12 +104,10 @@ export default class FactorChartCtrl {
     }
 
     $setChartData() {
-        const chartData = [];
+ /*       const chartData = [];
         let filterCriteria = {};
-        forEach(this.groupParameters, parameter => {
-
             const filterFn = (data) => {
-                let status = data[this.groupBy] == parameter;
+                let status = true;
 
                 if (this.caster) {
                    status =  status && data.caster == parseInt(this.caster);
@@ -140,7 +138,6 @@ export default class FactorChartCtrl {
                     color: this.colors[parameter]
                 });
             }
-        });
         const arrMax = [];
         const len = this.chartData.length;
         if(this.max) {
@@ -165,8 +162,8 @@ export default class FactorChartCtrl {
                 color: "#000000"
             });
         }
-        this.data = chartData;
-        this.options.chart.yAxis.tickFormat = d => d == this.max ? 'Max' : (d == this.min ? 'Min' : d);
+       // this.data = chartData;
+        this.options.chart.yAxis.tickFormat = d => d == this.max ? 'Max' : (d == this.min ? 'Min' : d);*/
     }
 
     $doCheck() {
@@ -182,8 +179,8 @@ export default class FactorChartCtrl {
             this.dateFromFilter !== this.dateFrom ||
             this.dateToFilter !== this.dateTo
         ) {
-            this.$setGroupBy();
-            this.$setChartData();
+            //this.$setGroupBy();
+            //this.$setChartData();
             this.groupFactor = this.groupBy;
             this.casterFilter = this.caster
             this.ovenFilter = this.oven;

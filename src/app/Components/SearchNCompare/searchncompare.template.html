@@ -2,7 +2,9 @@
     <div class="panel panel-info">
         <div class="panel-heading">Mill Speed Deviation</div>
         <div class="panel-body">
-            <div class="pull-right">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-right">
 
                     <span style="margin-right:40px" class="form-group">
                         <label>Plant:</label>
@@ -40,17 +42,24 @@
                     </span>
 
             </div>
-            <div class="clearfix">
-            <div class="form-group">
-                <label>Range Size: </label>
-                <select ng-model="$ctrl.rangeSize">
-                    <option value="range_5">5</option>
-                    <option value="range_10">10</option>
-                </select>
+                </div>
             </div>
-            <mill-speed-trend range-size="$ctrl.rangeSize" clusters="$ctrl.Clusters.list" trends="$ctrl.trends"
-                              ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill"
-                              gauge="$ctrl.targetGauge"></mill-speed-trend>
+            <div class="clearfix"/>
+            <div class="row" style="margin-top:20px">
+                <div class="col-md-11">
+                    <div class="form-group pull-left">
+                        <label>Range Size: </label>
+                        <select ng-model="$ctrl.rangeSize">
+                            <option value="range_5">5</option>
+                            <option value="range_10">10</option>
+                        </select>
+                    </div>
+                    <a class="btn-sm btn-warning pull-right" ui-sref="insights" style="cursor: pointer">Details <span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <mill-speed-trend range-size="$ctrl.rangeSize" clusters="$ctrl.Clusters.list" trends="$ctrl.trends"
+                                      ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill"
+                                      gauge="$ctrl.targetGauge"></mill-speed-trend>
+                </div>
+            </div>
         </div>
     </div>
 </div>
