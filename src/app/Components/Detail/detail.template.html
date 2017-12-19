@@ -1,58 +1,83 @@
 <div class="panel panel-info">
     <div class="panel-heading">
-        <strong>Identified Patterns</strong> For {{$ctrl.coilType}} Coils
-
+        <strong>Identified Patterns</strong>
     </div>
-    <div class="pull-right" style="margin-right: 15px">
+    <div class="panel-body">
+        <ul class="nav nav-tabs">
+            <li><a ng-click="$ctrl.coilTypeGrp = 'accepted'; $ctrl.coilType = 'Accepted'"
+                   ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'accepted'},{'btn-default' : $ctrl.coilTypeGrp != 'accepted'}]">
+                Accepted vs Rejected
+            </a></li>
+            <li>
+                <a ng-click="$ctrl.coilTypeGrp = 'goodnall'; $ctrl.coilType = 'Good'"
+                   ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'goodnall'},{'btn-default' : $ctrl.coilTypeGrp !== 'goodnall'}]">
+                    Good v/s Non Standard v/s Web Breaks
+                </a>
+            </li>
+            <li>
+                <a ng-click="$ctrl.coilTypeGrp = 'good' ; $ctrl.coilType = 'Good'"
+                   ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'good'},{'btn-default' : $ctrl.coilTypeGrp !== 'good'}]">
+                    Good v/s Not Good
+                </a>
+            </li>
+            <li>
+                <a ng-click="$ctrl.coilTypeGrp = 'webbreaks'; $ctrl.coilType = 'Web Breaks'"
+                   ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'webbreaks'},{'btn-default' : $ctrl.coilTypeGrp !== 'webbreaks'}]">
+                    Web Breaks v/s Non Web Breaks
+                </a>
+            </li>
+        </ul>
+        <div class="pull-right" style="margin-right: 15px">
         <span class="form-group" style="padding-right:20px">
-            <label>Parameter Base:</label>
-            <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'" ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span  style="margin-right:30px">Hot Springs</span>
-            <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'" ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span> Louisville</span>
+            <label>Coil Type: </label>
+            <select ng-model="$ctrl.coilType">
+                <option ng-repeat="coil in $ctrl.coilTypes[$ctrl.coilTypeGrp]"
+                        value="{{coil.key}}">{{coil.value}}</option>
+            </select>
+        </span>
+        </span>
+            <span class="form-group" style="padding-right:20px">
+            <label>Parameter Base: </label>
+            <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'"
+                   ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"
+                   style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span
+                    style="margin-right:30px">Hot Springs</span>
+            <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'"
+                   ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"
+                   style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span> Louisville</span>
         </span>
 
-        <span  ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus"
-               class="btn btn-xs btn-success toggle {{$ctrl.weatherStatus ? 'active' : 'btn-info'}}">
+            <span ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus"
+                  class="btn btn-xs btn-success toggle {{$ctrl.weatherStatus ? 'active' : 'btn-info'}}">
             {{$ctrl.weatherStatus ? 'Weather': 'Non Weather'}}
             <span class="btn btn-xs btn-default">&nbsp;</span>
         </span>
-    </div>
-    <div class="clearfix"></div>
-    <div class="row ml-0">
+        </div>
+        <div class="clearfix"></div>
+        <div class="row ml-0">
             <div class="col-md-1 div-cell"><strong>#</strong></div>
-            <div class="col-md-7 div-cell" ><strong>Reasons</strong></div>
-            <div class="col-md-2 div-cell"><strong># Count</strong></div>
+            <div class="col-md-6 div-cell"><strong>Reasons</strong></div>
+            <div class="col-md-1 div-cell"><strong># Count</strong></div>
             <div class="col-md-2 div-cell"><strong># {{$ctrl.coilType}}</strong></div>
-    </div>
-    <div class="scroll-body scroll">
-        <div class="row ml-0" ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]">
+            <div class="col-md-1 div-cell"><strong>Percent</strong></div>
+        </div>
+        <div class="scroll-body scroll">
+            <div class="row ml-0"
+                 ng-repeat="(idx,item) in $ctrl.details[$ctrl.coilTypeGrp][$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]]"
+                 ng-if = "$ctrl.details[$ctrl.coilTypeGrp][$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]].length > 0">
                 <div class="col-md-1 div-cell">{{idx + 1}}</div>
-                <div class="col-md-7 div-cell">{{item.reason}}</div>
-                <div class="col-md-2 div-cell">{{item.count}}</div>
-                <div class="col-md-2 div-cell">{{item[$ctrl.coilType.toLowerCase()]}}</div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6" ng-if="false">
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                ML Factors & Contribution
+                <div class="col-md-6 div-cell">{{item.reason}}</div>
+                <div class="col-md-1 div-cell center">{{item.count}}</div>
+                <div class="col-md-2 div-cell center">{{item[$ctrl.coilType.toLowerCase()]}}</div>
+                <div class="col-md-1 div-cell center">{{$ctrl.round(((item[$ctrl.coilType.toLowerCase()] / $ctrl.total)
+                    * 100) * 100) / 100}}%
+                </div>
             </div>
-            <div class="panel-body">
-                <nvd3 options="$ctrl.pieChartOptions" data="$ctrl.details[$ctrl.coilType].mlfactors"></nvd3>
+            <div class="row ml-0" ng-if = "$ctrl.details[$ctrl.coilTypeGrp][$ctrl.coilType].reasons[$ctrl.paramBase][$ctrl.weathers[$ctrl.weatherStatus * 1]].length == 0">
+                <div class="col-md-12 text-center">
+                    <h4>No Data is Available</h4>
+                </div>
             </div>
         </div>
-
-    </div>
-    <div class="col-md-6">
-        <div class="panel panel-info" ng-if="$ctrl.coilType == 'Rejected'">
-            <div class="panel-heading">
-                Reasons - Coil Rejects
-            </div>
-            <div class="panel-body">
-                <nvd3 options="$ctrl.pieChartOptions" data="$ctrl.details[$ctrl.coilType].rejectReason"></nvd3>
-            </div>
-        </div>
-
     </div>
 </div>

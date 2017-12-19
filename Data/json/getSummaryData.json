@@ -1,698 +1,766 @@
 {
-	'summary1': [{
-		'y': 3280,
-		'percent': 96.0,
-		'key': u 'Accepted'
-	}, {
-		'y': 133,
-		'percent': 4.0,
-		'key': u 'Rejected'
-	}],
-	'summary2': [],
-	'details': {
-		'Non Standard': {
-			'reasons': {
-				'reasonTotal': {
-					'louisville': {
-						'weather': 0,
-						'non-weather': 0
-					},
-					'hotsprings': {
-						'weather': 0,
-						'non-weather': 0
-					}
-				},
-				'louisville': {
-					u 'weather': [],
-					u 'non-weather': []
-				},
-				'hotsprings': {
-					u 'weather': [],
-					u 'non-weather': []
-				}
-			}
-		},
-		'Web Breaks': {
-			'reasons': {
-				'reasonTotal': {
-					'louisville': {
-						'weather': 0,
-						'non-weather': 0
-					},
-					'hotsprings': {
-						'weather': 0,
-						'non-weather': 0
-					}
-				},
-				'louisville': {
-					u 'weather': [],
-					u 'non-weather': []
-				},
-				'hotsprings': {
-					u 'weather': [],
-					u 'non-weather': []
-				}
-			}
-		},
-		'Accepted': {
-			'reasons': {
-				'reasonTotal': {
-					'louisville': {
-						'weather': 0,
-						'non-weather': 2448
-					},
-					'hotsprings': {
-						'weather': 4820,
-						'non-weather': 4394
-					}
-				},
-				'louisville': {
-					u 'weather': [],
-					u 'non-weather': [{
-						u 'count': 41,
-						u 'decision': u 'Accept',
-						u 'rejected': 1,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt > 0.00898466911167  &  no_of_passes <= 3.18510127068 ==>Accepted',
-						u 'accepted_per': 97.5609756097561,
-						u 'accepted': 40,
-						u 'rejected_per': 2.4390243902439024
-					}, {
-						u 'count': 129,
-						u 'decision': u 'Accept',
-						u 'rejected': 2,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll > 237.984466553  &  oxygenlevel <= 1.72587442398 ==>Accepted',
-						u 'accepted_per': 98.44961240310077,
-						u 'accepted': 127,
-						u 'rejected_per': 1.550387596899225
-					}, {
-						u 'count': 16,
-						u 'decision': u 'Accept',
-						u 'rejected': 2,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt <= 0.00898466911167  &  avg_meandslbrtemp <= 142.043701172 ==>Accepted',
-						u 'accepted_per': 87.5,
-						u 'accepted': 14,
-						u 'rejected_per': 12.5
-					}, {
-						u 'count': 228,
-						u 'decision': u 'Accept',
-						u 'rejected': 2,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt <= 0.00898466911167  &  avg_meandslbrtemp > 142.043701172 ==>Accepted',
-						u 'accepted_per': 99.12280701754386,
-						u 'accepted': 226,
-						u 'rejected_per': 0.8771929824561403
-					}, {
-						u 'count': 134,
-						u 'decision': u 'Accept',
-						u 'rejected': 3,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes <= 5.98928689957  &  avg_shapepk2pkmean <= 14.6552295685 ==>Accepted',
-						u 'accepted_per': 97.76119402985076,
-						u 'accepted': 131,
-						u 'rejected_per': 2.2388059701492535
-					}, {
-						u 'count': 361,
-						u 'decision': u 'Accept',
-						u 'rejected': 3,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes > 5.98928689957  &  no_of_passes <= 9.58141708374 ==>Accepted',
-						u 'accepted_per': 99.16897506925207,
-						u 'accepted': 358,
-						u 'rejected_per': 0.8310249307479225
-					}, {
-						u 'count': 15,
-						u 'decision': u 'Accept',
-						u 'rejected': 3,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes > 5.98928689957  &  no_of_passes > 9.58141708374 ==>Accepted',
-						u 'accepted_per': 80.0,
-						u 'accepted': 12,
-						u 'rejected_per': 20.0
-					}, {
-						u 'count': 45,
-						u 'decision': u 'Accept',
-						u 'rejected': 3,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp <= 1240.26464844  &  tundish_os_temp <= 200.843338013  &  no_of_passes > 2.96935749054  &  rotor_act_speed <= 496.557983398 ==>Accepted',
-						u 'accepted_per': 93.33333333333333,
-						u 'accepted': 42,
-						u 'rejected_per': 6.666666666666667
-					}, {
-						u 'count': 122,
-						u 'decision': u 'Accept',
-						u 'rejected': 3,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind <= 730.412841797  &  z5wind <= 2.62499046326  &  avg_bendpcmean <= -23.7444877625 ==>Accepted',
-						u 'accepted_per': 97.54098360655738,
-						u 'accepted': 119,
-						u 'rejected_per': 2.459016393442623
-					}, {
-						u 'count': 20,
-						u 'decision': u 'Accept',
-						u 'rejected': 4,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind <= 730.412841797  &  z5wind <= 2.62499046326  &  avg_bendpcmean > -23.7444877625 ==>Accepted',
-						u 'accepted_per': 80.0,
-						u 'accepted': 16,
-						u 'rejected_per': 20.0
-					}, {
-						u 'count': 221,
-						u 'decision': u 'Accept',
-						u 'rejected': 10,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll <= 237.984466553  &  rotor_act_speed <= 100.124252319 ==>Accepted',
-						u 'accepted_per': 95.47511312217195,
-						u 'accepted': 211,
-						u 'rejected_per': 4.524886877828054
-					}, {
-						u 'count': 1116,
-						u 'decision': u 'Accept',
-						u 'rejected': 20,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind > 730.412841797  &  mill2_p3_weight <= 558.494018555  &  mill2_p1_avg_gauge <= 0.0485385879874 ==>Accepted',
-						u 'accepted_per': 98.2078853046595,
-						u 'accepted': 1096,
-						u 'rejected_per': 1.7921146953405016
-					}]
-				},
-				'hotsprings': {
-					u 'weather': [{
-						u 'count': 54,
-						u 'decision': u 'Accept',
-						u 'rejected': 2,
-						u 'reason': u 'crown<=3.00001692772 & wedge<=0.0012409343617 & crown<=2.00126791 & c8_casterstripspeed<=1254.31738281 & crown<=1.95311880112',
-						u 'accepted_per': 96.29629629629629,
-						u 'accepted': 52,
-						u 'rejected_per': 3.7037037037037033
-					}, {
-						u 'count': 12,
-						u 'decision': u 'Accept',
-						u 'rejected': 2,
-						u 'reason': u 'crown<=3.00001692772 & wedge<=0.0012409343617 & crown<=2.00126791 & c8_casterstripspeed>1254.31738281',
-						u 'accepted_per': 83.33333333333334,
-						u 'accepted': 10,
-						u 'rejected_per': 16.666666666666664
-					}, {
-						u 'count': 16,
-						u 'decision': u 'Accept',
-						u 'rejected': 2,
-						u 'reason': u 'crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours<=5.06458330154',
-						u 'accepted_per': 87.5,
-						u 'accepted': 14,
-						u 'rejected_per': 12.5
-					}, {
-						u 'count': 460,
-						u 'decision': u 'Accept',
-						u 'rejected': 5,
-						u 'reason': u 'crown<=3.00001692772 & wedge<=0.0012409343617 & crown<=2.00126791 & c8_casterstripspeed<=1254.31738281 & crown>1.95311880112',
-						u 'accepted_per': 98.91304347826086,
-						u 'accepted': 455,
-						u 'rejected_per': 1.0869565217391304
-					}, {
-						u 'count': 108,
-						u 'decision': u 'Accept',
-						u 'rejected': 5,
-						u 'reason': u 'crown<=3.00001692772 & wedge>0.0012409343617 & wedge>0.999702095985 & crown>2.50336742401 & crown>2.9986205101',
-						u 'accepted_per': 95.37037037037037,
-						u 'accepted': 103,
-						u 'rejected_per': 4.62962962962963
-					}, {
-						u 'count': 460,
-						u 'decision': u 'Accept',
-						u 'rejected': 7,
-						u 'reason': u 'crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours>5.06458330154',
-						u 'accepted_per': 98.47826086956522,
-						u 'accepted': 453,
-						u 'rejected_per': 1.5217391304347827
-					}, {
-						u 'count': 158,
-						u 'decision': u 'Accept',
-						u 'rejected': 8,
-						u 'reason': u 'crown<=3.00001692772 & wedge>0.0012409343617 & wedge>0.999702095985 & crown<=2.50336742401 & crown<=2.4972782135',
-						u 'accepted_per': 94.9367088607595,
-						u 'accepted': 150,
-						u 'rejected_per': 5.063291139240507
-					}, {
-						u 'count': 518,
-						u 'decision': u 'Accept',
-						u 'rejected': 21,
-						u 'reason': u 'crown<=3.00001692772 & wedge>0.0012409343617 & wedge>0.999702095985 & crown<=2.50336742401 & crown>2.4972782135',
-						u 'accepted_per': 95.94594594594594,
-						u 'accepted': 497,
-						u 'rejected_per': 4.054054054054054
-					}, {
-						u 'count': 352,
-						u 'decision': u 'Accept',
-						u 'rejected': 23,
-						u 'reason': u 'crown<=3.00001692772 & wedge<=0.0012409343617 & crown>2.00126791 & crown>2.99227619171 & duration_in_hours>7.55394601822',
-						u 'accepted_per': 93.4659090909091,
-						u 'accepted': 329,
-						u 'rejected_per': 6.534090909090909
-					}, {
-						u 'count': 438,
-						u 'decision': u 'Accept',
-						u 'rejected': 28,
-						u 'reason': u 'crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed<=188.147888184 & wedge<=1.00246572495',
-						u 'accepted_per': 93.60730593607306,
-						u 'accepted': 410,
-						u 'rejected_per': 6.392694063926941
-					}, {
-						u 'count': 1321,
-						u 'decision': u 'Accept',
-						u 'rejected': 41,
-						u 'reason': u 'crown<=3.00001692772 & wedge<=0.0012409343617 & crown>2.00126791 & crown>2.99227619171 & duration_in_hours<=7.55394601822',
-						u 'accepted_per': 96.89629068887207,
-						u 'accepted': 1280,
-						u 'rejected_per': 3.1037093111279335
-					}, {
-						u 'count': 923,
-						u 'decision': u 'Accept',
-						u 'rejected': 48,
-						u 'reason': u 'crown>3.00001692772 & crown>3.49988412857 & wedge<=0.99987578392 & crown>3.99988698959 & crown<=4.00136375427',
-						u 'accepted_per': 94.79956663055255,
-						u 'accepted': 875,
-						u 'rejected_per': 5.200433369447454
-					}],
-					u 'non-weather': [{
-						u 'count': 51,
-						u 'decision': u 'Accept',
-						u 'rejected': 1,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps>134.599365234 & d_gauge_deviation>0.0010183674749',
-						u 'accepted_per': 98.0392156862745,
-						u 'accepted': 50,
-						u 'rejected_per': 1.9607843137254901
-					}, {
-						u 'count': 108,
-						u 'decision': u 'Accept',
-						u 'rejected': 5,
-						u 'reason': u 'crown<=3.00031375885 & wedge>0.0012409343617 & wedge>0.999853849411 & crown>2.50269937515 & crown>2.99670338631',
-						u 'accepted_per': 95.37037037037037,
-						u 'accepted': 103,
-						u 'rejected_per': 4.62962962962963
-					}, {
-						u 'count': 296,
-						u 'decision': u 'Accept',
-						u 'rejected': 7,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps<=134.599365234 & c8_casterstripspeed<=2.55765986443',
-						u 'accepted_per': 97.63513513513513,
-						u 'accepted': 289,
-						u 'rejected_per': 2.364864864864865
-					}, {
-						u 'count': 459,
-						u 'decision': u 'Accept',
-						u 'rejected': 7,
-						u 'reason': u 'crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours>5.09061861038',
-						u 'accepted_per': 98.47494553376906,
-						u 'accepted': 452,
-						u 'rejected_per': 1.5250544662309369
-					}, {
-						u 'count': 640,
-						u 'decision': u 'Accept',
-						u 'rejected': 10,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours<=6.91361856461 & c8_casterstripspeed<=1252.83374023 & center<=395.150146484',
-						u 'accepted_per': 98.4375,
-						u 'accepted': 630,
-						u 'rejected_per': 1.5625
-					}, {
-						u 'count': 170,
-						u 'decision': u 'Accept',
-						u 'rejected': 10,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps<=134.599365234 & c8_casterstripspeed>2.55765986443',
-						u 'accepted_per': 94.11764705882352,
-						u 'accepted': 160,
-						u 'rejected_per': 5.88235294117647
-					}, {
-						u 'count': 518,
-						u 'decision': u 'Accept',
-						u 'rejected': 21,
-						u 'reason': u 'crown<=3.00031375885 & wedge>0.0012409343617 & wedge>0.999853849411 & crown<=2.50269937515 & crown>2.4957151413',
-						u 'accepted_per': 95.94594594594594,
-						u 'accepted': 497,
-						u 'rejected_per': 4.054054054054054
-					}, {
-						u 'count': 791,
-						u 'decision': u 'Accept',
-						u 'rejected': 25,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours<=6.91361856461 & c8_casterstripspeed<=1252.83374023 & center>395.150146484',
-						u 'accepted_per': 96.83944374209861,
-						u 'accepted': 766,
-						u 'rejected_per': 3.16055625790139
-					}, {
-						u 'count': 438,
-						u 'decision': u 'Accept',
-						u 'rejected': 28,
-						u 'reason': u 'crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed<=188.147888184 & wedge<=1.00144743919',
-						u 'accepted_per': 93.60730593607306,
-						u 'accepted': 410,
-						u 'rejected_per': 6.392694063926941
-					}, {
-						u 'count': 923,
-						u 'decision': u 'Accept',
-						u 'rejected': 48,
-						u 'reason': u 'crown>3.00031375885 & crown>3.49988412857 & wedge<=0.999870657921 & crown>3.99988698959 & crown<=4.00080060959',
-						u 'accepted_per': 94.79956663055255,
-						u 'accepted': 875,
-						u 'rejected_per': 5.200433369447454
-					}]
-				}
-			},
-			'mlfactors': {
-				'weather': [{
-					u 'y': 0.3303696,
-					u 'key': u 'wedge'
-				}, {
-					u 'y': 0.2290944,
-					u 'key': u 'crown'
-				}, {
-					u 'y': 0.21968015,
-					u 'key': u 'fe_perc'
-				}, {
-					u 'y': 0.06345407,
-					u 'key': u 'bi_perc'
-				}, {
-					u 'y': 0.028664943,
-					u 'key': u 'hg_perc'
-				}, {
-					u 'y': 0.023544755,
-					u 'key': u 'd_speed_deviation'
-				}, {
-					u 'y': 0.022377962,
-					u 'key': u 'water_equivalent'
-				}, {
-					u 'y': 0.021911323,
-					u 'key': u 'wind_speed'
-				}, {
-					u 'y': 0.021255136,
-					u 'key': u 'd3'
-				}, {
-					u 'y': 0.017326001,
-					u 'key': u 'si_perc'
-				}],
-				'non-weather': [{
-					u 'y': 0.38041976,
-					u 'key': u 'crown'
-				}, {
-					u 'y': 0.22461632,
-					u 'key': u 'wedge'
-				}, {
-					u 'y': 0.22335534,
-					u 'key': u 'si_perc'
-				}, {
-					u 'y': 0.09259097,
-					u 'key': u 'cd_perc'
-				}, {
-					u 'y': 0.021983797,
-					u 'key': u 'd3'
-				}, {
-					u 'y': 0.016898073,
-					u 'key': u 'mg_perc'
-				}, {
-					u 'y': 0.015620518,
-					u 'key': u 'b_perc'
-				}, {
-					u 'y': 0.014904737,
-					u 'key': u 'hg_perc'
-				}, {
-					u 'y': 0.005865434,
-					u 'key': u 'd_speed_deviation'
-				}, {
-					u 'y': 0.00314627,
-					u 'key': u 'v_perc'
-				}]
-			}
-		},
-		'Good': {
-			'reasons': {
-				'reasonTotal': {
-					'louisville': {
-						'weather': 0,
-						'non-weather': 0
-					},
-					'hotsprings': {
-						'weather': 0,
-						'non-weather': 0
-					}
-				},
-				'louisville': {
-					u 'weather': [],
-					u 'non-weather': []
-				},
-				'hotsprings': {
-					u 'weather': [],
-					u 'non-weather': []
-				}
-			}
-		},
-		'Rejected': {
-			'reasons': {
-				'reasonTotal': {
-					'louisville': {
-						'weather': 0,
-						'non-weather': 894
-					},
-					'hotsprings': {
-						'weather': 253,
-						'non-weather': 616
-					}
-				},
-				'louisville': {
-					u 'weather': [],
-					u 'non-weather': [{
-						u 'count': 4,
-						u 'decision': u 'Reject',
-						u 'rejected': 1,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed > 150.238632202  &  mill1_p1_entry_gauge <= 0.00778803694993  &  mill1_p1_avg_gauge > 0.00210299924947 ==>Reject',
-						u 'accepted_per': 75.0,
-						u 'accepted': 3,
-						u 'rejected_per': 25.0
-					}, {
-						u 'count': 2,
-						u 'decision': u 'Reject',
-						u 'rejected': 1,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp <= 1240.26464844  &  tundish_os_temp > 200.843338013  &  rotor_act_speed <= 200.699951172  &  avg_entrystressmean > 3777.14111328 ==>Reject',
-						u 'accepted_per': 50.0,
-						u 'accepted': 1,
-						u 'rejected_per': 50.0
-					}, {
-						u 'count': 2,
-						u 'decision': u 'Reject',
-						u 'rejected': 1,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind <= 730.412841797  &  z5wind > 2.62499046326  &  total_hours_duration_in_furnace <= 20.4432830811 ==>Reject',
-						u 'accepted_per': 50.0,
-						u 'accepted': 1,
-						u 'rejected_per': 50.0
-					}, {
-						u 'count': 11,
-						u 'decision': u 'Reject',
-						u 'rejected': 1,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind > 730.412841797  &  mill2_p3_weight > 558.494018555 ==>Reject',
-						u 'accepted_per': 90.9090909090909,
-						u 'accepted': 10,
-						u 'rejected_per': 9.090909090909092
-					}, {
-						u 'count': 18,
-						u 'decision': u 'Reject',
-						u 'rejected': 2,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll > 237.984466553  &  oxygenlevel > 1.72587442398 ==>Reject',
-						u 'accepted_per': 88.88888888888889,
-						u 'accepted': 16,
-						u 'rejected_per': 11.11111111111111
-					}, {
-						u 'count': 12,
-						u 'decision': u 'Reject',
-						u 'rejected': 2,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp <= 1240.26464844  &  tundish_os_temp <= 200.843338013  &  no_of_passes <= 2.96935749054 ==>Reject',
-						u 'accepted_per': 83.33333333333334,
-						u 'accepted': 10,
-						u 'rejected_per': 16.666666666666664
-					}, {
-						u 'count': 11,
-						u 'decision': u 'Reject',
-						u 'rejected': 2,
-						u 'reason': u 'rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind > 730.412841797  &  mill2_p3_weight <= 558.494018555  &  mill2_p1_avg_gauge > 0.0485385879874 ==>Reject',
-						u 'accepted_per': 81.81818181818183,
-						u 'accepted': 9,
-						u 'rejected_per': 18.181818181818183
-					}, {
-						u 'count': 8,
-						u 'decision': u 'Reject',
-						u 'rejected': 3,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt > 0.00898466911167  &  no_of_passes > 3.18510127068 ==>Reject',
-						u 'accepted_per': 62.5,
-						u 'accepted': 5,
-						u 'rejected_per': 37.5
-					}, {
-						u 'count': 52,
-						u 'decision': u 'Reject',
-						u 'rejected': 4,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed > 150.238632202  &  mill1_p1_entry_gauge <= 0.00778803694993  &  mill1_p1_avg_gauge <= 0.00210299924947 ==>Reject',
-						u 'accepted_per': 92.3076923076923,
-						u 'accepted': 48,
-						u 'rejected_per': 7.6923076923076925
-					}, {
-						u 'count': 98,
-						u 'decision': u 'Reject',
-						u 'rejected': 13,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes <= 5.98928689957  &  avg_shapepk2pkmean > 14.6552295685 ==>Reject',
-						u 'accepted_per': 86.73469387755102,
-						u 'accepted': 85,
-						u 'rejected_per': 13.26530612244898
-					}, {
-						u 'count': 676,
-						u 'decision': u 'Reject',
-						u 'rejected': 51,
-						u 'reason': u 'rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll <= 237.984466553  &  rotor_act_speed > 100.124252319 ==>Reject',
-						u 'accepted_per': 92.45562130177515,
-						u 'accepted': 625,
-						u 'rejected_per': 7.544378698224852
-					}]
-				},
-				'hotsprings': {
-					u 'weather': [{
-						u 'count': 47,
-						u 'decision': u 'Reject',
-						u 'rejected': 4,
-						u 'reason': u 'crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed<=188.147888184 & wedge>1.00246572495',
-						u 'accepted_per': 91.48936170212765,
-						u 'accepted': 43,
-						u 'rejected_per': 8.51063829787234
-					}, {
-						u 'count': 206,
-						u 'decision': u 'Reject',
-						u 'rejected': 14,
-						u 'reason': u 'crown>3.00001692772 & crown>3.49988412857 & wedge<=0.99987578392 & crown>3.99988698959 & crown>4.00136375427',
-						u 'accepted_per': 93.20388349514563,
-						u 'accepted': 192,
-						u 'rejected_per': 6.796116504854369
-					}],
-					u 'non-weather': [{
-						u 'count': 17,
-						u 'decision': u 'Reject',
-						u 'rejected': 2,
-						u 'reason': u 'crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours<=5.09061861038',
-						u 'accepted_per': 88.23529411764706,
-						u 'accepted': 15,
-						u 'rejected_per': 11.76470588235294
-					}, {
-						u 'count': 47,
-						u 'decision': u 'Reject',
-						u 'rejected': 4,
-						u 'reason': u 'crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed<=188.147888184 & wedge>1.00144743919',
-						u 'accepted_per': 91.48936170212765,
-						u 'accepted': 43,
-						u 'rejected_per': 8.51063829787234
-					}, {
-						u 'count': 52,
-						u 'decision': u 'Reject',
-						u 'rejected': 5,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours<=6.91361856461 & c8_casterstripspeed>1252.83374023 & c8_a622_rotor_act_speed<=506.531494141',
-						u 'accepted_per': 90.38461538461539,
-						u 'accepted': 47,
-						u 'rejected_per': 9.615384615384617
-					}, {
-						u 'count': 158,
-						u 'decision': u 'Reject',
-						u 'rejected': 8,
-						u 'reason': u 'crown<=3.00031375885 & wedge>0.0012409343617 & wedge>0.999853849411 & crown<=2.50269937515 & crown<=2.4957151413',
-						u 'accepted_per': 94.9367088607595,
-						u 'accepted': 150,
-						u 'rejected_per': 5.063291139240507
-					}, {
-						u 'count': 206,
-						u 'decision': u 'Reject',
-						u 'rejected': 14,
-						u 'reason': u 'crown>3.00031375885 & crown>3.49988412857 & wedge<=0.999870657921 & crown>3.99988698959 & crown>4.00080060959',
-						u 'accepted_per': 93.20388349514563,
-						u 'accepted': 192,
-						u 'rejected_per': 6.796116504854369
-					}, {
-						u 'count': 136,
-						u 'decision': u 'Reject',
-						u 'rejected': 15,
-						u 'reason': u 'crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps>134.599365234 & d_gauge_deviation<=0.0010183674749',
-						u 'accepted_per': 88.97058823529412,
-						u 'accepted': 121,
-						u 'rejected_per': 11.029411764705882
-					}]
-				}
-			},
-			'rejectReason': [{
-				'y': 39,
-				'key': u 'Inclusions - Dross'
-			}, {
-				'y': 1,
-				'key': u 'RR'
-			}, {
-				'y': 58,
-				'key': u 'Edge Cracks'
-			}, {
-				'y': 1,
-				'key': u 'Waterstain'
-			}, {
-				'y': 1,
-				'key': u 'Crown'
-			}, {
-				'y': 29,
-				'key': u 'Shape'
-			}, {
-				'y': 4,
-				'key': u 'Voids'
-			}],
-			'mlfactors': {
-				'weather': [{
-					u 'y': 0.3303696,
-					u 'key': u 'wedge'
-				}, {
-					u 'y': 0.2290944,
-					u 'key': u 'crown'
-				}, {
-					u 'y': 0.21968015,
-					u 'key': u 'fe_perc'
-				}, {
-					u 'y': 0.06345407,
-					u 'key': u 'bi_perc'
-				}, {
-					u 'y': 0.028664943,
-					u 'key': u 'hg_perc'
-				}, {
-					u 'y': 0.023544755,
-					u 'key': u 'd_speed_deviation'
-				}, {
-					u 'y': 0.022377962,
-					u 'key': u 'water_equivalent'
-				}, {
-					u 'y': 0.021911323,
-					u 'key': u 'wind_speed'
-				}, {
-					u 'y': 0.021255136,
-					u 'key': u 'd3'
-				}, {
-					u 'y': 0.017326001,
-					u 'key': u 'si_perc'
-				}],
-				'non-weather': [{
-					u 'y': 0.38041976,
-					u 'key': u 'crown'
-				}, {
-					u 'y': 0.22461632,
-					u 'key': u 'wedge'
-				}, {
-					u 'y': 0.22335534,
-					u 'key': u 'si_perc'
-				}, {
-					u 'y': 0.09259097,
-					u 'key': u 'cd_perc'
-				}, {
-					u 'y': 0.021983797,
-					u 'key': u 'd3'
-				}, {
-					u 'y': 0.016898073,
-					u 'key': u 'mg_perc'
-				}, {
-					u 'y': 0.015620518,
-					u 'key': u 'b_perc'
-				}, {
-					u 'y': 0.014904737,
-					u 'key': u 'hg_perc'
-				}, {
-					u 'y': 0.005865434,
-					u 'key': u 'd_speed_deviation'
-				}, {
-					u 'y': 0.00314627,
-					u 'key': u 'v_perc'
-				}]
-			}
-		}
-	}
+    "summary1": [{
+        "y": 3280,
+        "percent": 96,
+        "key": "Accepted"
+    }, {
+        "y": 133,
+        "percent": 4,
+        "key": "Rejected"
+    }],
+    "summary2": [{
+        "y": 3280,
+        "percent": 96,
+        "key": "Good"
+    }, {
+        "y": 98,
+        "percent": 2.8,
+        "key": "Web Breaks"
+    }, {
+        "y": 35,
+        "percent": 1,
+        "key": "Non Standard"
+    }],
+    "rejectReason": [{
+        "y": 39,
+        "key": "Inclusions - Dross"
+    }, {
+        "y": 1,
+        "key": "RR"
+    }, {
+        "y": 58,
+        "key": "Edge Cracks"
+    }, {
+        "y": 1,
+        "key": "Waterstain"
+    }, {
+        "y": 1,
+        "key": "Crown"
+    }, {
+        "y": 29,
+        "key": "Shape"
+    }, {
+        "y": 4,
+        "key": "Voids"
+    }],
+    "details": {
+        "accepted": {
+            "Accepted": {
+                "reasons": {
+                    "reasonTotal": {
+                        "louisville": {
+                            "weather": 0,
+                            "non-weather": 2448
+                        },
+                        "hotsprings": {
+                            "weather": 4820,
+                            "non-weather": 4394
+                        }
+                    },
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": [{
+                            "count": 41,
+                            "decision": "Accept",
+                            "rejected": 1,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt > 0.00898466911167  &  no_of_passes <= 3.18510127068 ==>Accepted",
+                            "accepted_per": 97.5609756097561,
+                            "accepted": 40,
+                            "rejected_per": 2.4390243902439024
+                        }, {
+                            "count": 129,
+                            "decision": "Accept",
+                            "rejected": 2,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll > 237.984466553  &  oxygenlevel <= 1.72587442398 ==>Accepted",
+                            "accepted_per": 98.44961240310077,
+                            "accepted": 127,
+                            "rejected_per": 1.550387596899225
+                        }, {
+                            "count": 16,
+                            "decision": "Accept",
+                            "rejected": 2,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt <= 0.00898466911167  &  avg_meandslbrtemp <= 142.043701172 ==>Accepted",
+                            "accepted_per": 87.5,
+                            "accepted": 14,
+                            "rejected_per": 12.5
+                        }, {
+                            "count": 228,
+                            "decision": "Accept",
+                            "rejected": 2,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt <= 0.00898466911167  &  avg_meandslbrtemp > 142.043701172 ==>Accepted",
+                            "accepted_per": 99.12280701754386,
+                            "accepted": 226,
+                            "rejected_per": 0.8771929824561403
+                        }, {
+                            "count": 134,
+                            "decision": "Accept",
+                            "rejected": 3,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes <= 5.98928689957  &  avg_shapepk2pkmean <= 14.6552295685 ==>Accepted",
+                            "accepted_per": 97.76119402985076,
+                            "accepted": 131,
+                            "rejected_per": 2.2388059701492535
+                        }, {
+                            "count": 361,
+                            "decision": "Accept",
+                            "rejected": 3,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes > 5.98928689957  &  no_of_passes <= 9.58141708374 ==>Accepted",
+                            "accepted_per": 99.16897506925207,
+                            "accepted": 358,
+                            "rejected_per": 0.8310249307479225
+                        }, {
+                            "count": 15,
+                            "decision": "Accept",
+                            "rejected": 3,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes > 5.98928689957  &  no_of_passes > 9.58141708374 ==>Accepted",
+                            "accepted_per": 80,
+                            "accepted": 12,
+                            "rejected_per": 20
+                        }, {
+                            "count": 45,
+                            "decision": "Accept",
+                            "rejected": 3,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp <= 1240.26464844  &  tundish_os_temp <= 200.843338013  &  no_of_passes > 2.96935749054  &  rotor_act_speed <= 496.557983398 ==>Accepted",
+                            "accepted_per": 93.33333333333333,
+                            "accepted": 42,
+                            "rejected_per": 6.666666666666667
+                        }, {
+                            "count": 122,
+                            "decision": "Accept",
+                            "rejected": 3,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind <= 730.412841797  &  z5wind <= 2.62499046326  &  avg_bendpcmean <= -23.7444877625 ==>Accepted",
+                            "accepted_per": 97.54098360655738,
+                            "accepted": 119,
+                            "rejected_per": 2.459016393442623
+                        }, {
+                            "count": 20,
+                            "decision": "Accept",
+                            "rejected": 4,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind <= 730.412841797  &  z5wind <= 2.62499046326  &  avg_bendpcmean > -23.7444877625 ==>Accepted",
+                            "accepted_per": 80,
+                            "accepted": 16,
+                            "rejected_per": 20
+                        }, {
+                            "count": 221,
+                            "decision": "Accept",
+                            "rejected": 10,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll <= 237.984466553  &  rotor_act_speed <= 100.124252319 ==>Accepted",
+                            "accepted_per": 95.47511312217195,
+                            "accepted": 211,
+                            "rejected_per": 4.524886877828054
+                        }, {
+                            "count": 1116,
+                            "decision": "Accept",
+                            "rejected": 20,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind > 730.412841797  &  mill2_p3_weight <= 558.494018555  &  mill2_p1_avg_gauge <= 0.0485385879874 ==>Accepted",
+                            "accepted_per": 98.2078853046595,
+                            "accepted": 1096,
+                            "rejected_per": 1.7921146953405016
+                        }]
+                    },
+                    "hotsprings": {
+                        "weather": [{
+                            "count": 54,
+                            "decision": "Accept",
+                            "rejected": 2,
+                            "reason": "crown<=3.00001692772 & wedge<=0.0012409343617 & crown<=2.00126791 & c8_casterstripspeed<=1254.31738281 & crown<=1.95311880112",
+                            "accepted_per": 96.29629629629629,
+                            "accepted": 52,
+                            "rejected_per": 3.7037037037037033
+                        }, {
+                            "count": 12,
+                            "decision": "Accept",
+                            "rejected": 2,
+                            "reason": "crown<=3.00001692772 & wedge<=0.0012409343617 & crown<=2.00126791 & c8_casterstripspeed>1254.31738281",
+                            "accepted_per": 83.33333333333334,
+                            "accepted": 10,
+                            "rejected_per": 16.666666666666664
+                        }, {
+                            "count": 16,
+                            "decision": "Accept",
+                            "rejected": 2,
+                            "reason": "crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours<=5.06458330154",
+                            "accepted_per": 87.5,
+                            "accepted": 14,
+                            "rejected_per": 12.5
+                        }, {
+                            "count": 460,
+                            "decision": "Accept",
+                            "rejected": 5,
+                            "reason": "crown<=3.00001692772 & wedge<=0.0012409343617 & crown<=2.00126791 & c8_casterstripspeed<=1254.31738281 & crown>1.95311880112",
+                            "accepted_per": 98.91304347826086,
+                            "accepted": 455,
+                            "rejected_per": 1.0869565217391304
+                        }, {
+                            "count": 108,
+                            "decision": "Accept",
+                            "rejected": 5,
+                            "reason": "crown<=3.00001692772 & wedge>0.0012409343617 & wedge>0.999702095985 & crown>2.50336742401 & crown>2.9986205101",
+                            "accepted_per": 95.37037037037037,
+                            "accepted": 103,
+                            "rejected_per": 4.62962962962963
+                        }, {
+                            "count": 460,
+                            "decision": "Accept",
+                            "rejected": 7,
+                            "reason": "crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours>5.06458330154",
+                            "accepted_per": 98.47826086956522,
+                            "accepted": 453,
+                            "rejected_per": 1.5217391304347827
+                        }, {
+                            "count": 158,
+                            "decision": "Accept",
+                            "rejected": 8,
+                            "reason": "crown<=3.00001692772 & wedge>0.0012409343617 & wedge>0.999702095985 & crown<=2.50336742401 & crown<=2.4972782135",
+                            "accepted_per": 94.9367088607595,
+                            "accepted": 150,
+                            "rejected_per": 5.063291139240507
+                        }, {
+                            "count": 518,
+                            "decision": "Accept",
+                            "rejected": 21,
+                            "reason": "crown<=3.00001692772 & wedge>0.0012409343617 & wedge>0.999702095985 & crown<=2.50336742401 & crown>2.4972782135",
+                            "accepted_per": 95.94594594594594,
+                            "accepted": 497,
+                            "rejected_per": 4.054054054054054
+                        }, {
+                            "count": 352,
+                            "decision": "Accept",
+                            "rejected": 23,
+                            "reason": "crown<=3.00001692772 & wedge<=0.0012409343617 & crown>2.00126791 & crown>2.99227619171 & duration_in_hours>7.55394601822",
+                            "accepted_per": 93.4659090909091,
+                            "accepted": 329,
+                            "rejected_per": 6.534090909090909
+                        }, {
+                            "count": 438,
+                            "decision": "Accept",
+                            "rejected": 28,
+                            "reason": "crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed<=188.147888184 & wedge<=1.00246572495",
+                            "accepted_per": 93.60730593607306,
+                            "accepted": 410,
+                            "rejected_per": 6.392694063926941
+                        }, {
+                            "count": 1321,
+                            "decision": "Accept",
+                            "rejected": 41,
+                            "reason": "crown<=3.00001692772 & wedge<=0.0012409343617 & crown>2.00126791 & crown>2.99227619171 & duration_in_hours<=7.55394601822",
+                            "accepted_per": 96.89629068887207,
+                            "accepted": 1280,
+                            "rejected_per": 3.1037093111279335
+                        }, {
+                            "count": 923,
+                            "decision": "Accept",
+                            "rejected": 48,
+                            "reason": "crown>3.00001692772 & crown>3.49988412857 & wedge<=0.99987578392 & crown>3.99988698959 & crown<=4.00136375427",
+                            "accepted_per": 94.79956663055255,
+                            "accepted": 875,
+                            "rejected_per": 5.200433369447454
+                        }],
+                        "non-weather": [{
+                            "count": 51,
+                            "decision": "Accept",
+                            "rejected": 1,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps>134.599365234 & d_gauge_deviation>0.0010183674749",
+                            "accepted_per": 98.0392156862745,
+                            "accepted": 50,
+                            "rejected_per": 1.9607843137254901
+                        }, {
+                            "count": 108,
+                            "decision": "Accept",
+                            "rejected": 5,
+                            "reason": "crown<=3.00031375885 & wedge>0.0012409343617 & wedge>0.999853849411 & crown>2.50269937515 & crown>2.99670338631",
+                            "accepted_per": 95.37037037037037,
+                            "accepted": 103,
+                            "rejected_per": 4.62962962962963
+                        }, {
+                            "count": 296,
+                            "decision": "Accept",
+                            "rejected": 7,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps<=134.599365234 & c8_casterstripspeed<=2.55765986443",
+                            "accepted_per": 97.63513513513513,
+                            "accepted": 289,
+                            "rejected_per": 2.364864864864865
+                        }, {
+                            "count": 459,
+                            "decision": "Accept",
+                            "rejected": 7,
+                            "reason": "crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours>5.09061861038",
+                            "accepted_per": 98.47494553376906,
+                            "accepted": 452,
+                            "rejected_per": 1.5250544662309369
+                        }, {
+                            "count": 640,
+                            "decision": "Accept",
+                            "rejected": 10,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours<=6.91361856461 & c8_casterstripspeed<=1252.83374023 & center<=395.150146484",
+                            "accepted_per": 98.4375,
+                            "accepted": 630,
+                            "rejected_per": 1.5625
+                        }, {
+                            "count": 170,
+                            "decision": "Accept",
+                            "rejected": 10,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps<=134.599365234 & c8_casterstripspeed>2.55765986443",
+                            "accepted_per": 94.11764705882352,
+                            "accepted": 160,
+                            "rejected_per": 5.88235294117647
+                        }, {
+                            "count": 518,
+                            "decision": "Accept",
+                            "rejected": 21,
+                            "reason": "crown<=3.00031375885 & wedge>0.0012409343617 & wedge>0.999853849411 & crown<=2.50269937515 & crown>2.4957151413",
+                            "accepted_per": 95.94594594594594,
+                            "accepted": 497,
+                            "rejected_per": 4.054054054054054
+                        }, {
+                            "count": 791,
+                            "decision": "Accept",
+                            "rejected": 25,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours<=6.91361856461 & c8_casterstripspeed<=1252.83374023 & center>395.150146484",
+                            "accepted_per": 96.83944374209861,
+                            "accepted": 766,
+                            "rejected_per": 3.16055625790139
+                        }, {
+                            "count": 438,
+                            "decision": "Accept",
+                            "rejected": 28,
+                            "reason": "crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed<=188.147888184 & wedge<=1.00144743919",
+                            "accepted_per": 93.60730593607306,
+                            "accepted": 410,
+                            "rejected_per": 6.392694063926941
+                        }, {
+                            "count": 923,
+                            "decision": "Accept",
+                            "rejected": 48,
+                            "reason": "crown>3.00031375885 & crown>3.49988412857 & wedge<=0.999870657921 & crown>3.99988698959 & crown<=4.00080060959",
+                            "accepted_per": 94.79956663055255,
+                            "accepted": 875,
+                            "rejected_per": 5.200433369447454
+                        }]
+                    }
+                },
+                "mlfactors": {
+                    "weather": [{
+                        "y": 0.3303696,
+                        "key": "wedge"
+                    }, {
+                        "y": 0.2290944,
+                        "key": "crown"
+                    }, {
+                        "y": 0.21968015,
+                        "key": "fe_perc"
+                    }, {
+                        "y": 0.06345407,
+                        "key": "bi_perc"
+                    }, {
+                        "y": 0.028664943,
+                        "key": "hg_perc"
+                    }, {
+                        "y": 0.023544755,
+                        "key": "d_speed_deviation"
+                    }, {
+                        "y": 0.022377962,
+                        "key": "water_equivalent"
+                    }, {
+                        "y": 0.021911323,
+                        "key": "wind_speed"
+                    }, {
+                        "y": 0.021255136,
+                        "key": "d3"
+                    }, {
+                        "y": 0.017326001,
+                        "key": "si_perc"
+                    }],
+                    "non-weather": [{
+                        "y": 0.38041976,
+                        "key": "crown"
+                    }, {
+                        "y": 0.22461632,
+                        "key": "wedge"
+                    }, {
+                        "y": 0.22335534,
+                        "key": "si_perc"
+                    }, {
+                        "y": 0.09259097,
+                        "key": "cd_perc"
+                    }, {
+                        "y": 0.021983797,
+                        "key": "d3"
+                    }, {
+                        "y": 0.016898073,
+                        "key": "mg_perc"
+                    }, {
+                        "y": 0.015620518,
+                        "key": "b_perc"
+                    }, {
+                        "y": 0.014904737,
+                        "key": "hg_perc"
+                    }, {
+                        "y": 0.005865434,
+                        "key": "d_speed_deviation"
+                    }, {
+                        "y": 0.00314627,
+                        "key": "v_perc"
+                    }]
+                }
+            },
+            "Rejected": {
+                "reasons": {
+                    "reasonTotal": {
+                        "louisville": {
+                            "weather": 0,
+                            "non-weather": 894
+                        },
+                        "hotsprings": {
+                            "weather": 253,
+                            "non-weather": 616
+                        }
+                    },
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": [{
+                            "count": 4,
+                            "decision": "Reject",
+                            "rejected": 1,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed > 150.238632202  &  mill1_p1_entry_gauge <= 0.00778803694993  &  mill1_p1_avg_gauge > 0.00210299924947 ==>Reject",
+                            "accepted_per": 75,
+                            "accepted": 3,
+                            "rejected_per": 25
+                        }, {
+                            "count": 2,
+                            "decision": "Reject",
+                            "rejected": 1,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp <= 1240.26464844  &  tundish_os_temp > 200.843338013  &  rotor_act_speed <= 200.699951172  &  avg_entrystressmean > 3777.14111328 ==>Reject",
+                            "accepted_per": 50,
+                            "accepted": 1,
+                            "rejected_per": 50
+                        }, {
+                            "count": 2,
+                            "decision": "Reject",
+                            "rejected": 1,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind <= 730.412841797  &  z5wind > 2.62499046326  &  total_hours_duration_in_furnace <= 20.4432830811 ==>Reject",
+                            "accepted_per": 50,
+                            "accepted": 1,
+                            "rejected_per": 50
+                        }, {
+                            "count": 11,
+                            "decision": "Reject",
+                            "rejected": 1,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind > 730.412841797  &  mill2_p3_weight > 558.494018555 ==>Reject",
+                            "accepted_per": 90.9090909090909,
+                            "accepted": 10,
+                            "rejected_per": 9.090909090909092
+                        }, {
+                            "count": 18,
+                            "decision": "Reject",
+                            "rejected": 2,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll > 237.984466553  &  oxygenlevel > 1.72587442398 ==>Reject",
+                            "accepted_per": 88.88888888888889,
+                            "accepted": 16,
+                            "rejected_per": 11.11111111111111
+                        }, {
+                            "count": 12,
+                            "decision": "Reject",
+                            "rejected": 2,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp <= 1240.26464844  &  tundish_os_temp <= 200.843338013  &  no_of_passes <= 2.96935749054 ==>Reject",
+                            "accepted_per": 83.33333333333334,
+                            "accepted": 10,
+                            "rejected_per": 16.666666666666664
+                        }, {
+                            "count": 11,
+                            "decision": "Reject",
+                            "rejected": 2,
+                            "reason": "rotor_act_speed > 200.02192688  &  tundish_os_temp > 1240.26464844  &  z7wind > 730.412841797  &  mill2_p3_weight <= 558.494018555  &  mill2_p1_avg_gauge > 0.0485385879874 ==>Reject",
+                            "accepted_per": 81.81818181818183,
+                            "accepted": 9,
+                            "rejected_per": 18.181818181818183
+                        }, {
+                            "count": 8,
+                            "decision": "Reject",
+                            "rejected": 3,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill > 3.99596309662  &  avg_shapetilttgt > 0.00898466911167  &  no_of_passes > 3.18510127068 ==>Reject",
+                            "accepted_per": 62.5,
+                            "accepted": 5,
+                            "rejected_per": 37.5
+                        }, {
+                            "count": 52,
+                            "decision": "Reject",
+                            "rejected": 4,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed > 150.238632202  &  mill1_p1_entry_gauge <= 0.00778803694993  &  mill1_p1_avg_gauge <= 0.00210299924947 ==>Reject",
+                            "accepted_per": 92.3076923076923,
+                            "accepted": 48,
+                            "rejected_per": 7.6923076923076925
+                        }, {
+                            "count": 98,
+                            "decision": "Reject",
+                            "rejected": 13,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f > 109.995475769  &  rotor_act_speed <= 150.238632202  &  no_of_passes <= 5.98928689957  &  avg_shapepk2pkmean > 14.6552295685 ==>Reject",
+                            "accepted_per": 86.73469387755102,
+                            "accepted": 85,
+                            "rejected_per": 13.26530612244898
+                        }, {
+                            "count": 676,
+                            "decision": "Reject",
+                            "rejected": 51,
+                            "reason": "rotor_act_speed <= 200.02192688  &  mill1_p1_lub_temp_f <= 109.995475769  &  mill4_p1_mill <= 3.99596309662  &  mill2_p1_top_work_roll <= 237.984466553  &  rotor_act_speed > 100.124252319 ==>Reject",
+                            "accepted_per": 92.45562130177515,
+                            "accepted": 625,
+                            "rejected_per": 7.544378698224852
+                        }]
+                    },
+                    "hotsprings": {
+                        "weather": [{
+                            "count": 47,
+                            "decision": "Reject",
+                            "rejected": 4,
+                            "reason": "crown>3.00001692772 & crown>3.49988412857 & wedge>0.99987578392 & c8_a622_rotor_act_speed<=188.147888184 & wedge>1.00246572495",
+                            "accepted_per": 91.48936170212765,
+                            "accepted": 43,
+                            "rejected_per": 8.51063829787234
+                        }, {
+                            "count": 206,
+                            "decision": "Reject",
+                            "rejected": 14,
+                            "reason": "crown>3.00001692772 & crown>3.49988412857 & wedge<=0.99987578392 & crown>3.99988698959 & crown>4.00136375427",
+                            "accepted_per": 93.20388349514563,
+                            "accepted": 192,
+                            "rejected_per": 6.796116504854369
+                        }],
+                        "non-weather": [{
+                            "count": 17,
+                            "decision": "Reject",
+                            "rejected": 2,
+                            "reason": "crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed>188.147888184 & duration_in_hours<=5.09061861038",
+                            "accepted_per": 88.23529411764706,
+                            "accepted": 15,
+                            "rejected_per": 11.76470588235294
+                        }, {
+                            "count": 47,
+                            "decision": "Reject",
+                            "rejected": 4,
+                            "reason": "crown>3.00031375885 & crown>3.49988412857 & wedge>0.999870657921 & c8_a622_rotor_act_speed<=188.147888184 & wedge>1.00144743919",
+                            "accepted_per": 91.48936170212765,
+                            "accepted": 43,
+                            "rejected_per": 8.51063829787234
+                        }, {
+                            "count": 52,
+                            "decision": "Reject",
+                            "rejected": 5,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours<=6.91361856461 & c8_casterstripspeed>1252.83374023 & c8_a622_rotor_act_speed<=506.531494141",
+                            "accepted_per": 90.38461538461539,
+                            "accepted": 47,
+                            "rejected_per": 9.615384615384617
+                        }, {
+                            "count": 158,
+                            "decision": "Reject",
+                            "rejected": 8,
+                            "reason": "crown<=3.00031375885 & wedge>0.0012409343617 & wedge>0.999853849411 & crown<=2.50269937515 & crown<=2.4957151413",
+                            "accepted_per": 94.9367088607595,
+                            "accepted": 150,
+                            "rejected_per": 5.063291139240507
+                        }, {
+                            "count": 206,
+                            "decision": "Reject",
+                            "rejected": 14,
+                            "reason": "crown>3.00031375885 & crown>3.49988412857 & wedge<=0.999870657921 & crown>3.99988698959 & crown>4.00080060959",
+                            "accepted_per": 93.20388349514563,
+                            "accepted": 192,
+                            "rejected_per": 6.796116504854369
+                        }, {
+                            "count": 136,
+                            "decision": "Reject",
+                            "rejected": 15,
+                            "reason": "crown<=3.00031375885 & wedge<=0.0012409343617 & duration_in_hours>6.91361856461 & c8_caster_amps>134.599365234 & d_gauge_deviation<=0.0010183674749",
+                            "accepted_per": 88.97058823529412,
+                            "accepted": 121,
+                            "rejected_per": 11.029411764705882
+                        }]
+                    }
+                },
+                "mlfactors": {
+                    "weather": [{
+                        "y": 0.3303696,
+                        "key": "wedge"
+                    }, {
+                        "y": 0.2290944,
+                        "key": "crown"
+                    }, {
+                        "y": 0.21968015,
+                        "key": "fe_perc"
+                    }, {
+                        "y": 0.06345407,
+                        "key": "bi_perc"
+                    }, {
+                        "y": 0.028664943,
+                        "key": "hg_perc"
+                    }, {
+                        "y": 0.023544755,
+                        "key": "d_speed_deviation"
+                    }, {
+                        "y": 0.022377962,
+                        "key": "water_equivalent"
+                    }, {
+                        "y": 0.021911323,
+                        "key": "wind_speed"
+                    }, {
+                        "y": 0.021255136,
+                        "key": "d3"
+                    }, {
+                        "y": 0.017326001,
+                        "key": "si_perc"
+                    }],
+                    "non-weather": [{
+                        "y": 0.38041976,
+                        "key": "crown"
+                    }, {
+                        "y": 0.22461632,
+                        "key": "wedge"
+                    }, {
+                        "y": 0.22335534,
+                        "key": "si_perc"
+                    }, {
+                        "y": 0.09259097,
+                        "key": "cd_perc"
+                    }, {
+                        "y": 0.021983797,
+                        "key": "d3"
+                    }, {
+                        "y": 0.016898073,
+                        "key": "mg_perc"
+                    }, {
+                        "y": 0.015620518,
+                        "key": "b_perc"
+                    }, {
+                        "y": 0.014904737,
+                        "key": "hg_perc"
+                    }, {
+                        "y": 0.005865434,
+                        "key": "d_speed_deviation"
+                    }, {
+                        "y": 0.00314627,
+                        "key": "v_perc"
+                    }]
+                }
+            }
+        },
+        "goodnall": {
+            "Non Standard": {
+                "reasons": {
+                    "reasonTotal": {
+                        "louisville": {
+                            "weather": 0,
+                            "non-weather": 0
+                        },
+                        "hotsprings": {
+                            "weather": 0,
+                            "non-weather": 0
+                        }
+                    },
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            },
+            "Web Breaks": {
+                "reasons": {
+                    "reasonTotal": {
+                        "louisville": {
+                            "weather": 0,
+                            "non-weather": 0
+                        },
+                        "hotsprings": {
+                            "weather": 0,
+                            "non-weather": 0
+                        }
+                    },
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            },
+            "Good": {
+                "reasons": {
+                    "reasonTotal": {
+                        "louisville": {
+                            "weather": 0,
+                            "non-weather": 0
+                        },
+                        "hotsprings": {
+                            "weather": 0,
+                            "non-weather": 0
+                        }
+                    },
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            }
+        },
+        "good": {
+            "Good": {
+                "reasons": {
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            },
+            "Not Good": {
+                "reasons": {
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            }
+        },
+        "webbreaks": {
+            "Web Breaks": {
+                "reasons": {
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            },
+            "Not Web Breaks": {
+                "reasons": {
+                    "louisville": {
+                        "weather": [],
+                        "non-weather": []
+                    },
+                    "hotsprings": {
+                        "weather": [],
+                        "non-weather": []
+                    }
+                }
+            }
+        }
+    }
 }

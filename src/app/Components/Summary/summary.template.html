@@ -8,7 +8,20 @@
                 <nvd3 options="$ctrl.chartOptions" data="$ctrl.summaryData.summary1"></nvd3>
             </div>
         </div>
-        <div class="panel panel-info" ng-if="false">
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                Coil Summary: Reject Reasons
+            </div>
+            <div class="panel-body">
+                <nvd3 options="$ctrl.chartOptionsRejectReason"
+                      data="$ctrl.summaryData.rejectReason"></nvd3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-info">
             <div class="panel-heading">
                 Coil Summary: Good v/s Non Standard v/s Web Breaks
             </div>
@@ -17,11 +30,12 @@
             </div>
         </div>
     </div>
-    <div class="col-md-8">
-       <detail  details="$ctrl.summaryData.details"
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <detail details="$ctrl.summaryData.details"
                 coil-type="$ctrl.coilType"
                 ng-if="$ctrl.coilType != null"
                 total="$ctrl.summary1[$ctrl.coilType]"></detail>
     </div>
 </div>
-

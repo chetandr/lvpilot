@@ -35,6 +35,7 @@ export default class SummaryCtrl {
             }
         }
         this.chartOptions = merge({},this.pieChartOptions, customChartOptions);
+        this.chartOptionsRejectReason = merge({},this.pieChartOptions, {chart: {legendPosition: "right"}});
     }
 
     $updateData(coilType) {
