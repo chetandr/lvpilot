@@ -81,6 +81,7 @@
     
 $options = array('chart' => 'scatterChart','xAxisLabel' => 'Coil Number', 'yAxisLabel' => ucfirst($_GET['factor']), 'threshold' => true, 'thresholdValues' => array('max' => 2000, 'min'=>500));*/
 //echo json_encode(array("options"=>$options, "data"=>$arr));
-echo file_get_contents('./json/getMLForCoilFactors.json');
+//echo file_get_contents('./json/getMLForCoilFactors.json');
 /*print_r(json_encode(json_decode($jsonString)));*/
+require_once "samplehsdata.php";
 ?>

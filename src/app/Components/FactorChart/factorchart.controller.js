@@ -30,10 +30,12 @@ export default class FactorChartCtrl {
         const scatterChartOptions = {
             chart: {
                 xAxis: {
-                   axisLabel: 'Speed Deviation Percent',
+                    axisLabel: 'Speed Deviation Percent',
+                    showMaxMin: false
                 },
                 yAxis: {
                     axisLabel: this.factor,
+                    showMaxMin: false
                     //tickFormat: d => d == this.chartOptions.thresholdValues.max ? 'Max' : (d == this.chartOptions.thresholdValues.min ? 'Min' : d)
                 },
                 showLegend: true,
@@ -41,7 +43,7 @@ export default class FactorChartCtrl {
         };
         this.options = merge({}, this.defaultScatterOptions, scatterChartOptions);
         //this.$setGroupBy();
-        //this.$setChartData();
+        this.$setChartData();
         this.groupFactor = this.groupBy;
         this.casterFilter = this.castor;
         this.defaultMax = this.max;
@@ -53,50 +55,6 @@ export default class FactorChartCtrl {
         this.dateToFilter = this.dateTo;
     }
 
-    $setLegendFilter(legend) {
-        let allFalse = true;
-        forEach(this.legendFilters, (l, k) => {
-            if (l && k != legend) {
-                allFalse = false;
-            }
-        });
-        if (allFalse) {
-            for (let k in this.legendFilters) {
-                if (this.legendFilters.hasOwnProperty(k)) {
-                    this.legendFilters[k] = true;
-                }
-            }
-        } else {
-            this.legendFilters[legend] = !this.legendFilters[legend];
-        }
-    }
-
-    $dblSetLegendFilter(legend) {
-        let allFalse = false;
-        forEach(this.legendFilters, (l, k) => {
-            if (l && k != legend) {
-                allFalse = true;
-            }
-        });
-        if (allFalse) {
-            const legendFiltersCount = this.legendFilters.length;
-            for (let k in this.legendFilters) {
-                if (this.legendFilters.hasOwnProperty(k)) {
-                    if (k == legend) {
-                        this.legendFilters[k] = true;
-                    } else {
-                        this.legendFilters[k] = false;
-                    }
-                }
-            }
-        } else {
-            for (let k in this.legendFilters) {
-                if (this.legendFilters.hasOwnProperty(k)) {
-                    this.legendFilters[k] = true;
-                }
-            }
-        }
-    }
 
     $setGroupBy() {
         this.groupParameters = uniq(map(this.chartData, this.groupBy));
@@ -104,45 +62,45 @@ export default class FactorChartCtrl {
     }
 
     $setChartData() {
- /*       const chartData = [];
+        const chartData = [];
         let filterCriteria = {};
-            const filterFn = (data) => {
-                let status = true;
+        const filterFn = (data) => {
+            let status = true;
 
-                if (this.caster) {
-                   status =  status && data.caster == parseInt(this.caster);
-                }
-                if (this.oven) {
-                    status =  status && data.oven == parseInt(this.oven);
-                }
-                if (this.workrolls) {
-                    status =  status &&  data.workrolls == parseInt(this.workrolls);
-                }
-                if (this.alloy) {
-                    status =  status && data.aloy == parseInt(this.alloy);
-                }
-                if(this.dateFrom) {
-                    status = status && data.date > this.dateFrom;
-                }
-                if(this.dateTo) {
-                    status = status && data.date < this.dateTo;
-                }
-
-                return status;
+            if (this.caster) {
+                status = status && data.caster == parseInt(this.caster);
+            }
+            if (this.oven) {
+                status = status && data.oven == parseInt(this.oven);
+            }
+            if (this.workrolls) {
+                status = status && data.workrolls == parseInt(this.workrolls);
+            }
+            if (this.alloy) {
+                status = status && data.aloy == parseInt(this.alloy);
+            }
+            if (this.dateFrom) {
+                status = status && data.date > this.dateFrom;
+            }
+            if (this.dateTo) {
+                status = status && data.date < this.dateTo;
             }
 
-            if (this.legendFilters[parameter]) {
-                chartData.push({
-                    "key": parameter,
-                    values: filter(this.chartData, filterFn),
-                    color: this.colors[parameter]
-                });
-            }
+            return status;
+        }
+        forEach(this.chartData, cdata => {
+            chartData.push({
+                "key": cdata.key,
+                values: filter(cdata.values, filterFn),
+                color: cdata.color
+            });
+        })
+        this.data = chartData;
         const arrMax = [];
         const len = this.chartData.length;
-        if(this.max) {
-            for(let k=0;k<len; k+=50) {
-                    arrMax.push({x:k, y: this.max, size:0.1,color:'#000'});
+        if (this.max) {
+            for (let k = 0; k < len; k += 50) {
+                arrMax.push({x: k, y: this.max, size: 0.1, color: '#000'});
             }
             chartData.push({
                 key: "Max",
@@ -152,9 +110,9 @@ export default class FactorChartCtrl {
         }
 
         const arrMin = [];
-        if(this.min) {
-            for(let k=0;k<len; k+=50) {
-                    arrMin.push({x:k, y: this.min, color:'#000',size:0.1});
+        if (this.min) {
+            for (let k = 0; k < len; k += 50) {
+                arrMin.push({x: k, y: this.min, color: '#000', size: 0.1});
             }
             chartData.push({
                 key: "Min",
@@ -162,8 +120,8 @@ export default class FactorChartCtrl {
                 color: "#000000"
             });
         }
-       // this.data = chartData;
-        this.options.chart.yAxis.tickFormat = d => d == this.max ? 'Max' : (d == this.min ? 'Min' : d);*/
+        // this.data = chartData;
+        this.options.chart.yAxis.tickFormat = d => d == this.max ? 'Max' : (d == this.min ? 'Min' : d);
     }
 
     $doCheck() {
@@ -180,7 +138,7 @@ export default class FactorChartCtrl {
             this.dateToFilter !== this.dateTo
         ) {
             //this.$setGroupBy();
-            //this.$setChartData();
+            this.$setChartData();
             this.groupFactor = this.groupBy;
             this.casterFilter = this.caster
             this.ovenFilter = this.oven;

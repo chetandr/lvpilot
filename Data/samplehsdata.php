@@ -23,7 +23,8 @@ for($i = 0; $i <100; $i +=10) {
                         $arrlist .= ",";
                     }
                     $valueCnt++;
-                    $arrlist .= '{"y":'.$arrData[$arrKeyIndex['cu_perc']].',"x":'.$deviationperc.'}';
+                    $date = rand(1451606400,1514764800);
+                    $arrlist .= '{"y":'.$arrData[$arrKeyIndex['cu_perc']].',"x":'.$deviationperc.',"date":'.$date.',"caster":'.rand(1,10).'}';
                 }
 
 
