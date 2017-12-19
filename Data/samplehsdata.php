@@ -24,7 +24,7 @@ for($i = 0; $i <100; $i +=10) {
                     }
                     $valueCnt++;
                     $date = rand(1451606400,1514764800);
-                    $arrlist .= '{"y":'.$arrData[$arrKeyIndex['cu_perc']].',"x":'.$deviationperc.',"date":'.$date.',"caster":'.rand(1,10).'}';
+                    $arrlist .= '{"y":'.$arrData[$arrKeyIndex['cu_perc']].',"x":'.$deviationperc.',"date":'.$date.',"caster":'.rand(1,10).',"sampleno":'.$arrData[$arrKeyIndex['sampleno']].'}';
                 }
 
 
