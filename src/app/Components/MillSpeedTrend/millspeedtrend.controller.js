@@ -34,7 +34,8 @@ export default class MillSpeedTrendCtrl {
                     }
                 },
                 yAxis: {
-                    axisLabel: this.trends.options.yAxisLabel
+                    axisLabel: this.trends.options.yAxisLabel,
+                    tickFormat: d => d3.format('d')(d)
                 },
                 margin: {
                     bottom: 80
