@@ -59,17 +59,17 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">Ranked Factors</div>
                     <div class="panel-body">
-                        <ul class="list-group">
+                        <ul class="list-group" style="height:300px; overflow-y: scroll">
                             <li ng-repeat="factor in $ctrl.factors"
                                 class="list-group-item list-group-item-warning"
                                 ng-click="$ctrl.$onFactorClick(factor.key)">
-                                {{factor.value}} <span class="badge badge-danger">Rank : {{factor.rank}}</span>
+                                <strong>Rank {{factor.rank}}: </strong> {{factor.value}}
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <insight-detail factors="$ctrl.pageFactors"
                                 factor = "$ctrl.factor"
                                 caster="$ctrl.Caster"
@@ -83,5 +83,17 @@
             </div>
         </div>
 
+        <div class="row" style="margin-top:10px">
+            <div class="col-md-offset-10 col-md-2">
+                <button
+                        ng-class="['btn-xs', {'btn-success': $ctrl.currentPage != 0}, {'btn-default': $ctrl.currentPage == 0}]"
+                        ng-click="$ctrl.$onPrev()"
+                        ng-disabled="$ctrl.currentPage == 0"><span class="glyphicon glyphicon-arrow-left"></span> Prev</button>
+                <button
+                        ng-class="['btn-xs', {'btn-success': $ctrl.pageSize * ($ctrl.currentPage + 1) < $ctrl.factors.length}, {'btn-default': $ctrl.pageSize * ($ctrl.currentPage + 1) >= $ctrl.factors.length}]"
+                        ng-click="$ctrl.$onNext()"
+                        ng-disabled="$ctrl.pageSize * ($ctrl.currentPage + 1) >= $ctrl.factors.length">Next  <span class="glyphicon glyphicon-arrow-right"></span></button>
+            </div>
+        </div>
     </div>
 </div>

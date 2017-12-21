@@ -4,7 +4,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="pull-right">
+                    <div class="pull-right alert alert-info">
 
                     <span style="margin-right:40px" class="form-group">
                         <label>Plant:</label>
@@ -54,7 +54,7 @@
                             <option value="range_10">10</option>
                         </select>
                     </div>
-                    <a class="btn-sm btn-warning pull-right" ui-sref="insights" style="cursor: pointer">Details <span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <a class="btn-sm btn-success pull-right" ui-sref="insights" style="cursor: pointer">Show Details <span class="glyphicon glyphicon-arrow-right"></span></a>
                     <mill-speed-trend range-size="$ctrl.rangeSize" clusters="$ctrl.Clusters.list" trends="$ctrl.trends"
                                       ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill"
                                       gauge="$ctrl.targetGauge"></mill-speed-trend>
