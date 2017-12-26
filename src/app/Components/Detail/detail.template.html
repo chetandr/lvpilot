@@ -4,24 +4,24 @@
     </div>
     <div class="panel-body">
         <ul class="nav nav-tabs">
-            <li><a ng-click="$ctrl.coilTypeGrp = 'accepted'; $ctrl.coilType = 'Accepted'"
+            <li><a ng-click="$ctrl.coilTypeGrp = 'accepted'; $ctrl.coilType = 'Accepted'; $ctrl.paramBase = 'hotsprings'"
                    ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'accepted'},{'btn-default' : $ctrl.coilTypeGrp != 'accepted'}]">
                 Accepted vs Rejected
             </a></li>
             <li>
-                <a ng-click="$ctrl.coilTypeGrp = 'goodnall'; $ctrl.coilType = 'Good'"
+                <a ng-click="$ctrl.coilTypeGrp = 'goodnall'; $ctrl.coilType = 'Good'; $ctrl.paramBase = 'louisville'"
                    ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'goodnall'},{'btn-default' : $ctrl.coilTypeGrp !== 'goodnall'}]">
                     Good v/s Non Standard v/s Web Breaks
                 </a>
             </li>
             <li>
-                <a ng-click="$ctrl.coilTypeGrp = 'good' ; $ctrl.coilType = 'Good'"
+                <a ng-click="$ctrl.coilTypeGrp = 'good' ; $ctrl.coilType = 'Good'; $ctrl.paramBase = 'louisville'"
                    ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'good'},{'btn-default' : $ctrl.coilTypeGrp !== 'good'}]">
                     Good v/s Not Good
                 </a>
             </li>
             <li>
-                <a ng-click="$ctrl.coilTypeGrp = 'webbreaks'; $ctrl.coilType = 'Web Breaks'"
+                <a ng-click="$ctrl.coilTypeGrp = 'webbreaks'; $ctrl.coilType = 'Web Breaks'; $ctrl.paramBase = 'louisville'"
                    ng-class="['btn',{'btn-success' : $ctrl.coilTypeGrp == 'webbreaks'},{'btn-default' : $ctrl.coilTypeGrp !== 'webbreaks'}]">
                     Web Breaks v/s Non Web Breaks
                 </a>
@@ -36,15 +36,16 @@
             </select>
         </span>
             </span>
-            <span class="form-group" style="padding-right:20px">
-            <label>Parameter Base: </label>
-            <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'"
-                   ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"
-                   style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span
-                    style="margin-right:30px">Hot Springs</span>
-            <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'"
-                   ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"
-                   style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"> <span> Louisville</span>
+            <span class="form-group" style="padding-right:20px" ng-if="$ctrl.coilTypeGrp == 'accepted'">
+                <label>Parameter Base: </label>
+                <input type="checkbox" ng-checked="$ctrl.paramBase == 'hotsprings'"
+                       ng-click="$ctrl.setParamBase('hotsprings')" class="regular-checkbox"
+                       style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"/>
+                    <span
+                            style="margin-right:30px">Hot Springs</span>
+                <input type="checkbox" ng-checked="$ctrl.paramBase == 'louisville'"
+                       ng-click="$ctrl.setParamBase('louisville')" class="regular-checkbox"
+                       style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;"/> <span> Louisville</span>
         </span>
 
             <span ng-click="$ctrl.weatherStatus = ! $ctrl.weatherStatus"
