@@ -15,6 +15,7 @@ export default  class FactorsMillSpeedCtrl {
         this.mill = FilterService.getValue('mill');
         this.gauge = FilterService.getValue('gauge');
         this.groupFactor = 'group1';
+        this.detailType = "topfactor";
     }
 
     $onInit() {
@@ -29,7 +30,12 @@ export default  class FactorsMillSpeedCtrl {
             //this.$setChartData();
             this.maxMinValues = uniq(map(orderBy(this.data, 'y'), 'y'));
             this.chartOptions = result.data.options;
-            this.showLoading = false
+            this.showLoading = false;
+        });
+        let restURLPred = this.AppConfig.restUrls.ML_TRANSFORMATIONS + '?factor=' + this.factor + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge;
+        this.http.get(restURLPred,).then((result) => {
+            this.predData = result.data;
+            this.showPredLoading = false;
         });
     }
 

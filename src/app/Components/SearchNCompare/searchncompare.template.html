@@ -46,7 +46,7 @@
             </div>
             <div class="clearfix"/>
             <div class="row" style="margin-top:20px">
-                <div class="col-md-11">
+                <div class="col-md-9">
                     <div class="form-group pull-left">
                         <label>Range Size: </label>
                         <select ng-model="$ctrl.rangeSize">
@@ -58,6 +58,20 @@
                     <mill-speed-trend range-size="$ctrl.rangeSize" clusters="$ctrl.Clusters.list" trends="$ctrl.trends"
                                       ng-if="$ctrl.trends != null" plant="$ctrl.plant" mill="$ctrl.currentMill"
                                       gauge="$ctrl.targetGauge"></mill-speed-trend>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Ranked Factors</div>
+                        <div class="panel-body">
+                            <ul class="list-group" style="height:300px; overflow-y: scroll">
+                                <li ng-repeat="factor in $ctrl.factors"
+                                    class="list-group-item list-group-item-warning"
+                                    ng-click="$ctrl.$onFactorClick(factor.key)">
+                                    <strong>Rank {{factor.rank}}: </strong> {{factor.value}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

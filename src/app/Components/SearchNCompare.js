@@ -3,7 +3,8 @@ import template from './SearchNCompare/searchncompare.template.html';
 
 const bindings = {
     mills: '<',
-    filters: '<'
+    filters: '<',
+    factors: '<'
 }
 
 export default {

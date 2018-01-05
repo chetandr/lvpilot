@@ -2,34 +2,23 @@
     <div class="panel-heading">Rank : {{$ctrl.rank}} - {{$ctrl.factor}}
         vs Speed Deviation</div>
     <div  class="panel-body" style="min-height: 500px">
-        <div class="loading" ng-if="$ctrl.data.length <= 0"></div>
-        <div class="row" ng-if="false">
-            <div class="col-md-6">
-                <label>Group By:</label>
-                <select ng-model="$ctrl.groupFactor" style="font-size:0.8em;width:200px" disabled>
-                    <option value="group1">Accepted Vs Rejected (with Reason)</option>
-                    <option value="group2">Good Vs Non Standard Vs Web Breaks</option>
-                </select>
-            </div>
-            <div class="col-md-2" ng-if="$ctrl.chartOptions.threshold">
-                <div class="form-group">
-                    <label>Min:</label>
-                    <input type="number" style="font-size:0.8em;width:40px" ng-model="$ctrl.minThreshold"/>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="form-group" ng-if="$ctrl.chartOptions.threshold" >
-                    <label>Max:</label>
-                    <input type="number" style="font-size:0.8em; width:40px" ng-model="$ctrl.maxThreshold"/>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="form-group" ng-if="$ctrl.chartOptions.threshold" >
-                    <button class="btn-xs" ng-click="$ctrl.$plotMaxMin()">Go</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
+        <ul class="nav nav-tabs" style="maring-top:10px;">
+            <li>
+                <a ng-click="$ctrl.detailType = 'topfactor'"
+                   ng-class="['btn',{'btn-success' : $ctrl.detailType == 'topfactor'},{'btn-default' : $ctrl.detailType != 'topfactor'}]">
+                    Actual
+                </a>
+            </li>
+            <li>
+                <a ng-click="$ctrl.detailType = 'prediction'"
+                   ng-class="['btn',{'btn-success' : $ctrl.detailType == 'prediction'},{'btn-default' : $ctrl.detailType !== 'prediction'}]">
+                    Prediction
+                </a>
+            </li>
+        </ul>
+        <div class="loading" ng-if="$ctrl.data.length <= 0 && $ctrl.detailType == 'topfactor'"></div>
+        <div class="loading" ng-if="$ctrl.predData.length <= 0 && $ctrl.detailType == 'prediction'"></div>
+        <div class="row" ng-if="$ctrl.detailType == 'topfactor'">
             <div class="col-md-12 hide-grid-y">
                 <factor-chart caster="$ctrl.caster"
                               oven="$ctrl.oven"
@@ -44,7 +33,16 @@
                               min="$ctrl.min"
                               date-from="$ctrl.dateFrom"
                               date-to="$ctrl.dateTo"
+                              default-options="$ctrl.defaultOptions"
                               ng-if="$ctrl.data.length > 0"></factor-chart>
+            </div>
+        </div>
+        <div class="row" ng-if="$ctrl.detailType == 'prediction'">
+            <div class="col-md-12 hide-grid-y">
+                <factor-prediction
+                        default-options="$ctrl.defaultOptions"
+                              chart-data="$ctrl.predData"
+                              factor="$ctrl.factor"></factor-prediction>
             </div>
         </div>
     </div>

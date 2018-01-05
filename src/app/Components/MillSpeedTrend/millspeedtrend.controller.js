@@ -19,7 +19,7 @@ export default class MillSpeedTrendCtrl {
         let restURL = this.AppConfig.restUrls.MILL_SPEED_TREND;
         const multiBarChart = {
             "chart" :{
-                //width: 750,
+                width: 1080,
                 xAxis:{
                     tickFormat: d => {
                         const values = this.trends.data[this.plant][this.mill][this.gauge][this.rangeSize][0].values;

@@ -17,6 +17,7 @@ const bindings = {
     dateFrom: '<',
     dateTo : '<',
     rank: '<',
+    defaultOptions: '<',
     factor:'<'
 };
 

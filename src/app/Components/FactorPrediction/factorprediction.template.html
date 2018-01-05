@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-md-5">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                Prediction
+            </div>
+            <div class="panel-body">
+                <span  ng-bind-html="$ctrl.predictionFormula"></span>
+                <div class="form-group" style="margin-top:10px">
+                    <label>{{$ctrl.chartData.r}}</label>:
+                    <button ng-click="$ctrl.stepUp()" class="btn-success glyphicon glyphicon-arrow-up hide" style="padding-bottom: 7px;padding-top: 2px;margin-right: -4px;"></button>
+                    <input ng-model="$ctrl.independentValue" ng-change="$ctrl.predict()" step="{{$ctrl.numberStep}}">
+                    <button ng-click="$ctrl.stepDown()" class="btn-success glyphicon glyphicon-arrow-down hide" style="padding-bottom: 7px;padding-top: 2px;margin-left: -5px;"></button>
+                    [<span class="constant" style="font-size:0.8em">{{$ctrl.chartData.min}}</span> to <span class="constant" style="font-size:0.8em">{{$ctrl.chartData.max}}</span>]
+                </div>
+                <div class="form-group">
+                    <label>{{$ctrl.chartData.l}}</label>:
+                    <strong class="dependent">{{$ctrl.predictedValue}}</strong>
+                </div>
+                <div class="form-group">
+                    <label>Traget Speed</label>:
+                    <strong class="dependent">{{$ctrl.chartData.target_speed}}</strong>
+                </div>
+                <div class="form-group">
+                    <label>Deviation Percent</label>:
+                    <strong class="dependent">{{$ctrl.deviationPercent}}%</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                Transformations
+            </div>
+            <div class="panel-body">
+                <ol class="list-group" style="overflow-y: hidden">
+                    <li class="list-group-item list-group-item-warning">
+                        The value for <span class="dependent">{{$ctrl.chartData.l}}</span> is transformed to <span ng-bind-html="$ctrl.lhs"></span>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                        The value for <span class="independent">{{$ctrl.chartData.r}}</span> is transformed to <span ng-bind-html="$ctrl.rhs"></span>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                        The <span class="constant">Intercept</span> calculated for <span class="dependent"> Y </span> = <span ng-bind-html="$ctrl.lhs"></span>
+                        and <span class="independent"> X </span> = <span ng-bind-html="$ctrl.rhs"></span>
+                        is <span class="constant">{{$ctrl.chartData.intercept}}</span>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                        The <span class="constant"> Beta/Slope</span> calculated for <span class="dependent"> Y </span> = <span ng-bind-html="$ctrl.lhs"></span>
+                        and <span class="independent"> X </span> = <span ng-bind-html="$ctrl.rhs"></span>
+                        is <span class="constant">{{$ctrl.chartData.beta}}</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-7">
+        <nvd3 options="$ctrl.predChartoptions" data="$ctrl.chartData.data"/>
+    </div>
+</div>
+

@@ -11,10 +11,11 @@ export default class SummaryCtrl {
 
     $onInit() {
         this.summary1 = {};
-
+        this.total = 0;
         for(let k in this.summaryData.summary1) {
             if (this.summaryData.summary1.hasOwnProperty(k)) {
                 this.summary1[this.summaryData.summary1[k].key] = this.summaryData.summary1[k].y;
+                this.total += this.summaryData.summary1[k].y;
             }
         }
         const vm = this;

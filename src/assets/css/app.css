@@ -469,3 +469,24 @@ input[type="checkbox"].small-round {
 .hide-grid-x .nv-x .tick line {
     display: none;
 }
+
+.constant {
+    color: #400D01;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.function {
+    color: #49731F;
+    font-weight: bold;
+}
+
+.dependent {
+    color: #0D5B8C;
+    font-weight: bold;
+}
+
+.independent {
+    color: #0D5B8C;
+    font-weight: bold;
+}

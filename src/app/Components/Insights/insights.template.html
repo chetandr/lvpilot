@@ -1,4 +1,4 @@
-<div class="panel panel-info">
+<div class="panel panel-info" style="maring-top:10px;">
 <div class="panel-heading">
     <div class="row">
         <div class="col-md-4">
@@ -55,21 +55,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <div class="panel panel-success">
-                    <div class="panel-heading">Ranked Factors</div>
-                    <div class="panel-body">
-                        <ul class="list-group" style="height:300px; overflow-y: scroll">
-                            <li ng-repeat="factor in $ctrl.factors"
-                                class="list-group-item list-group-item-warning"
-                                ng-click="$ctrl.$onFactorClick(factor.key)">
-                                <strong>Rank {{factor.rank}}: </strong> {{factor.value}}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
+
+            <div class="col-md-12">
                 <insight-detail factors="$ctrl.pageFactors"
                                 factor = "$ctrl.factor"
                                 caster="$ctrl.Caster"

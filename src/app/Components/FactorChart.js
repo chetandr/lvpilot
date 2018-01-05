@@ -13,6 +13,7 @@ const bindings = {
     max: '<',
     min: '<',
     dateFrom: '<',
+    defaultOptions: '<',
     dateTo: '<',
     factor: '<'
 };

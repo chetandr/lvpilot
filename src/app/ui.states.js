@@ -38,7 +38,8 @@ const UIStates = {
         component : 'searchNCompare',
         resolve: {
             filters : (CoilDataService) => CoilDataService.getFilters(),
-            mills : (CoilDataService) => CoilDataService.getMills()
+            mills : (CoilDataService) => CoilDataService.getMills(),
+            factors : (CoilDataService) => CoilDataService.getFactorsForMillSpeed(),
         }
     },
     Test : {

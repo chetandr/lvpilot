@@ -10,7 +10,6 @@ import isEqual from 'lodash-es/isEqual';
 export default class FactorChartCtrl {
 
     constructor(ChartOptions, AppConfig) {
-        this.defaultScatterOptions = ChartOptions.getOption('scatterChart');
         this.colors = AppConfig.colors;
         this.filter = filter;
         this.legendFilters = {};
@@ -41,7 +40,7 @@ export default class FactorChartCtrl {
                 showLegend: true,
             }
         };
-        this.options = merge({}, this.defaultScatterOptions, scatterChartOptions);
+        this.options = merge({}, this.defaultOptions, scatterChartOptions);
         //this.$setGroupBy();
         this.$setChartData();
         this.groupFactor = this.groupBy;

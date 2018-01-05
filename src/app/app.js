@@ -21,6 +21,7 @@ import MillSpeedTrend from './Components/MillSpeedTrend';
 import Insights from './Components/Insights';
 import InsightDetail from './Components/InsightDetail';
 import Test from './Components/Test';
+import FactorPrediction from './Components/FactorPrediction';
 
 import UIState from './ui.states';
 // Services
@@ -58,6 +59,7 @@ angular.module(MODULE_NAME,[tabs, nvd3, uiRouter])
     .component('millSpeedTrend', MillSpeedTrend )
     .component('insights', Insights )
     .component('insightDetail', InsightDetail )
+    .component('factorPrediction', FactorPrediction )
     .component('test', Test )
     .factory('AppConfig', AppConfig)
     .factory('ChartOptions', ChartOptions)
