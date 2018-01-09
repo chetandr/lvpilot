@@ -11,11 +11,22 @@ export default class SummaryCtrl {
 
     $onInit() {
         this.summary1 = {};
-        this.total = 0;
+        this.summary2 = {};
+        this.totals = {accepted:0, goodnall:0, good:0, webbreaks:0};
+        // caluclate totals for summary 1
         for(let k in this.summaryData.summary1) {
             if (this.summaryData.summary1.hasOwnProperty(k)) {
                 this.summary1[this.summaryData.summary1[k].key] = this.summaryData.summary1[k].y;
-                this.total += this.summaryData.summary1[k].y;
+                this.totals.accepted += this.summaryData.summary1[k].y;
+            }
+        }
+        // calulate Totals for summary2
+        for(let k in this.summaryData.summary2) {
+            if (this.summaryData.summary2.hasOwnProperty(k)) {
+                this.summary2[this.summaryData.summary2[k].key] = this.summaryData.summary2[k].y;
+                this.totals.goodnall += this.summaryData.summary2[k].y;
+                this.totals.good += this.summaryData.summary2[k].y;
+                this.totals.webbreaks += this.summaryData.summary2[k].y;
             }
         }
         const vm = this;

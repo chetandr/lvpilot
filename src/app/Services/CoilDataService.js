@@ -11,7 +11,13 @@ const CoildDataSevice =($http, $stateParams, AppConfig, FilterService, Filters) 
         getFactors() {
             let restURL = AppConfig.restUrls.ML_IMPORTANT_FACTORS + '?coilstate=' + $stateParams.coilState;
             return new Promise((resolve, reject) => {
-                    $http.get(restURL,).then((result)=> resolve(result.data),(err)=> reject(err) );
+                    $http.get(restURL,).then((result)=> {
+                        this.FilterService.setValue('plant', "hotsprings");
+                        this.FilterService.setValue('mill', "Mill 1");
+                        this.FilterService.setValue('gauge', 0.04);
+                        this.FilterService.setValue('isWeather', false);
+                        resolve(result.data)
+                    },(err)=> reject(err) );
                 }
             )
         },

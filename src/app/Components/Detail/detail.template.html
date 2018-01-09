@@ -70,7 +70,7 @@
                 <div class="col-md-6 div-cell">{{item.reason}}</div>
                 <div class="col-md-1 div-cell center">{{item.count}}</div>
                 <div class="col-md-2 div-cell center">{{item[$ctrl.coilType.toLowerCase()]}}</div>
-                <div class="col-md-1 div-cell center">{{$ctrl.round(((item[$ctrl.coilType.toLowerCase()] / $ctrl.total)
+                <div class="col-md-1 div-cell center">{{$ctrl.round(((item[$ctrl.coilType.toLowerCase()] / $ctrl.total[$ctrl.coilTypeGrp])
                     * 100) * 100) / 100}}%
                 </div>
             </div>
