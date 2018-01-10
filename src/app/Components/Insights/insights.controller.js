@@ -30,7 +30,7 @@ export default class InsightsCtrl {
     $onInit(){
         this.dateFrom = head(this.filters.period).key;
         this.dateTo = last(this.filters.period).key;
-        const factors = this.factors[this.mill][this.gauge];
+        const factors = this.factors[this.plant][this.mill][this.gauge];
         this.factor = head(factors).key;
         for(let i=this.currentPage; i<this.currentPage+ this.pageSize; i++) {
             this.pageFactors.push(factors[i])
