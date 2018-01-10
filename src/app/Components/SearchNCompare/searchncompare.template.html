@@ -64,7 +64,7 @@
                         <div class="panel-heading">Ranked Factors</div>
                         <div class="panel-body">
                             <ul class="list-group" style="height:300px; overflow-y: scroll">
-                                <li ng-repeat="factor in $ctrl.factors[$ctrl.plant][$ctrl.currentMill][$ctrl.targetGauge]"
+                                <li ng-repeat="factor in $ctrl.factors[$ctrl.plant][$ctrl.currentMill.replace(' ','')][$ctrl.targetGauge]"
                                     class="list-group-item list-group-item-warning"
                                     ng-click="$ctrl.$onFactorClick(factor.key)">
                                     <strong>Rank {{factor.rank}}: </strong> {{factor.value}}
