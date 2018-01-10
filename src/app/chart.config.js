@@ -2,7 +2,7 @@ const Config = {
     'pieChart' : {
             chart: {
                 type: 'pieChart',
-                height: 300,
+                height: 400,
                 width: 400,
                 donut: true,
                 x: function (d) {
