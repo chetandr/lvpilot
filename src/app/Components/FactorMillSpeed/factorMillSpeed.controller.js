@@ -24,7 +24,7 @@ export default  class FactorsMillSpeedCtrl {
         this.loading = true;
         this.maxThreshold = null;
         this.minThreshold = null;
-        let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factor + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge;
+        let restURL = this.AppConfig.restUrls.ML_COIL_FACTORS + '?factor=' + this.factorKey + '&plant=' + this.plant + '&mill=' + this.mill + '&gauge=' + this.gauge;
         this.http.get(restURL,).then((result) => {
             this.data = result.data;
             //this.$setChartData();

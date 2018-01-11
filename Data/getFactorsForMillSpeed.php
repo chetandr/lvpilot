@@ -30,8 +30,8 @@ foreach($plants as $plant) {
             $finalArray[$plant][$mill["value"]]["".$targetGauge.""] = array(
                 array('key' => 'crown', 'value' => 'Crown'.$targetGauge, 'rank' => 1),
                 array('key' => 'wedge', 'value' => 'Wedge'.$targetGauge, 'rank' => 9999),
-                array('key' => 'as-cast-gauge', 'value' => 'As-cast Gauge'.$targetGauge, 'rank' => 3),
-                array('key' => 'cast-speed', 'value' => 'Cast Speed'.$targetGauge, 'rank' => 4),
+                array('key' => 'as-cast-gauge', 'value' => 'As-cast Gauge'.$targetGauge, 'rank' => 9999),
+                array('key' => 'cast-speed', 'value' => 'Cast Speed'.$targetGauge, 'rank' => 9999),
                 array('key' => 'coil-chemistry-zinc', 'value' => 'Coil-Chemistry (% Zinc)'.$targetGauge, 'rank' => 5),
                 array('key' => 'mill-amps-at-hs-mill-1st-pass', 'value' => 'Mill Amps at HS Mill 1st pass'.$targetGauge, 'rank' => 6),
                 array('key' => 'weather-temp-at-rolling-time', 'value' => 'Weather temp at rolling time'.$targetGauge, 'rank' => 7),
@@ -41,5 +41,8 @@ foreach($plants as $plant) {
     }
 }
 header('Access-Control-Allow-Origin: *');
+header('Content-Type: text/json');
+
 echo json_encode($finalArray);
+//echo file_get_contents('./json/getFactorsForMillSpeed.json');
 ?>

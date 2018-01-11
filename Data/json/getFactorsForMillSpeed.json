@@ -1,1 +1,1542 @@
-{"Mill 1":{"0.045":[{"key":"crown","value":"Crown0.045","rank":1},{"key":"wedge","value":"Wedge0.045","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.045","rank":3},{"key":"cast-speed","value":"Cast Speed0.045","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.045","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.045","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.045","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.045","rank":8}],"0.085":[{"key":"crown","value":"Crown0.085","rank":1},{"key":"wedge","value":"Wedge0.085","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.085","rank":3},{"key":"cast-speed","value":"Cast Speed0.085","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.085","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.085","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.085","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.085","rank":8}],"0.125":[{"key":"crown","value":"Crown0.125","rank":1},{"key":"wedge","value":"Wedge0.125","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.125","rank":3},{"key":"cast-speed","value":"Cast Speed0.125","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.125","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.125","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.125","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.125","rank":8}]},"Mill 2":{"0.145":[{"key":"crown","value":"Crown0.145","rank":1},{"key":"wedge","value":"Wedge0.145","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.145","rank":3},{"key":"cast-speed","value":"Cast Speed0.145","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.145","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.145","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.145","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.145","rank":8}],"0.085":[{"key":"crown","value":"Crown0.085","rank":1},{"key":"wedge","value":"Wedge0.085","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.085","rank":3},{"key":"cast-speed","value":"Cast Speed0.085","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.085","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.085","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.085","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.085","rank":8}],"0.125":[{"key":"crown","value":"Crown0.125","rank":1},{"key":"wedge","value":"Wedge0.125","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.125","rank":3},{"key":"cast-speed","value":"Cast Speed0.125","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.125","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.125","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.125","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.125","rank":8}]},"Mill 3":{"0.245":[{"key":"crown","value":"Crown0.245","rank":1},{"key":"wedge","value":"Wedge0.245","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.245","rank":3},{"key":"cast-speed","value":"Cast Speed0.245","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.245","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.245","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.245","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.245","rank":8}],"0.085":[{"key":"crown","value":"Crown0.085","rank":1},{"key":"wedge","value":"Wedge0.085","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.085","rank":3},{"key":"cast-speed","value":"Cast Speed0.085","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.085","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.085","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.085","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.085","rank":8}],"0.125":[{"key":"crown","value":"Crown0.125","rank":1},{"key":"wedge","value":"Wedge0.125","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.125","rank":3},{"key":"cast-speed","value":"Cast Speed0.125","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.125","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.125","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.125","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.125","rank":8}]},"Mill 4":{"0.345":[{"key":"crown","value":"Crown0.345","rank":1},{"key":"wedge","value":"Wedge0.345","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.345","rank":3},{"key":"cast-speed","value":"Cast Speed0.345","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.345","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.345","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.345","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.345","rank":8}],"0.085":[{"key":"crown","value":"Crown0.085","rank":1},{"key":"wedge","value":"Wedge0.085","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.085","rank":3},{"key":"cast-speed","value":"Cast Speed0.085","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.085","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.085","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.085","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.085","rank":8}],"0.125":[{"key":"crown","value":"Crown0.125","rank":1},{"key":"wedge","value":"Wedge0.125","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.125","rank":3},{"key":"cast-speed","value":"Cast Speed0.125","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.125","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.125","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.125","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.125","rank":8}]},"Mill 5":{"0.445":[{"key":"crown","value":"Crown0.445","rank":1},{"key":"wedge","value":"Wedge0.445","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.445","rank":3},{"key":"cast-speed","value":"Cast Speed0.445","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.445","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.445","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.445","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.445","rank":8}],"0.085":[{"key":"crown","value":"Crown0.085","rank":1},{"key":"wedge","value":"Wedge0.085","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.085","rank":3},{"key":"cast-speed","value":"Cast Speed0.085","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.085","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.085","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.085","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.085","rank":8}],"0.125":[{"key":"crown","value":"Crown0.125","rank":1},{"key":"wedge","value":"Wedge0.125","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.125","rank":3},{"key":"cast-speed","value":"Cast Speed0.125","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.125","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.125","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.125","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.125","rank":8}]},"Mill 6":{"0.545":[{"key":"crown","value":"Crown0.545","rank":1},{"key":"wedge","value":"Wedge0.545","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.545","rank":3},{"key":"cast-speed","value":"Cast Speed0.545","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.545","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.545","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.545","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.545","rank":8}],"0.085":[{"key":"crown","value":"Crown0.085","rank":1},{"key":"wedge","value":"Wedge0.085","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.085","rank":3},{"key":"cast-speed","value":"Cast Speed0.085","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.085","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.085","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.085","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.085","rank":8}],"0.125":[{"key":"crown","value":"Crown0.125","rank":1},{"key":"wedge","value":"Wedge0.125","rank":2},{"key":"as-cast-gauge","value":"As-cast Gauge0.125","rank":3},{"key":"cast-speed","value":"Cast Speed0.125","rank":4},{"key":"coil-chemistry-zinc","value":"Coil-Chemistry (% Zinc)0.125","rank":5},{"key":"mill-amps-at-hs-mill-1st-pass","value":"Mill Amps at HS Mill 1st pass0.125","rank":6},{"key":"weather-temp-at-rolling-time","value":"Weather temp at rolling time0.125","rank":7},{"key":"weather-humidity-at-rolling-time","value":"Weather humidity at rolling time0.125","rank":8}]}}
+{
+  "hotsprings": {
+    "Mill1": {
+      "0.045": [
+        {
+          "key": "crown",
+          "value": "Crown0.045",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.045",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.045",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.045",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.045",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.045",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.045",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.045",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill2": {
+      "0.145": [
+        {
+          "key": "crown",
+          "value": "Crown0.145",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.145",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.145",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.145",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.145",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.145",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.145",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.145",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill3": {
+      "0.245": [
+        {
+          "key": "crown",
+          "value": "Crown0.245",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.245",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.245",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.245",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.245",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.245",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.245",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.245",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill4": {
+      "0.345": [
+        {
+          "key": "crown",
+          "value": "Crown0.345",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.345",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.345",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.345",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.345",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.345",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.345",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.345",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill5": {
+      "0.445": [
+        {
+          "key": "crown",
+          "value": "Crown0.445",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.445",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.445",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.445",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.445",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.445",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.445",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.445",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill6": {
+      "0.545": [
+        {
+          "key": "crown",
+          "value": "Crown0.545",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.545",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.545",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.545",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.545",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.545",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.545",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.545",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    }
+  },
+  "louisville": {
+    "Mill1": {
+      "0.045": [
+        {
+          "key": "crown",
+          "value": "Crown0.045",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.045",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.045",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.045",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.045",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.045",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.045",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.045",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill2": {
+      "0.145": [
+        {
+          "key": "crown",
+          "value": "Crown0.145",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.145",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.145",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.145",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.145",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.145",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.145",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.145",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill3": {
+      "0.245": [
+        {
+          "key": "crown",
+          "value": "Crown0.245",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.245",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.245",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.245",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.245",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.245",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.245",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.245",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill4": {
+      "0.345": [
+        {
+          "key": "crown",
+          "value": "Crown0.345",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.345",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.345",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.345",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.345",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.345",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.345",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.345",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill5": {
+      "0.445": [
+        {
+          "key": "crown",
+          "value": "Crown0.445",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.445",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.445",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.445",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.445",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.445",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.445",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.445",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    },
+    "Mill6": {
+      "0.545": [
+        {
+          "key": "crown",
+          "value": "Crown0.545",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.545",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.545",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.545",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.545",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.545",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.545",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.545",
+          "rank": 8
+        }
+      ],
+      "0.085": [
+        {
+          "key": "crown",
+          "value": "Crown0.085",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.085",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.085",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.085",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.085",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.085",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.085",
+          "rank": 8
+        }
+      ],
+      "0.125": [
+        {
+          "key": "crown",
+          "value": "Crown0.125",
+          "rank": 1
+        },
+        {
+          "key": "wedge",
+          "value": "Wedge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "as-cast-gauge",
+          "value": "As-cast Gauge0.125",
+          "rank": 9999
+        },
+        {
+          "key": "cast-speed",
+          "value": "Cast Speed0.125",
+          "rank": 9999
+        },
+        {
+          "key": "coil-chemistry-zinc",
+          "value": "Coil-Chemistry (% Zinc)0.125",
+          "rank": 5
+        },
+        {
+          "key": "mill-amps-at-hs-mill-1st-pass",
+          "value": "Mill Amps at HS Mill 1st pass0.125",
+          "rank": 6
+        },
+        {
+          "key": "weather-temp-at-rolling-time",
+          "value": "Weather temp at rolling time0.125",
+          "rank": 7
+        },
+        {
+          "key": "weather-humidity-at-rolling-time",
+          "value": "Weather humidity at rolling time0.125",
+          "rank": 8
+        }
+      ]
+    }
+  }
+}
