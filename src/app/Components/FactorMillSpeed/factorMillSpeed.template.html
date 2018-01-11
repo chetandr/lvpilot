@@ -1,6 +1,7 @@
 <div class="panel panel-success">
-    <div class="panel-heading">Rank : {{$ctrl.rank}} - {{$ctrl.factor}}
-        vs Speed Deviation</div>
+    <div class="panel-heading" ng-if="$ctrl.rank != 9999">Rank : {{$ctrl.rank}} - {{$ctrl.factor}} vs Speed Deviation</div>
+    <div class="panel-heading" ng-if="$ctrl.rank == 9999">{{$ctrl.factor}} vs Speed Deviation</div>
+
     <div  class="panel-body" style="min-height: 500px">
         <ul class="nav nav-tabs" style="maring-top:10px;">
             <li>
@@ -9,7 +10,7 @@
                     Actual
                 </a>
             </li>
-            <li>
+            <li ng-if="$ctrl.rank != 9999">
                 <a ng-click="$ctrl.detailType = 'prediction'"
                    ng-class="['btn',{'btn-success' : $ctrl.detailType == 'prediction'},{'btn-default' : $ctrl.detailType !== 'prediction'}]">
                     Prediction
@@ -37,7 +38,7 @@
                               ng-if="$ctrl.data.length > 0"></factor-chart>
             </div>
         </div>
-        <div class="row" ng-if="$ctrl.detailType == 'prediction'">
+        <div class="row" ng-if="$ctrl.detailType == 'prediction' && $ctrl.rank != 9999">
             <div class="col-md-12 hide-grid-y">
                 <factor-prediction
                         default-options="$ctrl.defaultOptions"

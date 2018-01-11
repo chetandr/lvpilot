@@ -66,7 +66,7 @@
                             <ul class="list-group" style="height:300px; overflow-y: scroll">
                                 <li ng-repeat="factor in $ctrl.factors[$ctrl.plant][$ctrl.currentMill.replace(' ','')][$ctrl.targetGauge]"
                                     class="list-group-item list-group-item-warning"
-                                    ng-click="$ctrl.$onFactorClick(factor.key)">
+                                    ng-click="$ctrl.$onFactorClick(factor.key)" ng-if="factor.rank != 9999">
                                     <strong>Rank {{factor.rank}}: </strong> {{factor.value}}
                                 </li>
                             </ul>

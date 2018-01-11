@@ -29,7 +29,7 @@ foreach($plants as $plant) {
         foreach ($mill["targetGauge"] as $targetGauge) {
             $finalArray[$plant][$mill["value"]]["".$targetGauge.""] = array(
                 array('key' => 'crown', 'value' => 'Crown'.$targetGauge, 'rank' => 1),
-                array('key' => 'wedge', 'value' => 'Wedge'.$targetGauge, 'rank' => 2),
+                array('key' => 'wedge', 'value' => 'Wedge'.$targetGauge, 'rank' => 9999),
                 array('key' => 'as-cast-gauge', 'value' => 'As-cast Gauge'.$targetGauge, 'rank' => 3),
                 array('key' => 'cast-speed', 'value' => 'Cast Speed'.$targetGauge, 'rank' => 4),
                 array('key' => 'coil-chemistry-zinc', 'value' => 'Coil-Chemistry (% Zinc)'.$targetGauge, 'rank' => 5),
